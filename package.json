@@ -1,0 +1,25 @@
+{
+  "name": "jcmm_comics",
+  "version": "1.0.0",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mdiasan/JCMM_COMICS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mdiasan/JCMM_COMICS/issues"
+  },
+  "homepage": "https://github.com/Mdiasan/JCMM_COMICS#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "node-php-server": "^0.1.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}
