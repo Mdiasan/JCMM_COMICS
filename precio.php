@@ -16,25 +16,24 @@
 
 <?php include("includes/design-top.php");?>
 
-<div class="container" id="main-content">
-    <div class="row">
-        <div class="col-6 ">
-            <img id="imagenComic" src="media/images/comicEjemplo.png" alt="">
-        </div>
+
+<div class="row">
+    <div class="col-6 ">
+        <img id="imagenComic" src="media/images/comicEjemplo.png" alt="">
+    </div>
         
-        <div class="col-6 border border-secondary">
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            <div id="precio" class="row border border-secondary bg-primary">
-                precio 3,45€
-                <input id="boton" type="button" value="comprar" name="comprar">
-            </div>
+    <div class="col-6 border border-secondary">
+        aqui ira un texto de descripcion<br>
+        aqui ira un texto de descripcion<br>
+        aqui ira un texto de descripcion<br>
+        aqui ira un texto de descripcion<br>
+        aqui ira un texto de descripcion<br>
+        aqui ira un texto de descripcion<br>
+        aqui ira un texto de descripcion<br>
+        aqui ira un texto de descripcion<br>
+        <div id="precio" class="row border border-secondary bg-primary">
+            precio 3,45€
+            <input id="boton" type="button" value="comprar" name="comprar">
         </div>
     </div>
 </div>
