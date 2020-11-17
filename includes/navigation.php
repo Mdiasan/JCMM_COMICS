@@ -1,11 +1,6 @@
 <nav class="navbar navbar-dark bg-danger navbar-expand-md">
         <a class="navbar-brand" href="#">
-<<<<<<< Updated upstream
           <img src="media\images\logo-jcmm-128x128.png" width="30" height="30" alt="logo">
-=======
-          <img src="media/images/logo-jcmm-128x128.png" width="30" height="30" alt="logo">
-
->>>>>>> Stashed changes
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
