@@ -205,3 +205,15 @@ h3 {
 .footer {
   background-color: #0d0b0e;
   border-style: solid; }
+
+  #imagenComic{
+    width: 25em;
+    height: 35em;
+  }
+  #cuerpoPrecio{
+    background-color: white;
+  }
+  #precio{
+    background-color: orange;
+    color: black;
+  }
