@@ -36,7 +36,9 @@ h3 {
   background-color: white; }
 
 #precio {
-  color: black; }
+  color: black;
+  padding-bottom: 1em;
+  padding-top: 1em; }
 
 .footer {
   background-color: #0d0b0e;

@@ -17,7 +17,7 @@
                 <img id="imagenComic" src="media/images/comicEjemplo.png" alt="">
             </div>
 
-            <div class="col-6 p-2">
+            <div class="col-6">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum consectetur nam, est nihil eos nulla 
                 inventore pariatur omnis! Tempore sint ducimus fugiat, libero perspiciatis harum? Rerum, obcaecati
                 ducimus. Cupiditate, architecto.
@@ -38,11 +38,11 @@
                 nesciunt beatae at aliquam.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolor, vel rerum ex fugiat enim repellat ut ratione, debitis 
                 dicta laborum totam est amet, odio sequi quae doloribus eveniet ipsam!
-                <div id="precio" class="row border border-secondary bg-primary p-2">
+                <div id="precio" class="bg-primary">
                     precio 3,45€
                 </div>
                 <div>
-                    <input class="form-control-3 btn btn-warning p-2" type="button" value="comprar" name="comprar">
+                    <input class="form-control-3 btn btn-warning" type="button" value="comprar" name="comprar">
                 </div>
             </div>
         </div>
