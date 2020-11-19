@@ -4,16 +4,7 @@
             <h1>Footer</h1>
         </div>
         <div class="row">
-            <div class="col-md-3">
-                <div class=" contenedorPequeño col">
-                    C/Ronda del Valle nº32
-                </div>
-                <div class=" contenedorPequeño col">
-                    Nostromo@comics.com
-                </div>
-            </div>
-
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class=" contenedorPequeño col">
                     Destacamos
                 </div>
@@ -25,7 +16,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class=" contenedorPequeño col">
                     Mi cuenta
                 </div>
@@ -35,7 +26,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class=" contenedorPequeño col">
                     Informacion
                 </div>

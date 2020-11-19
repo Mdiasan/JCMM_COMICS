@@ -186,17 +186,15 @@ h3 {
   z-index: -1;
   font-size: 1.75em; }
 
-.footer {
-  background: #FF6067;
-  color: white;
-  padding: 0.9375em;
-  text-align: center;
-  font-size: 0.8125em; }
+#imagenComic {
+  width: 25em;
+  height: 35em; }
 
-.footer a {
-  color: #F7EE1A;
-  text-decoration: none;
-  border-bottom: 1px solid; }
+#cuerpoPrecio {
+  background-color: white; }
+
+#precio {
+  color: black; }
 
 .footer {
   background-color: #0d0b0e;
