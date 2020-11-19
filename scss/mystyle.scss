@@ -1,3 +1,9 @@
+@import '_variables.scss';
+  @import 'cubero.scss';
+  @import 'mDiaz.scss';
+  @import 'mRamirez.scss';
+  
+
 body {
     background: #D7F7FE;
     font-family: "Nunito", sans-serif;
@@ -219,10 +225,6 @@ body {
     font-size: 1.75em;
   }
 
-  @import 'cubero.scss';
-  @import 'mDiaz.scss';
-  @import 'mRamirez.scss';
-  
   
   
   
