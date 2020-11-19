@@ -1,50 +1,54 @@
-<?php include("includes/a_config.php");?>
+<?php include("includes/a_config.php"); ?>
 <!DOCTYPE html>
 <html>
+
 <head>
-<?php include("includes/head-tag-contents.php");?>
-<link rel="stylesheet" href="css/mystyle.css">
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <?php include("includes/head-tag-contents.php"); ?>
 
 </head>
-<body id="cuerpoPrecio">
 
-<?php include("includes/design-top.php");?>
+<body>
 
-<div class="container" id="main-content">
-    <div class="row">
-        <div class="col-6 ">
-            <img id="imagenComic" src="media/images/comicEjemplo.png" alt="">
-        </div>
-        
-        <div class="col-6 border border-secondary">
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            aqui ira un texto de descripcion<br>
-            <div id="precio" class="row border border-secondary bg-primary">
-                precio 3,45€
-                <input id="boton" type="button" value="comprar" name="comprar">
+    <?php include("includes/design-top.php"); ?>
+
+    <div class="container" id="main-content">
+        <div class="row">
+            <div class="col-6 ">
+                <img id="imagenComic" src="media/images/comicEjemplo.png" alt="">
+            </div>
+
+            <div class="col-6 p-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum consectetur nam, est nihil eos nulla 
+                inventore pariatur omnis! Tempore sint ducimus fugiat, libero perspiciatis harum? Rerum, obcaecati
+                ducimus. Cupiditate, architecto.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia sed illum omnis porro vitae optio
+                enim minus unde delectus, ex consectetur numquam a nulla maiores itaque modi distinctio officiis excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptas quos possimus consectetur adipisci? 
+                Asperiores amet quo illum sequi itaque!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nulla aliquid nostrum rem alias perspiciatis magni, 
+                doloribus provident porro hic, quidem sapiente accusamus incidunt voluptatibus officia beatae! Maxime nihil harum 
+                totam, officiis rem incidunt fugiat quasi dolor, perspiciatis blanditiis recusandae eveniet, reprehenderit fugit 
+                excepturi quam doloribus eligendi sit amet nostrum?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda praesentium pariatur hic soluta. Quaerat officiis 
+                quo sint earum quisquam reprehenderit est, explicabo facilis. Dicta sit dolorem architecto debitis doloremque, modi ut 
+                accusantium quidem error itaque voluptate quas maxime officia fuga tempore aperiam, non exercitationem reiciendis ab fugit 
+                nemo vero? Illo?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, asperiores in voluptatum dignissimos eligendi dolorem excepturi 
+                nesciunt beatae at aliquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolor, vel rerum ex fugiat enim repellat ut ratione, debitis 
+                dicta laborum totam est amet, odio sequi quae doloribus eveniet ipsam!
+                <div id="precio" class="row border border-secondary bg-primary p-2">
+                    precio 3,45€
+                </div>
+                <div>
+                    <input class="form-control-3 btn btn-warning p-2" type="button" value="comprar" name="comprar">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<?php include("includes/footer.php");?>
+    <?php include("includes/footer.php"); ?>
 </body>
+
 </html>
