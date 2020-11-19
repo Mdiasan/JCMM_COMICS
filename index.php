@@ -11,10 +11,6 @@
 
 
 <main>
-<section class="content">
-  <div class="full-bleed cool-photo">
-  </div>
-</section>
 </main>
 
 <?php include("includes/footer.php");?>
