@@ -11,10 +11,6 @@ body {
   max-width: 75em;
   margin: 0 auto; }
 
-.header {
-  background: #FF6067;
-  color: white;
-  padding: 0.625em; }
 
 .header .container {
   display: flex;

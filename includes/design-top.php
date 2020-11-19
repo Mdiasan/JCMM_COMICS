@@ -1,13 +1,29 @@
+
 <header class="header">
-    <div class="container-flex">
-    <div>imgen</div>
-    <?php include("navigation.php");?>
-    <div class="row">
-        <form class="form-inline col">
-          <input class="form-control col-sm-11" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-danger col-sm-1" type="submit">buscar</button>
-        </form>
-      </div>
     
-  </div>
+    <div class="row"><img src="media/images/logo-jcmm-128x128.png" alt=""></div>
+    <div class="row">
+      <div class="col p-0">
+    <?php include("navigation.php");?> 
+    </div>
+    </div>
+  
+    <div class="row">
+      <div class="col p-0">
+    <form class="form-inline ">
+     
+         
+          <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+          
+          
+          
+          <button class="btn btn-outline-danger" type="submit">buscar</button>
+          
+          
+     </form>
+          
+          
+    </div>
+   
+    
 </header>
