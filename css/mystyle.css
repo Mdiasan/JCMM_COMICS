@@ -10,7 +10,7 @@ body {
 .header {
   background: #FF6067;
   color: white;
- }
+  padding: 0.625em; }
 
 .header .container {
   display: flex;
@@ -26,7 +26,8 @@ body {
 
 h3 {
   font-size: 2em;
-  color: #f7686e; }
+  color: #f7686e;
+  padding-left: 6px; }
 
 #imagenComic {
   width: 25em;
@@ -37,8 +38,8 @@ h3 {
 
 #precio {
   color: black;
-  padding-bottom: 1em;
-  padding-top: 1em; }
+  padding-bottom: 0.7em;
+  padding-top: 0.7em; }
 
 .footer {
   background-color: #0d0b0e;
