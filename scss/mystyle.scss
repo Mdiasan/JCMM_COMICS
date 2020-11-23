@@ -24,7 +24,7 @@ body {
   .site-title, h1, h2, h3 {
     font-family: "Pacifico", sans-serif;
     font-size: 2.625em;
-    color: #024654;
+    color: $secundario;
   }
   
   h3 {
@@ -57,7 +57,19 @@ body {
     background-color: $cuarto;
     border-style: solid; }
 
+.card-body{
+  background-color: $secundario;
+}
 
+.card-img, .card-img-botton, .card-img-top {
+  background-color: $secundario;
+}
+
+.bg-primary{
+  background-color: $primario !important;
+  
+
+}
   
   
   

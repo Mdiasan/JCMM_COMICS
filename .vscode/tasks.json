@@ -12,7 +12,7 @@
 		{
 			"label": "Sass Compile",
 			"type": "shell",
-			"command": "node-sass -w scss/mystyle.scss css/mystyle.css",
+			"command": "node-sass -w scss/ -o css/",
 			"group": "build",
 			"problemMatcher": []
 		}
