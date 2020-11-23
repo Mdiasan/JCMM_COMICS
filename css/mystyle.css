@@ -1,16 +1,11 @@
+@charset "UTF-8";
 body {
-  background: #D7F7FE;
   font-family: "Nunito", sans-serif;
   color: #222; }
 
 .container {
   max-width: 75em;
   margin: 0 auto; }
-
-.header {
-  background: #FF6067;
-  color: white;
- }
 
 .header .container {
   display: flex;
@@ -26,7 +21,8 @@ body {
 
 h3 {
   font-size: 2em;
-  color: #f7686e; }
+  color: #f7686e;
+  padding-left: 6px; }
 
 #imagenComic {
   width: 25em;
@@ -36,10 +32,15 @@ h3 {
   background-color: white; }
 
 #precio {
-  color: black;
-  padding-bottom: 1em;
-  padding-top: 1em; }
+  color: #0D0B0E;
+  padding-bottom: 0.7em;
+  padding-top: 0.7em; }
+
+.contenedorPequeño {
+  border-style: solid;
+  height: 50px;
+  background-color: #c6c7c2; }
 
 .footer {
-  background-color: #0d0b0e;
+  background-color: #0D0B0E;
   border-style: solid; }
