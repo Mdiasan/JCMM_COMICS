@@ -2,7 +2,6 @@
   
 
 body {
-    background: #D7F7FE;
     font-family: "Nunito", sans-serif;
     color: #222;
   }
@@ -13,9 +12,7 @@ body {
   }
   
   .header {
-    background: #FF6067;
-    color: white;
-    padding: 0.625em;
+    
   }
   .header .container {
     display: flex;
@@ -43,13 +40,18 @@ body {
     background-color: white; }
   
   #precio {
-    color: black; 
+    color: $cuarto; 
     padding-bottom: 1em;
     padding-top: 1em;
   }
+  .contenedorPequeño {
+    border-style: solid;
+    height: 50px;
+    background-color: rgb(198, 199, 194);
+  }
   
   .footer {
-    background-color: #0d0b0e;
+    background-color: $cuarto;
     border-style: solid; }
 
 
