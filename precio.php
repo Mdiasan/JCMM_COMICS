@@ -39,7 +39,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolor, vel rerum ex fugiat enim repellat ut ratione, debitis 
                 dicta laborum totam est amet, odio sequi quae doloribus eveniet ipsam!
                 <div id="precio" class="bg-primary">
-                   <p class="text-white">precio 3,45€ </p>
+                   <h3>precio 3,45€ <h3>
                 </div>
                 <div>
                     <input class="form-control-3 btn btn-warning" type="button" value="comprar" name="comprar">
