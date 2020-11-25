@@ -1,7 +1,12 @@
 
 <header class="header">
     
-    <div class="row"><img src="media/images/logo-jcmm-128x128.png" alt=""></div>
+    <div class="row">
+      <div class="col p-0">
+        <div class=" d-none d-sm-block "><img src="media/images/portada.png"  class="img-portada" ></div>
+      </div>
+      
+    </div>
     <div class="row">
       <div class="col p-0">
     <?php include("navigation.php");?> 

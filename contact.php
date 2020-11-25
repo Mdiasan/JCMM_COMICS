@@ -10,7 +10,7 @@
 
 
 
-	<div class="container" id="main-content">
+	<div class="container-fluid">
 		<?php include("includes/design-top.php"); ?>
 		<main>
 			<div class="row">
