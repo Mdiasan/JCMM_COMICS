@@ -1,7 +1,10 @@
 @charset "UTF-8";
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Galindo", cursive;
   color: #222; }
+
+p {
+  font-family: "Lato", sans-serif; }
 
 .container {
   max-width: 75em;
@@ -14,8 +17,13 @@ body {
   align-items: center;
   flex-wrap: wrap; }
 
-.site-title, h1, h2, h3, h4, h5 {
-  font-family: "Pacifico", sans-serif;
+.site-title,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
   color: #fff; }
 
 h1 {
@@ -28,10 +36,10 @@ h3 {
   font-size: 1.955em; }
 
 h4 {
-  font-size: 1.500em; }
+  font-size: 1.5em; }
 
 h5 {
-  font-size: 1.250em; }
+  font-size: 1.25em; }
 
 #imagenComic {
   width: 25em;
@@ -41,7 +49,7 @@ h5 {
   background-color: white; }
 
 #precio {
-  color: #0D0B0E;
+  color: #0d0b0e;
   padding-bottom: 0.7em;
   padding-top: 0.7em; }
 
@@ -51,7 +59,7 @@ h5 {
   background-color: #c6c7c2; }
 
 .footer {
-  background-color: #0D0B0E;
+  background-color: #0d0b0e;
   border-style: solid;
   color: #fff;
   margin-top: 160px; }
@@ -79,7 +87,9 @@ h5 {
 .card-body {
   background-color: #34A9DA; }
 
-.card-img, .card-img-botton, .card-img-top {
+.card-img,
+.card-img-botton,
+.card-img-top {
   background-color: #34A9DA; }
 
 .bg-danger {
@@ -111,6 +121,11 @@ h5 {
 
 .btn-orange {
   background-color: #F18C31 !important; }
+
+  .card-text{
+    font-family: "Galindo", cursive !important;
+    
+  }
 
 .list-group {
   position: sticky;
