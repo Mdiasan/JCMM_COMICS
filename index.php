@@ -148,8 +148,8 @@
 
 
 
-    <?php include("./pie.php"); ?>
-  </div>
+    <?php include("includes/footer.php"); ?>
+      </div>
 </body>
 
 </html>
