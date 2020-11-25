@@ -9,9 +9,10 @@
 
 <body>
 
-    <?php include("includes/design-top.php"); ?>
+    
 
     <div class="container" id="main-content">
+    <?php include("includes/design-top.php"); ?>
         <div class="row">
             <div class="col-6 ">
                 <img id="imagenComic" src="media/images/comicEjemplo.png" alt="">
@@ -38,7 +39,7 @@
                 nesciunt beatae at aliquam.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolor, vel rerum ex fugiat enim repellat ut ratione, debitis 
                 dicta laborum totam est amet, odio sequi quae doloribus eveniet ipsam!
-                <div id="precio" class="bg-primary">
+                <div id="precio" class="bg-primary d-flex">
                    <h3>precio: 3,45€ <h3>
                 </div>
                 <div>
