@@ -8,7 +8,7 @@ body {
 #pAlt {
   font-family: "Galindo", cursive;
   color: #222;
-  
+
 }
 
 p {
@@ -75,8 +75,13 @@ h5 {
 }
 
 .footer {
-  background-color: #0d0b0e;
-  border-style: solid;
+  background-color:$cuarto !important;
+  background: linear-gradient(90deg, $cuarto 0%, rgba(2, 30, 41, 0.7) 100%),url(../media/images/tienda.jpg) center center no-repeat;
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-style: solid; 
   color: #fff;
   margin-top: 160px;
 }

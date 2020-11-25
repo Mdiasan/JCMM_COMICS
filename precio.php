@@ -39,13 +39,8 @@
                 nesciunt beatae at aliquam.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolor, vel rerum ex fugiat enim repellat ut ratione, debitis
                 dicta laborum totam est amet, odio sequi quae doloribus eveniet ipsam!
-<<<<<<< HEAD
                 <div id="precio" class="bg-primary">
                     <h3>precio: 3,45€ <h3>
-=======
-                <div id="precio" class="bg-primary d-flex">
-                   <h3>precio: 3,45€ <h3>
->>>>>>> 4892d6e2d958bce1398552ec5221fcabeefa8819
                 </div>
                 <div>
                     <input class="form-control-3 btn btn-warning" type="button" value="comprar" name="comprar">
