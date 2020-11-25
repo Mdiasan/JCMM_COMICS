@@ -57,7 +57,12 @@ h5{
   background-color: #c6c7c2; }
 
 .footer {
-  background-color: #0D0B0E;
+  background-color:$cuarto !important;
+  background: linear-gradient(90deg, $cuarto 0%, rgba(2, 30, 41, 0.7) 100%),url(../media/images/tienda.jpg) center center no-repeat;
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-style: solid; 
   color: #fff;
   margin-top: 160px;
