@@ -43,7 +43,7 @@
                     <h3>precio: 3,45€ <h3>
                 </div>
                 <div>
-                    <input class="form-control-3 btn btn-warning" type="button" value="comprar" name="comprar">
+                    <input class="form-control-3 btn btn-warning" type="button" value="añadir al carro" name="comprar">
                 </div>
             </div>
         </div>

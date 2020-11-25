@@ -71,7 +71,7 @@
                 <div class="card-body text-center">
                 <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                  <a href="#" class="btn btn-warning">comprar</a>
+                  <a href="precio2.php" class="btn btn-warning">comprar</a>
                 </div>
               </div>
 
@@ -81,7 +81,7 @@
                 <div class="card-body text-center">
                 <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                  <a href="#" class="btn btn-warning">comprar</a>
+                  <a href="precio2.php" class="btn btn-warning">comprar</a>
                 </div>
               </div>
 
@@ -90,7 +90,7 @@
                 <div class="card-body text-center">
                 <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                  <a href="#" class="btn btn-warning">comprar</a>
+                  <a href="precio2.php" class="btn btn-warning">comprar</a>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@
                 <div class="card-body text-center">
                 <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                  <a href="#" class="btn btn-warning">comprar</a>
+                  <a href="precio2.php" class="btn btn-warning">comprar</a>
                 </div>
               </div>
 
@@ -127,7 +127,7 @@
                 <div class="card-body text-center">
                   <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                  <a href="#" class="btn btn-warning">comprar</a>
+                  <a href="precio2.php" class="btn btn-warning">comprar</a>
                 </div>
               </div>
 
@@ -136,7 +136,7 @@
                 <div class="card-body text-center">
                 <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                  <a href="#" class="btn btn-warning">comprar</a>
+                  <a href="precio2.php" class="btn btn-warning">comprar</a>
                 </div>
               </div>
             </div>
