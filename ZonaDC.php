@@ -41,7 +41,7 @@
                             <div class="card-body text-center">
                                 <h4 class="card-title">comic 1</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                                <a href="precio2.php" class="btn btn-warning">comprar</a>
+                                <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                             </div>
                         </div>
 
@@ -51,7 +51,7 @@
                             <div class="card-body text-center">
                                 <h4 class="card-title">comic 1</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                                <a href="precio2.php" class="btn btn-warning">comprar</a>
+                                <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                             </div>
                         </div>
 
@@ -60,7 +60,7 @@
                             <div class="card-body text-center">
                                 <h4 class="card-title">comic 1</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                                <a href="precio2.php" class="btn btn-warning">comprar</a>
+                                <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                             </div>
                         </div>
                     </div>
