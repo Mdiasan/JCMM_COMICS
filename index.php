@@ -119,7 +119,7 @@
                 <div class="card-body text-center">
                 <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                  <a href="precio2.php" class="btn btn-warning the-icons span3"><i class="demo-icon icon-basket">comprar</i></a>
+                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                 </div>
               </div>
 
@@ -129,7 +129,7 @@
                 <div class="card-body text-center">
                   <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                  <a href="precio2.php" class="btn btn-warning the-icons span3"><i class="demo-icon icon-basket">comprar</i></a>
+                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                 </div>
               </div>
 
@@ -138,7 +138,7 @@
                 <div class="card-body text-center">
                 <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                  <a href="precio2.php" class="btn btn-warning the-icons span3"><i class="demo-icon icon-basket">comprar</i></a>
+                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                 </div>
               </div>
             </div>
