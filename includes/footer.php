@@ -5,20 +5,20 @@
                 <div class="col  barralateral">
                     <div class="row">
                         <div class="col">
-                        <i class="fas fa-address-card"></i> Lucena (Cordoba) 14900
-                        
+                            <i class="fas fa-thumbtack"></i> Lucena (Cordoba) 14900
+
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="col">
-                        <i class="fas fa-meh"></i>
+                            <i class="fas fa-phone-alt"></i> 957502579
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="col">
-                        <div class="the-icons span3" title="Code: 0xf0e0"><i class="demo-icon icon-mail-alt"></i> <span class="i-name"></span></div>
+                            <i class="fas fa-envelope"></i> JCMMCOMICS@gmail.com
                         </div>
 
                     </div>
@@ -88,6 +88,21 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="row">
+                <div class="col-4">
+
+                    <i class="fab fa-instagram"></i>
+
+
+                    <i class="fab fa-facebook-f"></i>
+
+
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="col-8">               
+                    <i class="far fa-copyright"></i> 2020 JCMMCOMICS Todos los derechos reservados
+                </div>
             </div>
         </div>
     </div>
