@@ -5,19 +5,20 @@
                 <div class="col  barralateral">
                     <div class="row">
                         <div class="col">
-                            direccion: Lucena(Cordoba) 14900 en C/Ronda del Valle nº15
+                        <i class="fas fa-address-card"></i> Lucena (Cordoba) 14900
+                        
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="col">
-                            telefono: 957364912
+                        <i class="fas fa-meh"></i>
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="col">
-                            correo: Radiantes@jcmmcomics.org
+                        <div class="the-icons span3" title="Code: 0xf0e0"><i class="demo-icon icon-mail-alt"></i> <span class="i-name"></span></div>
                         </div>
 
                     </div>
