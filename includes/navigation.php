@@ -49,10 +49,9 @@
     </ul>
     <div class="ml-auto">
       <form class="form-inline">
-      <div class="the-icons span3 mr-3" title="Code: 0xe800"><i class="demo-icon icon-basket">0,00€</i></div>
+      <div class="mr-3"> <i class="fas fa-shopping-cart"></i> 0,00€</div>
         <input class="form-control mr-3" type="text" placeholder="Busca aqui tu cómic">
-        <button class="btn btn-warning  d-block d-sm-inline" type="submit">Buscar</button>
-        
+        <button class="btn btn-warning  d-block d-sm-inline" type="submit">Buscar</button>               
       </form>
     </div>
   </div>
