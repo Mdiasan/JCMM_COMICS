@@ -85,6 +85,8 @@
                 </div>
               </div>
 
+              
+
               <div class="card">
                 <img class="card-img-top" src="media/images/spiderman ultimate.png" alt="Card image">
                 <div class="card-body text-center">

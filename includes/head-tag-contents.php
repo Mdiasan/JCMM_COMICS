@@ -20,5 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="media/icons/css/animation.css">
+<link rel="stylesheet" href="media/icons/css/fontello.css">
 
   <link rel="stylesheet" href="css/mystyle.css">
