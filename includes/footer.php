@@ -5,19 +5,20 @@
                 <div class="col  barralateral">
                     <div class="row">
                         <div class="col">
-                            direccion: Lucena(Cordoba) 14900 en C/Ronda del Valle nº15
+                            <i class="fas fa-thumbtack"></i> Lucena (Cordoba) 14900
+
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="col">
-                            telefono: 957364912
+                            <i class="fas fa-phone-alt"></i> 957502579
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="col">
-                            correo: Radiantes@jcmmcomics.org
+                            <i class="fas fa-envelope"></i> JCMMCOMICS@gmail.com
                         </div>
 
                     </div>
@@ -87,6 +88,21 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="row">
+                <div class="col-4">
+
+                    <i class="fab fa-instagram"></i>
+
+
+                    <i class="fab fa-facebook-f"></i>
+
+
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="col-8">               
+                    <i class="far fa-copyright"></i> 2020 JCMMCOMICS Todos los derechos reservados
+                </div>
             </div>
         </div>
     </div>

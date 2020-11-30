@@ -19,7 +19,7 @@
 					<p>Rellena con tu correo electrónico para que te enviemos más información sobre nosotros</p>
 					<form class="form-inline col">
 						<input class="form-control col-sm-8" type="search" placeholder="@example.com" aria-label="Search">
-						<button class="btn btn-primary col-sm-8" type="submit">buscar</button>
+						<button class="btn btn-primary col-sm-8" type="submit"><i class="fas fa-search"></i>buscar</button>
 					</form>
 				</div>
 

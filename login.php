@@ -25,7 +25,7 @@
                             <label for="contraseña">contraseña</label>
                             <input type="password" name="contraseña" class="form-control">
                             <input type="submit" class="form-control-3 btn btn-warning mt-3" value="enviar">
-                            <a href="crearUsuario.php">no tienes cuenta registrate aquí!</a>
+                            no tienes cuenta registrate <a href="crearUsuario.php">aquí!</a>
                         </form>
                     </div>
 

@@ -5,7 +5,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" type="text/css">
+  
 <?php if ($CURRENT_PAGE == "Index") { ?>
 	<meta name="description" content="" />
 	<meta name="keywords" content="" /> 
@@ -20,5 +21,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="media/icons/css/animation.css">
+<link rel="stylesheet" href="media/icons/css/fontello.css">
 
   <link rel="stylesheet" href="css/mystyle.css">
