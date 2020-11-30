@@ -1,11 +1,10 @@
-@charset "UTF-8";
 body {
   font-family: "Galindo", cursive;
-  color: #222; }
+  color: #0D0B0E; }
 
 #pAlt {
   font-family: "Galindo", cursive;
-  color: #222; }
+  color: #0D0B0E; }
 
 p {
   font-family: "Lato", sans-serif; }
@@ -53,14 +52,9 @@ h5 {
   background-color: white; }
 
 #precio {
-  color: #0d0b0e;
+  color: #0D0B0E;
   padding-bottom: 0.7em;
   padding-top: 0.7em; }
-
-.contenedorPequeño {
-  border-style: solid;
-  height: 50px;
-  background-color: #c6c7c2; }
 
 .footer {
   background-color: #0D0B0E !important;
@@ -100,6 +94,9 @@ h5 {
 .card-img-botton,
 .card-img-top {
   background-color: #34A9DA; }
+
+.text-dark {
+  color: #0D0B0E !important; }
 
 .bg-danger {
   background-color: #EF2131 !important; }
