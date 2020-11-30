@@ -14,10 +14,41 @@
 
           <div class="row">
             <div class="col">
-                identificate
+            <h1>logueate</h1>
+                    <div class="p-1">
+                        <form action="" class="form-group">
+
+                            <label for="usuario">usuario</label>
+                            <input type="text" name="usuario" class="form-control">
+                            <label for="contraseña">contraseña</label>
+                            <input type="password" name="contraseña" class="form-control">
+                            <input type="submit" class="form-control-3 btn btn-warning mt-3" value="enviar">
+                            <a href="crearUsuario.php">no tienes cuenta registrate aquí!</a>
+                        </form>
+                    </div>
             </div>
             <div class="col">
-                carrito
+                <div class="row">
+                    <div class="col text-center "><h1 class="text-dark">carrito</h1></div>
+                </div>
+                <div class="row  mt-5">
+                        <div class="col"><img src="media/images/spiderman negro.png" alt="" class="imagencarrito "></div>
+                        <div class="col"><p>nombre comic</p></div>
+                        <div class="col">precio:0,0€</div>
+                       
+                </div>
+                <hr>
+                <div class="row  mt-5">
+                        <div class="col "><img src="media/images/spiderman negro.png" alt="" class="imagencarrito "></div>
+                        <div class="col"><p>nombre comic</p></div>
+                        <div class="col">precio:0,0€</div>
+                       
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col"><p>total : 0,00€</p></div>
+                    <div class="col"><button class="btn btn-orange" disabled>pagar</button></div>
+                </div>
             </div>
           </div>
 
