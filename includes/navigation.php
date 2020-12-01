@@ -39,32 +39,26 @@
           <a class="dropdown-item" href="productos.php">juegos mesa/rol</a>
           <a class="dropdown-item" href="productos.php">figuras</a>
           <a class="dropdown-item" href="productos.php">manga</a>
-          
+
         </div>
       </li>
-     
+
       <li class="nav-item">
         <a class="nav-link" href="ofertas.php">ofertas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="contact.php">Contacto</a>
       </li>
-      <li class="nav-item ">
-            <a class="fas fa-shopping-cart  nav-link" href="carrito.php"></a>
-      </li>
-      <li class="nav-item ">
-      <a  class="nav-link" href="carrito.php">0,00€</a>
-
-      </li>
-      
-     
-     
     </ul>
-    <form class="form-inline ml-auto ">
+
+    <div class="ml-auto">
+      <form class="form-inline">
+        <div class="mr-3"> <a class="fas fa-shopping-cart text-white" href="carrito.php"></a>
+          <a class="text-white" href="carrito.php"> 0,00€</a></div>
+
         <input class="form-control mr-3" type="text" placeholder="Busca aqui tu cómic">
-        <button class="btn btn-warning  d-inline" type="submit">Buscar</button>               
-      </form> 
-      
-    
-  </div>
+        <button class="btn btn-warning  d-block d-sm-inline" type="submit">Buscar</button>
+      </form>
+
+    </div>
 </nav>
