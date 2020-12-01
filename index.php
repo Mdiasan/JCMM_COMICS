@@ -67,7 +67,7 @@
             <div class="card-deck">
 
               <div class="card">
-                <img class="card-img-top" src="media/images/spiderman negro.png" alt="Card image">
+                <img class="card-img-top img-fluid" src="media/images/PP.png" alt="Card image">
                 <div class="card-body text-center">
                 <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
@@ -77,7 +77,7 @@
 
 
               <div class="card">
-                <img class="card-img-top" src="media/images/thanos.png" alt="Card image">
+                <img class="card-img-top img-fluid" src="media/images/PP.png" alt="Card image">
                 <div class="card-body text-center">
                 <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
@@ -85,10 +85,19 @@
                 </div>
               </div>
 
-              
+              <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+
 
               <div class="card">
-                <img class="card-img-top" src="media/images/spiderman ultimate.png" alt="Card image">
+                <img class="card-img-top img-fluid" src="media/images/PP.png" alt="Card image">
+                <div class="card-body text-center">
+                <h2 class="card-title">comic 1</h2>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
+                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top img-fluid" src="media/images/spiderman ultimate.png" alt="Card image">
                 <div class="card-body text-center">
                 <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
@@ -115,7 +124,7 @@
             <div class="card-deck">
 
               <div class="card">
-                <img class="card-img-top" src="media/images/la broma asesina.png" alt="Card image">
+                <img class="card-img-top img-fluid" src="media/images/la broma asesina.png" alt="Card image">
                 <div class="card-body text-center">
                 <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
@@ -125,16 +134,25 @@
 
 
               <div class="card">
-                <img class="card-img-top" src="media/images/el caballero blancp.png" alt="Card image">
+                <img class="card-img-top img-fluid" src="media/images/el caballero blancp.png" alt="Card image">
                 <div class="card-body text-center">
                   <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                 </div>
               </div>
+              <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
 
               <div class="card">
-                <img class="card-img-top" src="media/images/muerte de la familia.png" alt="Card image">
+                <img class="card-img-top img-fluid" src="media/images/muerte de la familia.png" alt="Card image">
+                <div class="card-body text-center">
+                <h2 class="card-title">comic 1</h2>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
+                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top img-fluid" src="media/images/muerte de la familia.png" alt="Card image">
                 <div class="card-body text-center">
                 <h2 class="card-title">comic 1</h2>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
@@ -148,10 +166,10 @@
         </div>
     </main>
 
-
-
     <?php include("includes/footer.php"); ?>
-      </div>
+    </div>
+   
+     
 </body>
 
 </html>

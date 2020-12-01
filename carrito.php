@@ -14,7 +14,7 @@
 
           <div class="row">
             <div class="col">
-            <h1>logueate</h1>
+            <h1 class="text-dark">logueate</h1>
                     <div class="p-1">
                         <form action="" class="form-group">
 
@@ -46,8 +46,9 @@
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col"><p>total : 0,00€</p></div>
-                    <div class="col"><button class="btn btn-orange" disabled>pagar</button></div>
+                    <div class="col"> </div>
+                    <div class="col"> </div>
+                    <div class="col text-inline"><form action="" class=" form-inline">total : 0,00€<button class="btn btn-orange form-control" disabled>pagar</button> </form></div>
                 </div>
             </div>
           </div>

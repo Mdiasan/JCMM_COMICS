@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col footer">
             <div class="row ">
-                <div class="col  barralateral">
+                <div class="col  barralateral col-sm-6 col-md">
                     <div class="row">
                         <div class="col">
                             <i class="fas fa-thumbtack"></i> Lucena (Cordoba) 14900
@@ -23,10 +23,10 @@
 
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md">
                     <img src="media/images/logo-jcmm-128x128.png" class="imagenfooter">
                 </div>
-                <div class="col">
+                <div class="col col-sm-4 col-md">
                     <div class="row">
                         <h5>Destacados</h5>
                     </div>
@@ -35,7 +35,7 @@
                     <div class="row"><a href="">DC</a></div>
 
                 </div>
-                <div class="col">
+                <div class="col col-sm-4 col-md">
                     <div class="row">
                         <div class="col">
                             <h5>Mi cuenta</h5>
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-4 col-md">
                     <div class="row">
                         <div class="col">
                             <h5>información</h5>

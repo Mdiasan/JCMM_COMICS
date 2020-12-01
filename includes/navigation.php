@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark bg-danger navbar-expand-md">
+<nav class="navbar navbar-dark bg-danger navbar-expand-lg">
   <a class="navbar-brand" href="index.php">
     <img src="/media/images/logo-jcmm-128x128.png" width="30" height="30" alt="logo">
 
@@ -31,30 +31,40 @@
           <a class="dropdown-item" href="fantasia.php">Rincon de la fantasia</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="productos.php">juegos mesa/rol</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="libros.php" id="navbardrop" data-toggle="dropdown">
+          otros
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="productos.php">juegos mesa/rol</a>
+          <a class="dropdown-item" href="productos.php">figuras</a>
+          <a class="dropdown-item" href="productos.php">manga</a>
+          
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="productos.php">figuras</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="productos.php">manga</a>
-      </li>
+     
       <li class="nav-item">
         <a class="nav-link" href="ofertas.php">ofertas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="contact.php">Contacto</a>
       </li>
-    </ul>
-    <div class="ml-auto">
-      <form class="form-inline">
-      <div class="mr-3"> <a class="fas fa-shopping-cart text-white" href="carrito.php"></a>
-      <a class="text-white" href="carrito.php"> 0,00€</a></div>
+      <li class="nav-item ">
+            <a class="fas fa-shopping-cart  nav-link" href="carrito.php"></a>
+      </li>
+      <li class="nav-item ">
+      <a  class="nav-link" href="carrito.php">0,00€</a>
 
+      </li>
+      
+     
+     
+    </ul>
+    <form class="form-inline ml-auto ">
         <input class="form-control mr-3" type="text" placeholder="Busca aqui tu cómic">
-        <button class="btn btn-warning  d-block d-sm-inline" type="submit">Buscar</button>               
-      </form>
-    </div>
+        <button class="btn btn-warning  d-inline" type="submit">Buscar</button>               
+      </form> 
+      
+    
   </div>
 </nav>
