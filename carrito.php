@@ -13,7 +13,7 @@
         <main>
 
           <div class="row">
-            <div class="col">
+            <div class="col-12  col-sm-6">
             <h1 class="text-dark">logueate</h1>
                     <div class="p-1">
                         <form action="" class="form-group">
@@ -27,7 +27,7 @@
                         </form>
                     </div>
             </div>
-            <div class="col">
+            <div class="col-12  col-sm-6">
                 <div class="row">
                     <div class="col text-center "><h1 class="text-dark">carrito</h1></div>
                 </div>

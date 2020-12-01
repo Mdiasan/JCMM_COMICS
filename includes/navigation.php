@@ -56,7 +56,7 @@
         <div class="mr-3"> <a class="fas fa-shopping-cart text-white" href="carrito.php"></a>
           <a class="text-white" href="carrito.php"> 0,00€</a></div>
 
-        <input class="form-control mr-3" type="text" placeholder="Busca aqui tu cómic">
+        <input class="form-control mr-3 " type="text" placeholder="Busca aqui tu cómic">
         <button class="btn btn-warning  d-block d-sm-inline" type="submit">Buscar</button>
       </form>
 
