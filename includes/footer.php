@@ -62,7 +62,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <a href="">Aviso legal</a>
+                            <a href="/avisoLegal.php">Aviso legal</a>
                         </div>
                     </div>
 
