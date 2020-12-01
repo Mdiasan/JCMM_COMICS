@@ -69,18 +69,18 @@
               <div class="card">
                 <img class="card-img-top img-fluid" src="media/images/PP.png" alt="Card image">
                 <div class="card-body text-center">
-                <h2 class="card-title">comic 1</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
+                <h2 class="card-title">Principe payaso del crimen</h2>
+                  <p class="card-text">Conmemora los 80 años transcurridos desde la presentación del Joker, uno de los villanos más célebres de la historia de la cultura pop... ¡El Príncipe del Crimen!</p>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                 </div>
               </div>
 
 
               <div class="card">
-                <img class="card-img-top img-fluid" src="media/images/PP.png" alt="Card image">
+                <img class="card-img-top img-fluid" src="media/images/spiderman ultimate.png" alt="Card image">
                 <div class="card-body text-center">
-                <h2 class="card-title">comic 1</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
+                <h2 class="card-title">Ultimate Spider-man</h2>
+                  <p class="card-text">Ultimate Spider-man: Origen es el tomo con el que arranca la reedición de la colección Ultimate Spider-man que Panini está publicado actualmente. Así fue el origen y actualización de Spider-man, si hubiera nacido en el siglo XXI.</p>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                 </div>
               </div>
@@ -89,18 +89,18 @@
 
 
               <div class="card">
-                <img class="card-img-top img-fluid" src="media/images/PP.png" alt="Card image">
+                <img class="card-img-top img-fluid" src="media/images/muerte de la familia.png" alt="Card image">
                 <div class="card-body text-center">
-                <h2 class="card-title">comic 1</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
+                <h2 class="card-title">Batman:Una Muerte En La Familia</h2>
+                  <p class="card-text">Publicado originalmente en diciembre de 1983. La primera aparición de Jason Todd como Robin. El nuevo compañero de Batman acudirá en su rescate en plena batalla contra el Joker en Guatemala.</p>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                 </div>
               </div>
               <div class="card">
-                <img class="card-img-top img-fluid" src="media/images/spiderman ultimate.png" alt="Card image">
+                <img class="card-img-top img-fluid" src="media/images/la broma asesina.png" alt="Card image">
                 <div class="card-body text-center">
-                <h2 class="card-title">comic 1</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
+                <h2 class="card-title">Batman: la broma asesina</h2>
+                  <p class="card-text">La broma asesina es una historia centrada en el Joker, la antítesis de Batman por definición, y en la relación que éste y Batman han llegado a desarrollar a lo largo de los años.</p>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                 </div>
               </div>
@@ -126,8 +126,8 @@
               <div class="card">
                 <img class="card-img-top img-fluid" src="media/images/la broma asesina.png" alt="Card image">
                 <div class="card-body text-center">
-                <h2 class="card-title">comic 1</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
+                <h2 class="card-title">Batman: la broma asesina</h2>
+                  <p class="card-text">La broma asesina es una historia centrada en el Joker, la antítesis de Batman por definición, y en la relación que éste y Batman han llegado a desarrollar a lo largo de los años.</p>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                 </div>
               </div>
@@ -136,8 +136,8 @@
               <div class="card">
                 <img class="card-img-top img-fluid" src="media/images/el caballero blancp.png" alt="Card image">
                 <div class="card-body text-center">
-                  <h2 class="card-title">comic 1</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
+                  <h2 class="card-title">Batman: caballero blanco</h2>
+                  <p class="card-text">Cuando El Joker fue un héroe. ... Es difícil no caer rendido ante una premisa tan sugerente como un Joker convertido en héroe, un Batman venido a medio villano y un guion elaborado por el hombre que está detrás de Punk Rock Jesús, uno de los mejores cómics de la pasada década.</p>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                 </div>
               </div>
@@ -146,16 +146,16 @@
               <div class="card">
                 <img class="card-img-top img-fluid" src="media/images/muerte de la familia.png" alt="Card image">
                 <div class="card-body text-center">
-                <h2 class="card-title">comic 1</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
+                <h2 class="card-title">Batman:Una Muerte En La Familia</h2>
+                  <p class="card-text">Publicado originalmente en diciembre de 1983. La primera aparición de Jason Todd como Robin. El nuevo compañero de Batman acudirá en su rescate en plena batalla contra el Joker en Guatemala.</p>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                 </div>
               </div>
               <div class="card">
-                <img class="card-img-top img-fluid" src="media/images/muerte de la familia.png" alt="Card image">
+                <img class="card-img-top img-fluid" src="media/images/PP.png" alt="Card image">
                 <div class="card-body text-center">
-                <h2 class="card-title">comic 1</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
+                <h2 class="card-title">Principe payaso del crimen</h2>
+                  <p class="card-text">Conmemora los 80 años transcurridos desde la presentación del Joker, uno de los villanos más célebres de la historia de la cultura pop... ¡El Príncipe del Crimen!</p>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
                 </div>
               </div>
