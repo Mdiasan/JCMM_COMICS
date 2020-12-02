@@ -30,9 +30,9 @@
                     <div class="row">
                         <h5>Destacados</h5>
                     </div>
-                    <div class="row"><a href="">novedades</a></div>
-                    <div class="row"><a href="">marvel</a></div>
-                    <div class="row"><a href="">DC</a></div>
+                    <div class="row"><a href="./fantasia.php">Rincon Fantasia</a></div>
+                    <div class="row"><a href="./ZonaMarvel.php">marvel</a></div>
+                    <div class="row"><a href="./ZonaDC.php">DC</a></div>
 
                 </div>
                 <div class="col col-sm-4 col-md">
@@ -92,13 +92,13 @@
             <div class="row">
                 <div class="col-4">
 
-                    <i class="fab fa-instagram"></i>
+                    <a class="fab fa-instagram" href="https://www.instagram.com/" target="_blank"></a>
 
 
-                    <i class="fab fa-facebook-f"></i>
+                    <a class="fab fa-facebook-f" href="https://es-es.facebook.com/" target="_blank"></a>
 
 
-                    <i class="fab fa-twitter"></i>
+                    <a class="fab fa-twitter" href="https://mobile.twitter.com/" target="_blank"></a>
                 </div>
                 <div class="col-8">               
                     <i class="far fa-copyright"></i> 2020 JCMMCOMICS Todos los derechos reservados
