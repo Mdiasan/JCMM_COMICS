@@ -38,8 +38,8 @@
                     <div class="col">
                         <div class="row">
                             <div class="col">
-                                <div class="bg-primary text-center">
-                                <h3>ficha</h3>
+                                <div class="bg-danger text-center">
+                                <h4>BRANDON ANDERSON</h4>
                                 </div>
                               
                             </div>
@@ -48,18 +48,18 @@
                             <div class="col">
                                <div class="row">
                                    <div class="col">
-                                       <div class="bg-primary text-center"><h4>palabras radiantes</h4></div>
+                                       <div class="bg-danger text-center"><h4>palabras radiantes</h4></div>
                                        
                                     </div>
                                 </div>
                                <div class="row">
                                    <div class="col">
-                                       <p>35$</h4>
+                                       <h3>35$</h3>
                                     </div>
                                 </div>
                                <div class="row">
                                    <div class="col">
-                                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, reiciendis.</h4>
+                                       <p>La aclamada continuación de El camino de los reyes es, como el primer volumen de "El Archivo de las Tormentas", el resultado de más de una decada de construcción y escritura de universos, convertida en una obra maestra de la fantasía contemporánea en diez volúmenes.</p>
                                     </div>
                                 </div>
                                
@@ -71,7 +71,7 @@
                         <div class="row">
                             <div class="col">
                                 <form action="">
-                                    <button class="btn btn-warning">añadir al carro</button>
+                                    <button class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                                 </form>
                             </div>
                         </div>
@@ -93,29 +93,29 @@
               <div class="card">
                 <img class="card-img-top" src="media/images/spiderman negro.png" alt="Card image">
                 <div class="card-body text-center">
-                <h2 class="card-title">comic 1</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
+                <h2 class="card-title">Superior Spider-man</h2>
+                  <p class="card-text">Spider-Man: El último deseo fue el final del volumen uno de El Asombroso Spider-Man y el inicio de El Spider-Man Superior, una controvertida versión del personaje, en la que el Doctor Octopus poseía el cuerpo de Peter Parker.</p>              
                 </div>
+                <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
               </div>
 
 
               <div class="card">
                 <img class="card-img-top" src="media/images/thanos.png" alt="Card image">
                 <div class="card-body text-center">
-                <h2 class="card-title">comic 1</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
+                <h2 class="card-title">El Guantelete Del Infinito</h2>
+                  <p class="card-text">El Guantelete del Infinito: Héroes Marvel es un tomo que recoge las historias de Doctor Extraño, Quasar y Spider-man durante los eventos del crossover de El Guantelete del Infinito.</p>                
                 </div>
+                <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
               </div>
 
               <div class="card">
                 <img class="card-img-top" src="media/images/spiderman ultimate.png" alt="Card image">
                 <div class="card-body text-center">
-                <h2 class="card-title">comic 1</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
+                <h2 class="card-title">Ultimate Spider-man</h2>
+                  <p class="card-text">Ultimate Spider-man: Origen es el tomo con el que arranca la reedición de la colección Ultimate Spider-man que Panini está publicado actualmente. Así fue el origen y actualización de Spider-man, si hubiera nacido en el siglo XXI.</p>                 
                 </div>
+                <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
               </div>
             </div>
             </div>

@@ -31,7 +31,7 @@
                         <h5>Destacados</h5>
                     </div>
                     <div class="row"><a href="./fantasia.php">Rincon Fantasia</a></div>
-                    <div class="row"><a href="./ZonaMarvel.php">marvel</a></div>
+                    <div class="row"><a href="./ZonaMarvel.php">Marvel</a></div>
                     <div class="row"><a href="./ZonaDC.php">DC</a></div>
 
                 </div>
@@ -43,12 +43,12 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <a href="./login.php">inicio sesión</a>
+                            <a href="./login.php">Inicio sesión</a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <a href="./crearUsuario.php">registrate</a>
+                            <a href="./crearUsuario.php">Registrate</a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <a href="">entregas y devoluciones</a>
+                            <a href="">Entregas y devoluciones</a>
                         </div>
                     </div>
 

@@ -12,6 +12,8 @@
 	<meta name="keywords" content="" /> 
 <?php } ?>
 
+<link rel="shortcut icon" href="/media/images/logo-jcmm-128x128.png">
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 
