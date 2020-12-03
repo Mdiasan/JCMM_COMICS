@@ -12,15 +12,9 @@
 
         <main>
 
-
-
-
-
             <div class="col p-0 ">
                 <h1>crear usuario</h1>
                 <div class="p-1">
-
-
 
                     <form action="" class="form-group   ">
                         <label for="usuario">usuario</label>
@@ -38,14 +32,9 @@
                 </div>
             </div>
 
-
-
         </main>
-
-
 
         <?php include("includes/footer.php"); ?>
     </div>
 </body>
-
 </html>

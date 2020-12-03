@@ -14,7 +14,7 @@
         <div class="row">
 
             <div class=" col-sm-3 mt-3">
-                 <ul class="list-group">
+                <ul class="list-group">
                     <li class="list-group-item"><a href="index.php">inicio</a></li>
                     <li class="list-group-item"><a href="ZonaMarvel.php">Zona Marvel</a></li>
                     <li class="list-group-item"><a href="ZonaDC.php">zona DC</a></li>
@@ -67,10 +67,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
 
 
 

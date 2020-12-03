@@ -100,7 +100,7 @@
 
                     <a class="fab fa-twitter" href="https://mobile.twitter.com/" target="_blank"></a>
                 </div>
-                <div class="col-8">               
+                <div class="col-8">
                     <i class="far fa-copyright"></i> 2020 JCMMCOMICS Todos los derechos reservados
                 </div>
             </div>

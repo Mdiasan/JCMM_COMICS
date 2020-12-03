@@ -12,4 +12,3 @@
 			$CURRENT_PAGE = "Index";
 			$PAGE_TITLE = "JCMM COMICS";
 	}
-?>

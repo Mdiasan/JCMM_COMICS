@@ -14,7 +14,7 @@
         <div class="row">
 
             <div class=" col-sm-3 mt-3">
-            <ul class="list-group">
+                <ul class="list-group">
                     <li class="list-group-item"><a href="index.php">inicio</a></li>
                     <li class="list-group-item"><a href="ZonaMarvel.php">Zona Marvel</a></li>
                     <li class="list-group-item"><a href="ZonaDC.php">zona DC</a></li>
@@ -37,7 +37,7 @@
                     <div class="card-deck">
 
                         <div class="card">
-                        <img class="card-img-top" src="media/images/spiderman negro.png" alt="Card image">
+                            <img class="card-img-top" src="media/images/spiderman negro.png" alt="Card image">
                             <div class="card-body text-center">
                                 <h4 class="card-title">comic 1</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
