@@ -47,6 +47,9 @@
         <a class="nav-link" href="ofertas.php">ofertas</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="videos.php">Videos</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="contact.php">Contacto</a>
       </li>
     </ul>
