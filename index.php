@@ -67,10 +67,10 @@
               <div class="card-deck">
 
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/PP.png" alt="Card image">
+                  <img class="card-img-top img-fluid" src="media/images/volumen 4 bnh.jpg" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">Principe payaso del crimen</h2>
-                    <p class="card-text">Conmemora los 80 años transcurridos desde la presentación del Joker, uno de los villanos más célebres de la historia de la cultura pop... ¡El Príncipe del Crimen!</p>
+                    <h2 class="card-title">my hero academia volumen 4</h2>
+                    <p class="card-text">volumen de la serie "my hero academia" donde transcurre la historia del joven izuku midoriya y sus compañeros en el transcurro de su vida escolar para convertirse en el mejor heroe como el que el admira</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
@@ -95,6 +95,65 @@
                   <div class="card-body text-center">
                     <h2 class="card-title">Batman:Una Muerte En La Familia</h2>
                     <p class="card-text">Publicado originalmente en diciembre de 1983. La primera aparición de Jason Todd como Robin. El nuevo compañero de Batman acudirá en su rescate en plena batalla contra el Joker en Guatemala.</p>
+                  </div>
+                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
+                </div>
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="media/images/la broma asesina.png" alt="Card image">
+                  <div class="card-body text-center">
+                    <h2 class="card-title">Batman: la broma asesina</h2>
+                    <p class="card-text">La broma asesina es una historia centrada en el Joker, la antítesis de Batman por definición, y en la relación que éste y Batman han llegado a desarrollar a lo largo de los años.</p>
+                  </div>
+                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <div class="text-center bg-dark">
+                <h1 class=" text-white">merchardaising</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card-deck">
+
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="media/images/figura goku y vegeta blue.jpg" alt="Card image">
+                  <div class="card-body text-center">
+                    <h2 class="card-title">goku y vegeta super saiyan blue</h2>
+                    <p class="card-text">figura del anime de dragon ball super en la que estan son goku y vegeta en super saiyan blue</p>
+                  </div>
+                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
+                </div>
+
+
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="media/images/goku ssj3 mamadisimo.jpg" alt="Card image">
+                  <div class="card-body text-center">
+                    <h2 class="card-title">goku en super saiyan 3</h2>
+                    <p class="card-text">figura de una de las transformacions de goku en la saga Z</p>
+                  </div>
+                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
+                </div>
+
+                <div class="w-100 d-none d-sm-block d-md-none">
+                  <!-- wrap every 2 on sm-->
+                </div>
+
+
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="media/images/figura de goku.jpg" alt="Card image">
+                  <div class="card-body text-center">
+                    <h2 class="card-title">son goku</h2>
+                    <p class="card-text">protagonista de la serie de dragon ball en una fantastica pose.</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
