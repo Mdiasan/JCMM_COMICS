@@ -136,10 +136,10 @@
 
 
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/goku ssj3 mamadisimo.jpg" alt="Card image">
+                  <img class="card-img-top img-fluid" src="media/images/deku.jpg" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">goku en super saiyan 3</h2>
-                    <p class="card-text">figura de una de las transformacions de goku en la saga Z</p>
+                    <h2 class="card-title">deku</h2>
+                    <p class="card-text">protagonista de la serie de heroes my hero academia en una mitica pose </p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
@@ -158,10 +158,10 @@
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/la broma asesina.png" alt="Card image">
+                  <img class="card-img-top img-fluid" src="media/images/broly ssj4.jpg" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">Batman: la broma asesina</h2>
-                    <p class="card-text">La broma asesina es una historia centrada en el Joker, la antítesis de Batman por definición, y en la relación que éste y Batman han llegado a desarrollar a lo largo de los años.</p>
+                    <h2 class="card-title">broly en super saiyan 4</h2>
+                    <p class="card-text">broly en una mitica transformacion dentro del no canon </p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
