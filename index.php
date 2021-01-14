@@ -126,10 +126,10 @@
               <div class="card-deck">
 
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/figura goku y vegeta blue.jpg" alt="Card image">
+                  <img class="card-img-top img-fluid" src="media/images/figura goku migatte no gokui 100%.jpg" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">goku y vegeta super saiyan blue</h2>
-                    <p class="card-text">figura del anime de dragon ball super en la que estan son goku y vegeta en super saiyan blue</p>
+                    <h2 class="card-title">goku migatte no gokui 100%</h2>
+                    <p class="card-text">figura del anime de dragon ball super en la que estan son goku con su tecnica mas poderosa y una pose legendaria</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
