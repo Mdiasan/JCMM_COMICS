@@ -67,9 +67,9 @@
               <div class="card-deck">
 
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/volumen 4 bnh.jpg" alt="Card image">
+                  <img class="card-img-top img-fluid" src="media/images/bnh.jpg" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">my hero academia volumen 4</h2>
+                    <h2 class="card-title">my hero academia</h2>
                     <p class="card-text">volumen de la serie "my hero academia" donde transcurre la historia del joven izuku midoriya y sus compañeros en el transcurro de su vida escolar para convertirse en el mejor heroe como el que el admira</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
