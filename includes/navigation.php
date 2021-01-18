@@ -39,6 +39,9 @@
           <a class="dropdown-item" href="productos.php">juegos mesa/rol</a>
           <a class="dropdown-item" href="productos.php">figuras</a>
           <a class="dropdown-item" href="productos.php">manga</a>
+          <a class="dropdown-item" href="mistborn.php">juego nacidos de la bruma</a>
+          <a class="dropdown-item" href="">parejas superheroes</a>
+          <a class="dropdown-item" href="pong.php">pong</a>
 
         </div>
       </li>
@@ -52,6 +55,8 @@
       <li class="nav-item">
         <a class="nav-link" href="contact.php">Contacto</a>
       </li>
+
+      
     </ul>
 
     <div class="ml-auto">
