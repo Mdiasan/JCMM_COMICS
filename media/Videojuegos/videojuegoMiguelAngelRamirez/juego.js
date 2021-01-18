@@ -16,11 +16,11 @@ var game = (function () {
     arrayDeImagenes.push(imgEnemigo);
     var nombresImagenes=[];
     
-    nombresImagenes.push("images/fondo.jpg");
-    nombresImagenes.push("images/vin.png");
-    nombresImagenes.push("images/azul.png");
-    nombresImagenes.push("images/rojo.png");
-    nombresImagenes.push("images/enemigo.png");
+    nombresImagenes.push("media/images/fondo.jpg");
+    nombresImagenes.push("media/images/vin.png");
+    nombresImagenes.push("media/images/azul.png");
+    nombresImagenes.push("media/images/rojo.png");
+    nombresImagenes.push("media/images/enemigo.png");
 
     
    

@@ -3,51 +3,51 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [
     {
       name: 'batman',
-      img: 'images/batmandark.png'
+      img: 'media/images/batmandark.png'
     },
     {
       name: 'ironman',
-      img: 'images/ironmanred.png'
+      img: 'media/images/ironmanred.png'
     },
     {
       name: 'linternaverde',
-      img: 'images/linternaverde.png'
+      img: 'media/images/linternaverde.png'
     },
     {
       name: 'spiderman',
-      img: 'images/spidermanred.png'
+      img: 'media/images/spidermanred.png'
     },
     {
       name: 'superman',
-      img: 'images/supermanblue.png'
+      img: 'media/images/supermanblue.png'
     },
     {
       name: 'thor',
-      img: 'images/thoryellow.png'
+      img: 'media/images/thoryellow.png'
     },
     {
       name: 'batman',
-      img: 'images/batmandark.png'
+      img: 'media/images/batmandark.png'
     },
     {
       name: 'ironman',
-      img: 'images/ironmanred.png'
+      img: 'media/images/ironmanred.png'
     },
     {
       name: 'linternaverde',
-      img: 'images/linternaverde.png'
+      img: 'media/images/linternaverde.png'
     },
     {
       name: 'spiderman',
-      img: 'images/spidermanred.png'
+      img: 'media/images/spidermanred.png'
     },
     {
       name: 'superman',
-      img: 'images/supermanblue.png'
+      img: 'media/images/supermanblue.png'
     },
     {
       name: 'thor',
-      img: 'images/thoryellow.png'
+      img: 'media/images/thoryellow.png'
     }
   ]
 
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement('img')
-      card.setAttribute('src', 'images/blank.png')
+      card.setAttribute('src', 'media/images/blank.png')
       card.setAttribute('data-id', i)
       card.addEventListener('click', flipCard)
       grid.appendChild(card)
@@ -80,24 +80,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const optionTwoId = cardsChosenId[1]
     
     if(optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute('src', 'images/blank.png')
-      cards[optionTwoId].setAttribute('src', 'images/blank.png')
+      cards[optionOneId].setAttribute('src', 'media/images/blank.png')
+      cards[optionTwoId].setAttribute('src', 'media/images/blank.png')
       alert('No clickes en la misma imagen!')
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
       alert('Ehnorabuena has encontrado una pareja!')
-      cards[optionOneId].setAttribute('src', 'images/white.png')
-      cards[optionTwoId].setAttribute('src', 'images/white.png')
+      cards[optionOneId].setAttribute('src', 'media/images/white.png')
+      cards[optionTwoId].setAttribute('src', 'media/images/white.png')
       cards[optionOneId].removeEventListener('click', flipCard)
       cards[optionTwoId].removeEventListener('click', flipCard)
       cardsWon.push(cardsChosen)
 
       var sonidoscore = new Audio();
-	    sonidoscore.src = 'Sounds/acierto.mp3';
+	    sonidoscore.src = 'media/Sounds/acierto.mp3';
 	    sonidoscore.play();
     } else {
-      cards[optionOneId].setAttribute('src', 'images/blank.png')
-      cards[optionTwoId].setAttribute('src', 'images/blank.png')
+      cards[optionOneId].setAttribute('src', 'media/images/blank.png')
+      cards[optionTwoId].setAttribute('src', 'media/images/blank.png')
       alert('Oh, intentalo de nuevo')
     }
     cardsChosen = []
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     resultDisplay.textContent = cardsWon.length
     if  (cardsWon.length === cardArray.length/2) {
       var sonidoscore = new Audio();
-	    sonidoscore.src = 'Sounds/victoria.mp3';
+	    sonidoscore.src = 'media/Sounds/victoria.mp3';
 	    sonidoscore.play();
       resultDisplay.textContent = 'Ehnorabuena! Has encontrado todas las cartas!'
       
