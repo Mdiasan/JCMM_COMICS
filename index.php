@@ -117,7 +117,7 @@
           <div class="row">
             <div class="col">
               <div class="text-center bg-dark">
-                <h1 class=" text-white">merchardaising</h1>
+                <h1 class=" text-white">merchandising</h1>
               </div>
             </div>
           </div>
