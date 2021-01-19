@@ -51,50 +51,50 @@ El uso de los contenidos y servicios ofrecidos por JCMMCOMIC será bajo el exclu
 <table class="table table-dark">
   <thead>
     <tr>
-      <th scope="col">#</th>
       <th scope="col">titular</th>
+      <th scope="col">marca</th>
       <th scope="col">derechos</th>
       
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
+      <th scope="row">Disney</th>
       <td>marvel</td>
-      <td>Otto</td>
+      <td><a href="https://disneytermsofuse.com/">terminos de uso</a></td>
      
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>DC</td>
-      <td>Thornton</td>
+      <th scope="row">warnerbros</th>
+      <td>DC comics</td>
+      <td><a href="https://policies.warnerbros.com/terms/en-us/html/terms_en-us_1.2.0.html">terminos de uso</a></td>
      
     </tr>
     <tr>
-      <th scope="row">3</th>
+      <th scope="row">Shūeisha</th>
       <td>dragon ball</td>
-      <td>the Bird</td>
+      <td><a href="">terminos de uso</a></td>
      
     </tr>
 
     <tr>
-      <th scope="row">3</th>
-      <td>Nova</td>
-      <td>the Bird</td>
+      <th scope="row">nova</th>
+      <td>brandon sanderson libros</td>
+      <td><a href="https://www.penguinrandomhousegrupoeditorial.com/aviso-legal/">terminos de uso</a></td>
      
     </tr>
 
     <tr>
-      <th scope="row">3</th>
+      <th scope="row">Kōdansha</th>
       <td>attack of titan</td>
-      <td>the Bird</td>
+      <td><a href="https://kodanshacomics.com/terms-of-use/">terminos de uso</a></td>
      
     </tr>
 
     <tr>
-      <th scope="row">3</th>
+      <th scope="row">Shūeisha</th>
       <td>boku no hero</td>
-      <td>the Bird</td>
+      <td><a href="">terminos de uso</a></td>
      
     </tr>
   </tbody>
