@@ -69,21 +69,21 @@
 
                     <div class="row">
                         <div class="col">
-                            <a href="">Politica de privacidad</a>
+                            <a href="politicaDePrivacidad.php">Politica de privacidad</a>
                         </div>
                     </div>
 
 
                     <div class="row">
                         <div class="col">
-                            <a href="">Entregas y devoluciones</a>
+                            <a href="Devoluciones.php">Entregas y devoluciones</a>
                         </div>
                     </div>
 
 
                     <div class="row">
                         <div class="col">
-                            <a href="">Cookies</a>
+                            <a href="Cookies.php">Cookies</a>
                         </div>
                     </div>
                 </div>
