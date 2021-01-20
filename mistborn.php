@@ -25,18 +25,19 @@
 
 <?php include("includes/design-top.php"); ?>
 
+        <h1 class="text-center text-dark">Nacidos de la bruma</h1>
 
 
-    <div style="margin: 50 px ;">
+    <div class='Juegos'>
         <canvas  id='canvas' width='460px' height='460px'>
             
         </canvas>
-   
+        <p class="hierro"> el hierro te ayuda a moverte hacia abajo y hacia atras </p>
+        <p class="acero">el acero te ayuda a moverte hacia arriba y  de frente  </p>
     
     </div>
 
-    <p class="hierro"> el hierro te ayuda a moverte hacia abajo y hacia atras </p>
-    <p class="acero">el acero te ayuda a moverte hacia arriba y  de frente  </p>
+    
     <?php include("includes/footer.php"); ?>
 
 </div>

@@ -12,7 +12,13 @@
   <div class="container-fluid">
 
         <?php include("includes/design-top.php"); ?>
-    <canvas id="canvas" width="800" height="500"></canvas>
+
+        <h1 class="text-center text-dark">PONG</h1>
+
+   <div class=Juegos>
+   <canvas id="canvas" width="800" height="500"></canvas>
+   </div>
+   
     <script src="/media/Videojuegos/videojuego Juan Carlos Cubero/juego.js" charset="utf-8"></script>
     <?php include("includes/footer.php"); ?>
 

@@ -63,11 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
   //creando el tablero
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
-      var card = document.createElement('img')
-      card.setAttribute('src', 'media/images/blank.png')
-      card.setAttribute('data-id', i)
-      card.addEventListener('click', flipCard)
-      grid.appendChild(card)
+      var card = document.createElement('img');
+      card.setAttribute('src', 'media/images/blank.png');
+      card.setAttribute('data-id', i);
+      card.setAttribute('data-name',"hola");
+      card.addEventListener('click', flipCard);
+      grid.appendChild(card);
 
       
     }
@@ -75,7 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //validando las uniones de las cartas
   function checkForMatch() {
-    var cards = document.querySelectorAll('img')
+    var cards = document.querySelectorAll("img[data-name]");
+
     const optionOneId = cardsChosenId[0]
     const optionTwoId = cardsChosenId[1]
     

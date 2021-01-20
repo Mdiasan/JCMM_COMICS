@@ -18,13 +18,18 @@
 <body>
 
     <div class="container-fluid">
+
+    <?php include("includes/navigation.php"); ?>
+        <div class="Juegos">
         <main>
 
             <h2>Puntuación:<span id="result"></span></h2>
 
-            <div class="grid"></div>
+            <div class="grid" ></div>
             <a href="index.php">Volver a Inicio</a>
         </main>
+        </div>
+        
         <?php include("includes/footer.php"); ?>
     </div>
 </body>
