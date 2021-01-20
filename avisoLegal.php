@@ -12,7 +12,7 @@
 
     <div class="container-fluid">
         <?php include("includes/design-top.php"); ?>
-        <div>
+        <div  style="margin-top: 15px;">
             <h2>avisos legales</h2>
             <hr>
             <p>En cumplimiento con el deber de información dispuesto en la Ley 34/2002 de Servicios de la Sociedad de la Información y el Comercio Electrónico (LSSI-CE) de 11 de julio, se facilitan a continuación los siguientes datos de información general de este sitio web:
@@ -51,56 +51,56 @@ El uso de los contenidos y servicios ofrecidos por JCMMCOMIC será bajo el exclu
 <table class="table table-dark">
   <thead>
     <tr>
-      <th scope="col">titular</th>
-      <th scope="col">marca</th>
-      <th scope="col">derechos</th>
+      <th scope="col">Titular</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Derechos</th>
       
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">Disney</th>
-      <td>marvel</td>
-      <td><a href="https://disneytermsofuse.com/">terminos de uso</a></td>
+      <td>Marvel</td>
+      <td><a href="https://disneytermsofuse.com/">Terminos de uso</a></td>
      
     </tr>
     <tr>
-      <th scope="row">warnerbros</th>
+      <th scope="row">Warnerbros</th>
       <td>DC comics</td>
-      <td><a href="https://policies.warnerbros.com/terms/en-us/html/terms_en-us_1.2.0.html">terminos de uso</a></td>
+      <td><a href="https://policies.warnerbros.com/terms/en-us/html/terms_en-us_1.2.0.html">Terminos de uso</a></td>
      
     </tr>
     <tr>
       <th scope="row">Shūeisha</th>
-      <td>dragon ball</td>
-      <td><a href="">terminos de uso</a></td>
+      <td>Dragon ball</td>
+      <td><a href="">Terminos de uso</a></td>
      
     </tr>
 
     <tr>
-      <th scope="row">nova</th>
-      <td>brandon sanderson libros</td>
-      <td><a href="https://www.penguinrandomhousegrupoeditorial.com/aviso-legal/">terminos de uso</a></td>
+      <th scope="row">Nova</th>
+      <td>Brandon sanderson libros</td>
+      <td><a href="https://www.penguinrandomhousegrupoeditorial.com/aviso-legal/">Terminos de uso</a></td>
      
     </tr>
 
     <tr>
       <th scope="row">Kōdansha</th>
-      <td>attack of titan</td>
-      <td><a href="https://kodanshacomics.com/terms-of-use/">terminos de uso</a></td>
+      <td>Attack of titan</td>
+      <td><a href="https://kodanshacomics.com/terms-of-use/">Terminos de uso</a></td>
      
     </tr>
 
     <tr>
       <th scope="row">Shūeisha</th>
-      <td>boku no hero</td>
-      <td><a href="">terminos de uso</a></td>
+      <td>Boku no hero</td>
+      <td><a href="">Terminos de uso</a></td>
      
     </tr>
   </tbody>
 </table>
 
-
+        </div>
 
             <?php include("includes/footer.php"); ?>
         </div>

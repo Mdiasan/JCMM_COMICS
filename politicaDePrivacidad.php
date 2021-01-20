@@ -12,10 +12,10 @@
 
     <div class="container-fluid">
         <?php include("includes/design-top.php"); ?>
-        <div>
+        <div style="margin-top: 15px;">
             <h2>Politica de Privacidad</h2>
             <hr>
-            <h3>información y conocimiento</h3>
+            <h3>Información y conocimiento</h3>
             <hr>
             
             <p>De conformidad con lo dispuesto en el Reglamento UE 679/2015 de Protección de Datos, mediante la aceptación de la presente Política de Privacidad el Usuario (en adelante, el “Usuario”) presta su consentimiento informado, expreso, libre e inequívoco para que los datos personales recabados a través del Sitio Web https://www.JCMMCOMIC.com/ (en adelante, el “Sitio Web”) sean tratados por JCMMCOMIC conforme a lo dispuesto en la presente Política de Privacidad</p>
@@ -33,15 +33,17 @@
             <hr>
             <p>De conformidad con lo dispuesto en el RGPD y la Ley 34/2002, de Servicios de la Sociedad de la Información, todos los datos de carácter personal obtenidos mediante las cookies durante la utilización de Sitio Web, serán tratados de conformidad con lo dispuesto en la Política de Cookies.</p>
             
-            <h3>ejercicio de derechos</h3>
+            <h3>Ejercicio de derechos</h3>
             <hr>
             <p>De conformidad con lo dispuesto en el RGPD, le informamos que puede ejercer sus derechos de acceso, rectificación, cancelación, oposición, limitación del tratamiento y portabilidad, solicitándolo por escrito a través de cualquiera de los medios siguientes, adjuntando en todo caso una copia de documento acreditativo de su identidad y concretando el derecho o derechos que desea ejercer, directamente a JCMMCOMIC a través del siguiente e-mail: administracion@JCMMCOMIC.com</p>
-            <h3>información y consentimiento</h3>
+            <h3>Información y consentimiento</h3>
             <hr>
-            <p>titular: Juan Carlos Cubero</p>
-            <p>domicilio social: calle inventada nº∞</p>
+            <p>Titular: Juan Carlos Cubero</p>
+            <p>Domicilio social: calle inventada nº∞</p>
             <p>NIF:123456F</p>
-            <p>email:administracion@JCMMCOMIC.com</p>
+            <p>Email:administracion@JCMMCOMIC.com</p>
+
+        </div>
             <?php include("includes/footer.php"); ?>
         </div>
 

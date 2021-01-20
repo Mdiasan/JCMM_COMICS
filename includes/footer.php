@@ -55,7 +55,7 @@
                 <div class="col col-sm-4 col-md">
                     <div class="row">
                         <div class="col">
-                            <h5>información</h5>
+                            <h5>Información</h5>
                         </div>
                     </div>
 

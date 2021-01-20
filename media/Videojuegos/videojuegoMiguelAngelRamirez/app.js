@@ -4,24 +4,24 @@
     
     document.onkeydown = function(event) {
         switch (event.key) {
-          case "ArrowLeft":
+          case "a":
            
               direction = 'left';
             
             break;
-          case "ArrowRight":
+          case "d":
            
               direction = 'right';
                           
 
             
             break;
-          case "ArrowUp":
+          case "w":
           
               direction = 'up';
             
             break;
-          case "ArrowDown":
+          case "s":
             
               direction = 'down';
             

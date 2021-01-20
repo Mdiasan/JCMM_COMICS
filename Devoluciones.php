@@ -12,17 +12,17 @@
 
     <div class="container-fluid">
         <?php include("includes/design-top.php"); ?>
-        <div>
+        <div style="margin-top: 15px;">
             <h2>Condiciones de venta</h2>
             <hr>
             <h3>Formas de pago</h3>
             <hr>
-            <p>targeta de credito o débito Visa/Mastercad</p>
-            <h3>envios y plazos de entrega</h3>
+            <p>Targeta de credito o débito Visa/Mastercad</p>
+            <h3>Envios y plazos de entrega</h3>
             <p>Los envíos se realizarán con la prestigiosa agencia de transportes transportesInventados.sl</p>
             <p>El plazo de entrega estimado es de 24 a 48 años laborables, según destino. La entrega del pedido se realiza siempre en días laborables.</p>
             <p>no se realizan envios fuera de la peninsula iberica</p>
-            <h3>devoluciones</h3>
+            <h3>Devoluciones</h3>
             <p>para que  las deboluciones se puedan realizar se deben de cumplir los siguientes casos:</p>
             <ul>
             
@@ -36,10 +36,12 @@
 
 
 
-            <h3>condiciones de compra</h3>
+            <h3>Condiciones de compra</h3>
             <hr>
             <p>Juan Carlos Cubero, con domicilio en C\ inventada nº∞;  lucena y con N.I.F. 123456F es la propietaria de la página web https://www.JCMMCOMIC.com/ (en adelante la Web) y la pone a disposición de los usuarios de Internet, con el fin tanto de proporcionar información sobre los productos que se ofrecen, como de permitir la adquisición de los mismos a través del portal.</p>
             <p>Estas Condiciones de Uso y Venta establecen los derechos y obligaciones de los usuarios de la web https://www.JCMMCOMIC.com/ en relación con los productos que se ofertan en la tienda online y representan un contrato vinculante entre ambas partes. Pueden ser modificadas o actualizadas sin previo aviso, por lo que deben leerse previamente a la realización del pedido.</p>
+        </div>  
+            
             <?php include("includes/footer.php"); ?>
         </div>
 

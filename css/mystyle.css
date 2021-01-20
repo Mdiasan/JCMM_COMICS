@@ -187,3 +187,9 @@ button:hover {
 
 #volume-bar {
   width: 60px; }
+
+hr {
+  border: none;
+  height: 1.5px;
+  color: #0D0B0E;
+  background-color: #0D0B0E; }
