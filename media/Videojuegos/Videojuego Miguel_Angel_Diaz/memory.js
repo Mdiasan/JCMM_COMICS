@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const grid = document.querySelector('.grid')
   const resultDisplay = document.querySelector('#result')
+  const resultDisplay2 = document.querySelector('#result2')
   var cardsChosen = []
   var cardsChosenId = []
   var cardsWon = []
@@ -84,23 +85,23 @@ document.addEventListener('DOMContentLoaded', () => {
     if(optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute('src', 'media/images/blank.png')
       cards[optionTwoId].setAttribute('src', 'media/images/blank.png')
-      alert('No clickes en la misma imagen!')
+      resultDisplay2.textContent ='No clickes en la misma imagen!';
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
-      alert('Ehnorabuena has encontrado una pareja!')
       cards[optionOneId].setAttribute('src', 'media/images/white.png')
       cards[optionTwoId].setAttribute('src', 'media/images/white.png')
       cards[optionOneId].removeEventListener('click', flipCard)
       cards[optionTwoId].removeEventListener('click', flipCard)
       cardsWon.push(cardsChosen)
-
+      resultDisplay2.textContent ='Ehnorabuena has encontrado una pareja!'
+      
       var sonidoscore = new Audio();
 	    sonidoscore.src = 'media/Sounds/acierto.mp3';
 	    sonidoscore.play();
     } else {
       cards[optionOneId].setAttribute('src', 'media/images/blank.png')
       cards[optionTwoId].setAttribute('src', 'media/images/blank.png')
-      alert('Oh, intentalo de nuevo')
+      resultDisplay2.textContent ='Oh, intentalo de nuevo'
     }
     cardsChosen = []
     cardsChosenId = []
@@ -109,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
       var sonidoscore = new Audio();
 	    sonidoscore.src = 'media/Sounds/victoria.mp3';
 	    sonidoscore.play();
-      resultDisplay.textContent = 'Ehnorabuena! Has encontrado todas las cartas!'
+      resultDisplay2.textContent = 'Ehnorabuena! Has encontrado todas las cartas!'
       
     }
   }

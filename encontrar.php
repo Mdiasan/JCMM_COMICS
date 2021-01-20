@@ -26,7 +26,7 @@
             <h2>Puntuación:<span id="result"></span></h2>
 
             <div class="grid" ></div>
-            <a href="index.php">Volver a Inicio</a>
+            <h3><span id="result2"></span></h3>
         </main>
         </div>
         
