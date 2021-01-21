@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  //array de todas las cartas
+  
+  //Array de todas las cartas de los superheroes
   const cardArray = [
     {
       name: 'batman',
@@ -51,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ]
 
-  //desordenamos el array para que las cartas sean aleatorias
+  //Desordenamos el array para que las cartas sean aleatorias
   cardArray.sort(() => 0.5 - Math.random())
 
   const grid = document.querySelector('.grid')
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var cardsChosenId = []
   var cardsWon = []
 
-  //creando el tablero
+  //Creando el tablero
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement('img');
@@ -115,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  //aqui le damos la vuelta a la carta
+  //Aqui le damos la vuelta a la carta
   function flipCard() {
     var cardId = this.getAttribute('data-id')
     cardsChosen.push(cardArray[cardId].name)
@@ -126,5 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+//Creamos el tablero
   createBoard()
 })

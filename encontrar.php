@@ -19,18 +19,20 @@
 
     <div class="container-fluid">
 
-    <?php include("includes/navigation.php"); ?>
+        <?php include("includes/navigation.php"); ?>
         <div class="Juegos">
 
             <h2>Puntuación:<span id="result"></span></h2>
 
-            <div class="grid" ></div>
+            <div class="grid"></div>
             <h3><span id="result2"></span></h3><br>
 
             <h4 class="text-center text-dark">Encuentra todas las parejas haciendo click con el <i class="fas fa-mouse-pointer"></i></h4>
-        
+            <form action="encontrar.php" class="form-group">
+                <input type="submit" class="form-control-3 btn btn-warning mt-3" value="Volver a Jugar">
+            </form>
         </div>
-        
+
         <?php include("includes/footer.php"); ?>
     </div>
 </body>
