@@ -19,13 +19,13 @@
           Comics
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="ZonaMarvel.php">zona Marvel</a>
-          <a class="dropdown-item" href="ZonaDC.php">zona DC</a>
+          <a class="dropdown-item" href="ZonaMarvel.php">Zona Marvel</a>
+          <a class="dropdown-item" href="ZonaDC.php">Zona DC</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="libros.php" id="navbardrop" data-toggle="dropdown">
-          libros
+          Libros
         </a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="fantasia.php">Rincon de la fantasia</a>
@@ -33,21 +33,21 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="libros.php" id="navbardrop" data-toggle="dropdown">
-          otros
+          Otros
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="productos.php">juegos mesa/rol</a>
-          <a class="dropdown-item" href="productos.php">figuras</a>
-          <a class="dropdown-item" href="productos.php">manga</a>
-          <a class="dropdown-item" href="mistborn.php">nacidos de la bruma</a>
-          <a class="dropdown-item" href="encontrar.php">parejas superheroes</a>
-          <a class="dropdown-item" href="pong.php">pong</a>
+          <a class="dropdown-item" href="productos.php">Juegos mesa/rol</a>
+          <a class="dropdown-item" href="productos.php">Figuras</a>
+          <a class="dropdown-item" href="productos.php">Manga</a>
+          <a class="dropdown-item" href="mistborn.php">Nacidos de la bruma</a>
+          <a class="dropdown-item" href="encontrar.php">Parejas superheroes</a>
+          <a class="dropdown-item" href="pong.php">Pong</a>
 
         </div>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="ofertas.php">ofertas</a>
+        <a class="nav-link" href="ofertas.php">Ofertas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="videos.php">Videos</a>

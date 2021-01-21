@@ -20,12 +20,12 @@
                     <div class="p-1">
                         <form action="" class="form-group">
 
-                            <label for="usuario">usuario</label>
+                            <label for="usuario">Usuario</label>
                             <input type="text" name="usuario" class="form-control">
-                            <label for="contraseña">contraseña</label>
+                            <label for="contraseña">Contraseña</label>
                             <input type="password" name="contraseña" class="form-control">
-                            <input type="submit" class="form-control-3 btn btn-warning mt-3" value="enviar">
-                            no tienes cuenta registrate <a href="crearUsuario.php">aquí!</a>
+                            <input type="submit" class="form-control-3 btn btn-warning mt-3" value="Enviar">
+                            ¿No tienes cuenta? registrate <a href="crearUsuario.php">AQUÍ!</a>
                         </form>
                     </div>
 

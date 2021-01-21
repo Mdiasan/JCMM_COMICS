@@ -67,10 +67,10 @@
               <div class="card-deck">
 
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/bnh.jpg" alt="Card image">
+                  <img class="card-img-top img-fluid" src="media/images/thanos.png" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">my hero academia</h2>
-                    <p class="card-text">volumen de la serie "my hero academia" donde transcurre la historia del joven izuku midoriya y sus compañeros en el transcurro de su vida escolar para convertirse en el mejor heroe como el que el admira</p>
+                    <h2 class="card-title">El Guantelete del infinito</h2>
+                    <p class="card-text">Cuando Jim Starlin decidió resucitar a Thanos, que llevaba veinte años muerto (unos diez en tiempo Marvel) lo hizo en la colección de Estela Plateada, la cual era perfecta para narrar eventos de índole cósmica, pero el problema, más por suerte que por desgracia, era que lo que Starlin había pensado para Thanos tenía que incluir por fuerza a casi todos los héroes Marvel del momento.</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
@@ -93,7 +93,7 @@
                 <div class="card">
                   <img class="card-img-top img-fluid" src="media/images/muerte de la familia.png" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">Batman:Una Muerte En La Familia</h2>
+                    <h2 class="card-title">Una Muerte En La Familia</h2>
                     <p class="card-text">Publicado originalmente en diciembre de 1983. La primera aparición de Jason Todd como Robin. El nuevo compañero de Batman acudirá en su rescate en plena batalla contra el Joker en Guatemala.</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
@@ -101,7 +101,7 @@
                 <div class="card">
                   <img class="card-img-top img-fluid" src="media/images/la broma asesina.png" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">Batman: la broma asesina</h2>
+                    <h2 class="card-title">la broma asesina</h2>
                     <p class="card-text">La broma asesina es una historia centrada en el Joker, la antítesis de Batman por definición, y en la relación que éste y Batman han llegado a desarrollar a lo largo de los años.</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
@@ -128,8 +128,8 @@
                 <div class="card">
                   <img class="card-img-top img-fluid" src="media/images/figura goku migatte no gokui 100%.jpg" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">goku migatte no gokui 100%</h2>
-                    <p class="card-text">figura del anime de dragon ball super en la que estan son goku con su tecnica mas poderosa y una pose legendaria</p>
+                    <h2 class="card-title">goku Ultra instinto 100%</h2>
+                    <p class="card-text">Figura del anime de dragon ball super en la que estan son goku con su tecnica mas poderosa y una pose legendaria</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
@@ -139,7 +139,7 @@
                   <img class="card-img-top img-fluid" src="media/images/deku.jpg" alt="Card image">
                   <div class="card-body text-center">
                     <h2 class="card-title">deku</h2>
-                    <p class="card-text">protagonista de la serie de heroes my hero academia en una mitica pose </p>
+                    <p class="card-text">Protagonista de la serie de heroes my hero academia en una mitica pose </p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
@@ -153,15 +153,15 @@
                   <img class="card-img-top img-fluid" src="media/images/figura de goku.jpg" alt="Card image">
                   <div class="card-body text-center">
                     <h2 class="card-title">son goku</h2>
-                    <p class="card-text">protagonista de la serie de dragon ball en una fantastica pose.</p>
+                    <p class="card-text">Protagonista de la serie de dragon ball en una fantastica pose.</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
                 <div class="card">
                   <img class="card-img-top img-fluid" src="media/images/broly ssj4.jpg" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">broly en super saiyan 4</h2>
-                    <p class="card-text">broly en una mitica transformacion dentro del no canon </p>
+                    <h2 class="card-title">broly super saiyan 4</h2>
+                    <p class="card-text">Broly en una mitica transformacion dentro del no canon </p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
@@ -187,7 +187,7 @@
                 <div class="card">
                   <img class="card-img-top img-fluid" src="media/images/la broma asesina.png" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">Batman: la broma asesina</h2>
+                    <h2 class="card-title">la broma asesina</h2>
                     <p class="card-text">La broma asesina es una historia centrada en el Joker, la antítesis de Batman por definición, y en la relación que éste y Batman han llegado a desarrollar a lo largo de los años.</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
@@ -197,7 +197,7 @@
                 <div class="card">
                   <img class="card-img-top img-fluid" src="media/images/el caballero blancp.png" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">Batman: caballero blanco</h2>
+                    <h2 class="card-title">caballero blanco</h2>
                     <p class="card-text">Cuando El Joker fue un héroe. ... Es difícil no caer rendido ante una premisa tan sugerente como un Joker convertido en héroe, un Batman venido a medio villano y un guion elaborado por el hombre que está detrás de Punk Rock Jesús, uno de los mejores cómics de la pasada década.</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
@@ -209,7 +209,7 @@
                 <div class="card">
                   <img class="card-img-top img-fluid" src="media/images/muerte de la familia.png" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">Batman:Una Muerte En La Familia</h2>
+                    <h2 class="card-title">Una Muerte En La Familia</h2>
                     <p class="card-text">Publicado originalmente en diciembre de 1983. La primera aparición de Jason Todd como Robin. El nuevo compañero de Batman acudirá en su rescate en plena batalla contra el Joker en Guatemala.</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>

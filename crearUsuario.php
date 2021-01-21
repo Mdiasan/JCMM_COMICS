@@ -13,21 +13,21 @@
         <main>
 
             <div class="col p-0 ">
-                <h1>crear usuario</h1>
+                <h1>Crear usuario</h1>
                 <div class="p-1">
 
                     <form action="" class="form-group   ">
-                        <label for="usuario">usuario</label>
+                        <label for="usuario">Usuario</label>
                         <input type="text" name="usuario" class="form-control">
-                        <label for="nombre">nombre</label>
+                        <label for="nombre">Nombre</label>
                         <input type="text" name="nombre" class="form-control">
-                        <label for="apellidos">apellidos</label>
+                        <label for="apellidos">Apellidos</label>
                         <input type="text" name="apellidos" class="form-control">
-                        <label for="contraseña">contraseña</label>
+                        <label for="contraseña">Contraseña</label>
                         <input type="password" name="contraseña" class="form-control">
-                        <label for="recontraseña">repite la contraseña</label>
+                        <label for="recontraseña">Repite la contraseña</label>
                         <input type="password" name="recontraseña" class="form-control">
-                        <input type="submit" class="form-control-3 btn btn-warning mt-3" value="enviar">
+                        <input type="submit" class="form-control-3 btn btn-warning mt-3" value="Enviar">
                     </form>
                 </div>
             </div>
