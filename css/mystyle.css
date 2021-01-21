@@ -172,12 +172,12 @@ h5 {
 
 button {
   background: rgba(0, 0, 0, 0.5);
-  border: 0;
+  border: 2;
   color: #EEE;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -o-border-radius: 3px;
-  border-radius: 3px; }
+  border-radius: 10px; }
 
 button:hover {
   cursor: pointer; }

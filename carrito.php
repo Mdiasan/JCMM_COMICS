@@ -18,12 +18,12 @@
                     <div class="p-1">
                         <form action="" class="form-group">
 
-                            <label for="usuario">usuario</label>
+                            <label for="usuario">Usuario</label>
                             <input type="text" name="usuario" class="form-control">
-                            <label for="contraseña">contraseña</label>
+                            <label for="contraseña">Contraseña</label>
                             <input type="password" name="contraseña" class="form-control">
-                            <input type="submit" class="form-control-3 btn btn-warning mt-3" value="enviar">
-                            <a href="crearUsuario.php">no tienes cuenta registrate aquí!</a>
+                            <input type="submit" class="form-control-3 btn btn-warning mt-3" value="Enviar">
+                            <a href="crearUsuario.php">¿No tienes cuenta? registrate aquí!</a>
                         </form>
                     </div>
                 </div>
@@ -36,27 +36,27 @@
                     <div class="row  mt-5">
                         <div class="col"><img src="media/images/spiderman negro.png" alt="" class="imagencarrito "></div>
                         <div class="col">
-                            <p>nombre comic</p>
+                            <p>Superior-Spiderman</p>
                         </div>
-                        <div class="col">precio:0,0€</div>
+                        <div class="col">Precio:0,0€</div>
 
                     </div>
                     <hr>
                     <div class="row  mt-5">
                         <div class="col "><img src="media/images/spiderman negro.png" alt="" class="imagencarrito "></div>
                         <div class="col">
-                            <p>nombre comic</p>
+                            <p>Superior-Spiderman</p>
                         </div>
-                        <div class="col">precio:0,0€</div>
+                        <div class="col">Precio:0,0€</div>
 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col">                            <form action="/index.php" class=" form-inline"><button class="btn btn-orange form-control" >seguir comprando</button> </form>
+                        <div class="col">                            <form action="/index.php" class=" form-inline"><button class="btn btn-orange form-control" >Seguir Comprando</button> </form>
  </div>
                         <div class="col"> </div>
                         <div class="col text-inline">
-                            <form action="" class=" form-inline">total : 0,00€<button class="btn btn-orange form-control" disabled>pagar</button> </form>
+                            <form action="" class=" form-inline">Total : 0,00€<button class="btn btn-orange form-control" disabled>Pagar</button> </form>
                         </div>
                     </div>
                 </div>

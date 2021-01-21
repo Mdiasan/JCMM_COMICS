@@ -21,13 +21,14 @@
 
     <?php include("includes/navigation.php"); ?>
         <div class="Juegos">
-        <main>
 
             <h2>Puntuación:<span id="result"></span></h2>
 
             <div class="grid" ></div>
-            <h3><span id="result2"></span></h3>
-        </main>
+            <h3><span id="result2"></span></h3><br>
+
+            <h4 class="text-center text-dark">Encuentra todas las parejas haciendo click con el <i class="fas fa-mouse-pointer"></i></h4>
+        
         </div>
         
         <?php include("includes/footer.php"); ?>

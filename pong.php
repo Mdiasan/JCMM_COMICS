@@ -18,6 +18,8 @@
    <div class=Juegos>
    <canvas id="canvas" width="800" height="500"></canvas>
    </div>
+   <h4 class="text-center text-dark">Pulsa click para comenzar</h4><br>
+   <h4 class="text-center text-dark">Controla tu ladrillo con el  <i class="fas fa-mouse-pointer"></i></h4>
    
     <script src="/media/Videojuegos/videojuego Juan Carlos Cubero/juego.js" charset="utf-8"></script>
     <?php include("includes/footer.php"); ?>

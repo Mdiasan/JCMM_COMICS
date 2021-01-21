@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include("includes/head-tag-contents.php"); ?>
 
-    <title>juego</title>
     <style>
         .hierro{
             color: blue;
@@ -32,8 +31,10 @@
         <canvas  id='canvas' width='460px' height='460px'>
             
         </canvas>
-        <p class="hierro"> el hierro te ayuda a moverte hacia abajo y hacia atras </p>
-        <p class="acero">el acero te ayuda a moverte hacia arriba y  de frente  </p>
+        <h4 class="text-center text-dark">LLega al final evitando los malignos con tu personaje</h4><br>
+        <h4 class="text-center text-dark">Muevete con A<i class="fas fa-arrow-circle-left"></i> S<i class="fas fa-arrow-circle-down"></i> D<i class="fas fa-arrow-circle-right"></i> W<i class="fas fa-arrow-circle-up"></i></h4>
+        <p class="hierro"> El hierro te ayuda a moverte hacia abajo y hacia atras </p>
+        <p class="acero">El acero te ayuda a moverte hacia arriba y  de frente  </p>
     
     </div>
 
