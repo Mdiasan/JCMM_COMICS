@@ -22,7 +22,7 @@
 		
 
 			<div class="row">
-				<div class="col text-center ">
+				<div class="col text-justify ">
 					Avengers: Endgame (Vengadores: Endgame en España) es una película de superhéroes estadounidense de 2019 basada en el grupo Los Vengadores de Marvel Comics
 				</div>
 				<div class="col">
@@ -45,7 +45,7 @@
 
 				</div>
 				<div class="row">
-				<div class="col text-center ">
+				<div class="col text-justify ">
 				Spider-Man: Lejos de casa (en inglés: Spider-Man: Far From Home) es una película estadounidense de superhéroes de 2019 basada en el personaje de Spider-Man, perteneciente a Marvel Comics, producida por Columbia Pictures y Marvel Studios y distribuida por Sony Pictures Entertainment. Es la secuela de Spider-Man: Homecoming(2017)
 				</div>
 
@@ -59,9 +59,9 @@
 						<!-- Video Controls -->
 						<div id="video-controls">
 							<button type="button" id="play-pause2" class="play">></button>
-							<input type="range" id="seek-bar2" value="0">
+							<input  type="range" id="seek-bar2" value="0">
 							<button type="button" id="mute2"><i class="fas fa-volume-off"></i></button>
-							<input type="range" id="volume-bar2" min="0" max="1" step="0.1" value="1">
+							<input  type="range" id="volume-bar2" min="0" max="1" step="0.1" value="1">
 							<button type="button" id="full-screen2"><i class="fas fa-compress"></i></button>
 						</div>
 

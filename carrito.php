@@ -52,7 +52,8 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col"> </div>
+                        <div class="col">                            <form action="/index.php" class=" form-inline"><button class="btn btn-orange form-control" >seguir comprando</button> </form>
+ </div>
                         <div class="col"> </div>
                         <div class="col text-inline">
                             <form action="" class=" form-inline">total : 0,00€<button class="btn btn-orange form-control" disabled>pagar</button> </form>
