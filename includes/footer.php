@@ -30,7 +30,7 @@
                     <div class="row">
                         <h5>Destacados</h5>
                     </div>
-                    <div class="row"><a href="./fantasia.php">Rincon Fantasia</a></div>
+                    <div class="row"><a href="./fantasia.php">Libros</a></div>
                     <div class="row"><a href="./ZonaMarvel.php">Marvel</a></div>
                     <div class="row"><a href="./ZonaDC.php">DC</a></div>
 
@@ -84,6 +84,12 @@
                     <div class="row">
                         <div class="col">
                             <a href="Cookies.php">Cookies</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a href="contact.php">Contacto</a>
                         </div>
                     </div>
                 </div>
