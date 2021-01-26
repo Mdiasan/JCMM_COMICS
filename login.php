@@ -18,7 +18,7 @@
 
                     <h1>logueate</h1>
                     <div class="p-1">
-                        <form action="" class="form-group">
+                        <form action="" class="form-group" method="POST">
 
                             <label for="usuario">Usuario</label>
                             <input type="text" name="usuario" class="form-control">
@@ -33,7 +33,10 @@
 
 
             </div>
-
+            <?php 
+            $passwordmd5 = md5($_POST['contraseña']);
+            
+            ?>
 
         </main>
 
