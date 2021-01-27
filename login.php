@@ -33,10 +33,6 @@
 
 
             </div>
-            <?php 
-            $passwordmd5 = md5($_POST['contraseña']);
-            
-            ?>
 
         </main>
 
