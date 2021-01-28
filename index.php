@@ -126,7 +126,7 @@
               <div class="card-deck">
 
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/figura goku migatte no gokui 100%.jpg" alt="Card image">
+                  <img class="card-img-top img-fluid" src="media/images/figura_goku_migatte100.jpg" alt="Card image">
                   <div class="card-body text-center">
                     <h2 class="card-title">goku Ultra instinto 100%</h2>
                     <p class="card-text">Figura del anime de dragon ball super en la que estan son goku con su tecnica mas poderosa y una pose legendaria</p>
