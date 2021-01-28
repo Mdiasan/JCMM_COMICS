@@ -87,6 +87,7 @@
             </div>
 
             <hr>
+            
             <div class="row">
               <div class="col">
                 <form action="">
@@ -94,7 +95,9 @@
                 </form>
               </div>
             </div>
+            
           </div>
+          
         </div>
         <div class="row mt-5">
           <div class="col">
@@ -141,6 +144,7 @@
             </div>
           </div>
         </div>
+        <?php include("includes/Editor.php"); ?>
       </div>
     </div>
 
