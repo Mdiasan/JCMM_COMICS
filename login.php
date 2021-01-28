@@ -25,9 +25,20 @@
                             <label for="contraseña">Contraseña</label>
                             <input type="password" name="contraseña" class="form-control">
                             <input type="submit" class="form-control-3 btn btn-warning mt-3" value="Enviar">
-                            ¿No tienes cuenta? registrate <a href="crearUsuario.php">AQUÍ!</a>
+                            
+                         
                         </form>
                     </div>
+                    <br>
+                    <div id="gSignInWrapper">
+                            <span > o  Inicia sesíon con Google:</span>
+                            <br>,
+                        <div id="customBtn" class="customGPlusSignIn">
+                            <span class="icon"></span>
+                            <span class="buttonText">Google</span>
+                        </div>
+                    </div>
+                    <br> ¿No tienes cuenta? registrate <a href="crearUsuario.php">AQUÍ!</a>
 
                 </div>
 

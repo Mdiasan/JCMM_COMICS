@@ -218,7 +218,7 @@ span.label {
   font-weight: normal; }
 
 span.icon {
-  background: url("signin.png") transparent 5px 50% no-repeat;
+  background: url("../media/images/google.png") transparent 5px 50% no-repeat;
   display: inline-block;
   vertical-align: middle;
   width: 42px;
@@ -233,3 +233,31 @@ span.buttonText {
   font-weight: bold;
   /* Use the Roboto font that is loaded in the <head> */
   font-family: 'Roboto', sans-serif; }
+
+#form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px; }
+
+#form p {
+  text-align: center; }
+
+#form label {
+  font-size: 20px; }
+
+input[type="radio"] {
+  display: none; }
+
+label {
+  color: grey; }
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override; }
+
+label:hover,
+label:hover ~ label {
+  color: orange; }
+
+input[type="radio"]:checked ~ label {
+  color: orange; }
