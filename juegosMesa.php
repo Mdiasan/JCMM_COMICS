@@ -13,19 +13,8 @@
 
         <div class="row">
 
-            <div class=" col-sm-3 mt-3">
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="index.php">inicio</a></li>
-                    <li class="list-group-item"><a href="ZonaMarvel.php">Zona Marvel</a></li>
-                    <li class="list-group-item"><a href="ZonaDC.php">zona DC</a></li>
-                    <li class="list-group-item"><a href="fantasia.php">Rincón de la fantasía</a></li>
-                    <li class="list-group-item"><a href="juegos.php">juegos de mesa/rol</a></li>
-                    <li class="list-group-item"><a href="productos.php">figuras</a></li>
-                    <li class="list-group-item"><a href="productos.php">manga</a></li>
-                    <li class="list-group-item"><a href="ofertas.php">ofertas</a></li>
-                </ul>
-
-            </div>
+        <?php include("includes/navigation-2.php"); ?>
+        
             <div class=" col-sm-9 mt-3 ">
 
                 <div class="row">
