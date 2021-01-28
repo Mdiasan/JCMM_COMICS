@@ -24,8 +24,13 @@
         </div>
       </li>
 
+<<<<<<< HEAD
       <li class="nav-item dropdown d-none d-md-block">
         <a class="nav-link dropdown-toggle" href="libros.php" id="navbardrop" data-toggle="dropdown">
+=======
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+>>>>>>> dff513b80a7fd71ceab2afe72686eb8cf1172ec3
           Juegos
         </a>
         <div class="dropdown-menu">
@@ -36,7 +41,7 @@
         </div>
       </li>      
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="libros.php" id="navbardrop" data-toggle="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
           Otros
         </a>
         <div class="dropdown-menu">
