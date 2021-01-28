@@ -25,7 +25,7 @@
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
           Juegos
         </a>
         <div class="dropdown-menu">
@@ -36,7 +36,7 @@
         </div>
       </li>      
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
           Otros
         </a>
         <div class="dropdown-menu">

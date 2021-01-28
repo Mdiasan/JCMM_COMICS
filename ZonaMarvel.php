@@ -13,7 +13,7 @@
 
         <div class="row">
 
-        <?php include("includes/navigation-2.php"); ?>
+            <?php include("includes/navigation-2.php"); ?>
 
             <div class=" col-sm-9 mt-3 ">
 
