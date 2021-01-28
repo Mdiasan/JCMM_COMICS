@@ -37,7 +37,7 @@
 </head>
 <body>
   
-<div class="standalone-container">
+<div class="standalone-container" id="valorar">
   <div id="snow-container"></div>
 </div>
 
