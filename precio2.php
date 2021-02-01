@@ -52,6 +52,7 @@
                   <div class="col">
                   <form id="form">
   <p class="clasificacion">
+      <button class="btn-warning"  onclick="null" type="button" ><a href="#valorar" class="text-dark" style="text-decoration: none;">Valorar</a></button>
     <input id="radio1" type="radio" name="estrellas" value="5"><!--
     --><label for="radio1">★</label><!--
     --><input id="radio2" type="radio" name="estrellas" value="4"><!--
@@ -62,6 +63,7 @@
     --><label for="radio4">★</label><!--
     --><input id="radio5" type="radio" name="estrellas" value="1"><!--
     --><label for="radio5">★</label>
+        
   </p>
 </form>
                   </div>
@@ -81,7 +83,7 @@
             
             <div class="row">
               <div class="col">
-                <form action="">
+                <form action="carrito.php">
                   <button class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                 </form>
               </div>
@@ -142,7 +144,7 @@
     <?php include("includes/footer.php"); ?>
   </div>
 
-
+ 
 </body>
 
 </html>
