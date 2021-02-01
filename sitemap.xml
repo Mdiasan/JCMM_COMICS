@@ -3,147 +3,120 @@
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-			http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-			
-	<url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-	<url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/login.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.75</priority>
-	</url>
 
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/crearUsuario.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.25</priority>
-	</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/index.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/login.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/ZonaMarvel.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/ZonaDC.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/mistborn.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/encontrar.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/pong.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/juegosMesa.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/figuras.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/videos.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/manga.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/fantasia.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/ofertas.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/carrito.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/precio2.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/crearUsuario.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/avisoLegal.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/politicaDePrivacidad.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/Devoluciones.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/Cookies.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jcmmcomics.iesmarquesdecomares.org/contact.php</loc>
+  <lastmod>2021-02-01T10:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
-        <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/carrito.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.0</priority>
-	</url>
 
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/ZonaMarvel.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/ZonaDC.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-
-        <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/mistborn.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.25</priority>
-	</url>
-
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/encontrar.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.25</priority>
-	</url>
-
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/pong.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.25</priority>
-	</url>
-
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/juegosMesa.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/figuras.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/videos.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.25</priority>
-	</url>
-
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/manga.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-
-        <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/fantasia.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.25</priority>
-	</url>
-
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/ofertas.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>0.75</priority>
-	</url>
-
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/avisoLegal.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.2</priority>
-	</url>
-
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/politicaDePrivacidad.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.2</priority>
-	</url>
-
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/Devoluciones.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.2</priority>
-	</url>
-
-    <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/Cookies.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.2</priority>
-	</url>
-
-        <url>
-		<loc> http://jcmmcomics.iesmarquesdecomares.org/contact.php</loc>
-		<lastmod>2021-01-26</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.1</priority>
-	</url>
-
-	
 </urlset>
