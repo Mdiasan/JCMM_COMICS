@@ -316,3 +316,16 @@ label:hover ~ label {
 input[type="radio"]:checked ~ label {
   color: orange;
 }
+
+.errorDiv{
+  color: $primario;
+  display: none;
+
+}
+.formLogeo{
+ 
+ 
+  margin-left: 20%;
+  margin-right: 20%;
+
+}
