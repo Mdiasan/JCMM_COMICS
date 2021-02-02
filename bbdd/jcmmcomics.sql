@@ -1,6 +1,6 @@
 
-create database jcmmcomics;
-use jcmmcomics;
+create database jcmm-comics;
+use jcmm-comics;
 DROP TABLE IF EXISTS `comic`;
 
 CREATE TABLE `comic` (
