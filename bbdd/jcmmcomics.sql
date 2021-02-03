@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.19, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: jcmm-comics
+-- Host: localhost    Database: jcmm-comics
 -- ------------------------------------------------------
--- Server version	8.0.19
+-- Server version	8.0.22
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -18,17 +18,16 @@
 --
 -- Table structure for table `comic`
 --
-create database jcmmcomics;
-use jcmmcomics;
+
 DROP TABLE IF EXISTS `comic`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `comic` (
   `id` int NOT NULL,
   `titulo` varchar(45) DEFAULT NULL,
-  `descripcion` varchar(45) DEFAULT NULL,
+  `descripcion` varchar(200) DEFAULT NULL,
   `precio` int DEFAULT NULL,
-  `imagen` longblob,
+  `imagen` varchar(50) DEFAULT NULL,
   `editorial_id` int NOT NULL,
   `stock` int DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -56,6 +55,7 @@ DROP TABLE IF EXISTS `editorial`;
 CREATE TABLE `editorial` (
   `id` int NOT NULL,
   `nombre` varchar(45) DEFAULT NULL,
+  `tipo` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -79,12 +79,11 @@ DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE `usuario` (
   `id` int NOT NULL,
   `usuario` varchar(40) DEFAULT NULL,
-  `password` varchar(100) DEFAULT NULL,
+  `password` varchar(500) DEFAULT NULL,
   `nombre` varchar(100) DEFAULT NULL,
   `apellido` varchar(100) DEFAULT NULL,
   `rol` varchar(45) DEFAULT NULL,
   `fecha_creacion` date DEFAULT NULL,
-  `mail` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -95,6 +94,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` VALUES (1,'admin','1234','miguel','ramirez','admin',NULL);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -137,4 +137,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-02-02 11:30:52
+-- Dump completed on 2021-02-03  9:27:29

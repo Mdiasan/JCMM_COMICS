@@ -16,8 +16,8 @@
 
     <div class="row">
 
-    <?php include("includes/navigation-2.php"); ?>
-    
+      <?php include("includes/navigation-2.php"); ?>
+
       <div class="col-sm-9 mt-5">
         <div class="row">
           <div class="col">
@@ -50,24 +50,33 @@
                     <h3>35$</h3>
                   </div>
                   <div class="col">
-                  <form id="form">
-  <p class="clasificacion">
-      <button class="btn-warning"  onclick="null" type="button" ><a href="#valorar" class="text-dark" style="text-decoration: none;">Valorar</a></button>
-    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-    --><label for="radio1">★</label><!--
-    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-    --><label for="radio2">★</label><!--
-    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-    --><label for="radio3">★</label><!--
-    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-    --><label for="radio4">★</label><!--
-    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                    <form id="form">
+                      <p class="clasificacion">
+                        
+                        <input id="radio1" type="radio" name="estrellas" value="5" checked >
+                        <!--
+    --><label for="radio1">★</label>
+                        <!--
+    --><input id="radio2" type="radio" name="estrellas" selected value="4" >
+                        <!--
+    --><label for="radio2">★</label>
+                        <!--
+    --><input id="radio3" type="radio" name="estrellas" value="3" >
+                        <!--
+    --><label for="radio3">★</label>
+                        <!--
+    --><input id="radio4" type="radio" name="estrellas" value="2">
+                        <!--
+    --><label for="radio4">★</label>
+                        <!--
+    --><input id="radio5" type="radio" name="estrellas" value="1">
+                        <!--
     --><label for="radio5">★</label>
-        
-  </p>
-</form>
+
+                      </p>
+                    </form>
                   </div>
-                  
+
                 </div>
                 <div class="row">
                   <div class="col">
@@ -80,7 +89,7 @@
             </div>
 
             <hr>
-            
+
             <div class="row">
               <div class="col">
                 <form action="carrito.php">
@@ -88,9 +97,9 @@
                 </form>
               </div>
             </div>
-            
+
           </div>
-          
+
         </div>
         <div class="row mt-5">
           <div class="col">
@@ -138,13 +147,87 @@
           </div>
         </div>
         <?php include("includes/Editor.php"); ?>
+        <div style="margin-top: 5%; " name="comentarios" >
+          <h5 class="text-dark">Nombre Usuario</h5>
+          <hr>
+          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
+        </div>
+
+        <div style="margin-top: 5%;" name="comentarios" >
+          <h5 class="text-dark">Nombre Usuario</h5>
+          <hr>
+          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
+        </div>
+        <div style="margin-top: 5%; display: none; " name="comentarios" >
+          <h5 class="text-dark">Nombre Usuario</h5>
+          <hr>
+          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
+        </div>
+
+        <div style="margin-top: 5%; display: none;" name="comentarios" >
+          <h5 class="text-dark">Nombre Usuario</h5>
+          <hr>
+          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
+        </div>
+        <div style="margin-top: 5%; display: none; " name="comentarios" >
+          <h5 class="text-dark">Nombre Usuario</h5>
+          <hr>
+          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
+        </div>
+
+        <div style="margin-top: 5%; display: none;" name="comentarios" >
+          <h5 class="text-dark">Nombre Usuario</h5>
+          <hr>
+          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
+        </div>
+        <div style="margin-top: 5%; display: none; " name="comentarios" >
+          <h5 class="text-dark">Nombre Usuario</h5>
+          <hr>
+          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
+        </div>
+
+        <div style="margin-top: 5%; display: none;" name="comentarios" >
+          <h5 class="text-dark">Nombre Usuario</h5>
+          <hr>
+          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-primary"  style="margin: auto;" onclick="verTodosLosComentarios()" id="mas">ver más</button>
+          <button class="btn btn-primary " style="display: none; margin: auto;" onclick="verMenosComentarios()" id="menos" >ver menos</button>
+      
+      
+      </div>
       </div>
     </div>
 
     <?php include("includes/footer.php"); ?>
   </div>
 
- 
-</body>
 
+</body>
+<script>
+  function verTodosLosComentarios(){
+    var arrayDiv = document.getElementsByName("comentarios");
+    arrayDiv.forEach(element => {
+      element.style.display= 'block';
+    });
+
+    document.getElementById('mas').style.display='none';
+    document.getElementById('menos').style.display='block';
+    
+  }
+  function verMenosComentarios(){
+    var arrayDiv = document.getElementsByName("comentarios");
+      for (let index = 0; index < arrayDiv.length; index++) {
+        if(index != 1 && index!= 0){
+          arrayDiv[index].style.display='none';
+        }
+        
+       
+        
+      }
+    document.getElementById('mas').style.display='block';
+    document.getElementById('menos').style.display='none';
+  }
+</script>
 </html>

@@ -1,4 +1,17 @@
 <?php include("includes/a_config.php"); ?>
+<?php 
+require_once 'bbdd/model/Usuario.php';
+require_once 'bbdd/Controller/usuarioController.php';
+
+if(isset($_POST['enviar'])){
+
+}
+
+
+
+
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -19,6 +32,7 @@
                    
                     <div class="p-1 formLogeo">
                     <h1>logueate</h1>
+                    <div class="errorDiv">usuario o  contraseña incorrectos vuelva a intentarlo</div>
                         <form action=""  class="needs-validation"   method="POST" novalidate>
 
 
