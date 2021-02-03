@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.19, for Win64 (x86_64)
 --
 -- Host: localhost    Database: jcmm-comics
 -- ------------------------------------------------------
--- Server version	8.0.22
+-- Server version	8.0.19
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -44,6 +44,7 @@ CREATE TABLE `comic` (
 
 LOCK TABLES `comic` WRITE;
 /*!40000 ALTER TABLE `comic` DISABLE KEYS */;
+INSERT INTO `comic` VALUES (1,'Archivo De Las Tormentas','Hace seis años, un asesino mató al rey Alethi, y ahora está asesinando a los gobernantes de todo Roshar; entre sus principales objetivos es Dalinar. ...',25,'media/images/archivo-de-las-tormentas.png',3,10),(2,'Boku No Hero 1º volumen','Se sitúa en un mundo en el cual el 80% de la población mundial ha desarrollado superpoderes. ... Nuestro protagonista, Izuku Midoriya, pertenece a ese 20% de la población que no cuenta con superpodere',20,NULL,5,5),(3,'Broly SSJ4','Broly en una mitica transformacion dentro del no canon',40,NULL,6,5),(4,'Cell','Se trata de un bioandroide creado por el Dr. Gero con la intención de vengarse de Goku por haber acabado con el Ejército Red Ribbon.',30,NULL,6,5),(5,'La Era Marvel De Los Comics','Fue una época de héroes poderosos, monstruos incomprendidos y complejos villanos. Con la publicación, en noviembre de 1961, del primer número de Los Cuatro Fantásticos, el gigante de los cómics Marvel',20,NULL,1,5),(6,'Deku','Protagonista de la serie de heroes my hero academia en una mitica pose',30,NULL,6,5),(7,'El Caballero Blanco','Cuando El Joker fue un héroe. Es difícil no caer rendido ante una premisa tan sugerente como un Joker convertido en héroe, un Batman venido a medio villano y un guion elaborado por el hombre que está ',35,NULL,2,15),(8,'Goku vs Nappa','Protagonista de la serie de dragon ball en una legendaria pose derrotando a Nappa',50,NULL,6,5),(9,'Goku Ultra Instinto Dominado','Figura del anime de dragon ball super en la que estan son goku con su tecnica mas poderosa y una pose legendaria',40,NULL,6,5),(10,'Catan','Catan es un juego de mesa para toda la familia que se ha convertido en un fenómeno mundial. ... Se trata de un juego que aúna la estrategia, la astucia y la capacidad para negociar y en el que los jug',20,NULL,7,5);
 /*!40000 ALTER TABLE `comic` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -68,6 +69,7 @@ CREATE TABLE `editorial` (
 
 LOCK TABLES `editorial` WRITE;
 /*!40000 ALTER TABLE `editorial` DISABLE KEYS */;
+INSERT INTO `editorial` VALUES (1,'Marvel','Comic'),(2,'DC','Comic'),(3,'Nova','Libro'),(4,'Kōdansha','Manga'),(5,'Shūeisha','Manga'),(6,'Banpresto','Figura'),(7,'Devir','Juego');
 /*!40000 ALTER TABLE `editorial` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -96,7 +98,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'admin','1234','miguel','ramirez','admin',NULL);
+INSERT INTO `usuario` VALUES (1,'admin','1234','miguel','ramirez','admin',NULL),(2,'admin2','1234','miguel','diaz','admin',NULL),(3,'admin3','1234','juan carlos','cubero','admin',NULL);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,4 +141,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-02-03  9:27:29
+-- Dump completed on 2021-02-03 10:31:55
