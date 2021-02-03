@@ -22,7 +22,7 @@
         <div class="row">
           <div class="col">
             <div class="text-center">
-              <img id="imagenComic" src="media/images/archivo.png" alt="">
+              <img id="imagenComic" src="media/images/archivo de las tormentas.png" alt="">
             </div>
 
           </div>

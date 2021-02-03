@@ -56,7 +56,7 @@
                     <div class="card-deck mt-5">
 
                         <div class="card">
-                            <img class="card-img-top" src="media/images/spiderman negro.png" alt="Card image">
+                            <img class="card-img-top" src="media/images/superior spiderman.png" alt="Card image">
                             <div class="card-body text-center">
                                 <h4 class="card-title">comic 1</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
@@ -66,7 +66,7 @@
 
 
                         <div class="card">
-                            <img class="card-img-top" src="media/images/thanos.png" alt="Card image">
+                            <img class="card-img-top" src="media/images/guantelete del infinito.png" alt="Card image">
                             <div class="card-body text-center">
                                 <h4 class="card-title">comic 1</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
@@ -87,7 +87,7 @@
                     <div class="card-deck mt-5">
 
                         <div class="card">
-                            <img class="card-img-top" src="media/images/cel.png" alt="Card image">
+                            <img class="card-img-top" src="media/images/cell.png" alt="Card image">
                             <div class="card-body text-center">
                                 <h4 class="card-title">comic 1</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
@@ -97,7 +97,7 @@
 
 
                         <div class="card">
-                            <img class="card-img-top" src="media/images/archivo.png" alt="Card image">
+                            <img class="card-img-top" src="media/images/archivo de las tormentas.png" alt="Card image">
                             <div class="card-body text-center">
                                 <h4 class="card-title">comic 1</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>

@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/archivo.png" alt="Card image">
+                  <img class="card-img-top img-fluid" src="media/images/archivo de las tormentas.png" alt="Card image">
                   <div class="card-body text-center">
                     <h4 class="card-title">Palabras Radiantes</h4>
                     <p class="card-text">Hace seis años, un asesino mató al rey Alethi, y ahora está asesinando a los gobernantes de todo Roshar; entre sus principales objetivos es Dalinar. ...</p>

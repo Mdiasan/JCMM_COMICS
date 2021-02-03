@@ -25,7 +25,7 @@
                 <div class="col mt-5 mb-5">
                     <div class="card-deck">
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="media/images/spiderman negro.png" alt="Card image">
+                            <img class="card-img-top img-fluid" src="media/images/superior spiderman.png" alt="Card image">
                             <div class="card-body text-center">
                                 <h4 class="card-title">Superior Spider-man</h4>
                                 <p class="card-text">El mayor acontecimiento arácnido del año continúa, de la mano de J.J. Abrams (Star Trek, Perdidos), Henry Abrams y Sara Pichelli (Spider-Man, Los 4 Fantásticos). El primer choque con Cadavérico no sale bien. ¿Cuál será el impacto de este villano?</p>
@@ -34,7 +34,7 @@
                         </div>
 
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="media/images/thanos.png" alt="Card image">
+                            <img class="card-img-top img-fluid" src="media/images/guantelete del infinito.png" alt="Card image">
                             <div class="card-body text-center">
                                 <h4 class="card-title">El Guantelete del Infinito</h4>
                                 <p class="card-text">Para Thanos, el Guantelete del Infinito es el Santo Grial, el premio definitivo por su adoración hacia la muerte. Con él, lo controla todo. Liderados por Adam Warlock, los superhéroes de la Tierra representan la última esperanza del Universo.</p>

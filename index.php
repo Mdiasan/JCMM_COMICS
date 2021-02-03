@@ -73,7 +73,7 @@ session_start();
               <div class="card-deck">
 
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/thanos.png" alt="Card image">
+                  <img class="card-img-top img-fluid" src="media/images/guantelete del infinito.png" alt="Card image">
                   <div class="card-body text-center">
                     <h2 class="card-title">El Guantelete del infinito</h2>
                     <p class="card-text">Cuando Jim Starlin decidió resucitar a Thanos, que llevaba veinte años muerto (unos diez en tiempo Marvel) lo hizo en la colección de Estela Plateada, la cual era perfecta para narrar eventos de índole cósmica, pero el problema, más por suerte que por desgracia, era que lo que Starlin había pensado para Thanos tenía que incluir por fuerza a casi todos los héroes Marvel del momento.</p>
