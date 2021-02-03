@@ -9,8 +9,14 @@
   <div class="collapse navbar-collapse" id="navbar-list-2">
     <ul class="navbar-nav">
       <li class="nav-item active">
+        <?php if(!isset($_SESSION['usuario'])){ ?>
+
         <a class="nav-link" href="login.php"><i class="fas fa-user"></i> Iniciar Sesion <span class="sr-only"></span></a>
-      </li>
+        <?php }else{ ?>
+          <a class="nav-link" href="login.php"><i class="fas fa-user"></i> <?php echo $_SESSION['usuario']->nombre ?> <span class="sr-only"></span></a>
+
+        <?php } ?>
+        </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php">Inicio</a>
       </li>

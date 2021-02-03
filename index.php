@@ -1,4 +1,10 @@
-<?php include("includes/a_config.php"); ?>
+<?php include("includes/a_config.php"); 
+
+require_once 'bbdd/model/Usuario.php';
+
+session_start();
+
+?>
 <!DOCTYPE html>
 <html>
 

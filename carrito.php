@@ -1,4 +1,6 @@
-<?php include("includes/a_config.php"); ?>
+<?php include("includes/a_config.php"); 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
