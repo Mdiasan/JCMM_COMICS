@@ -1,6 +1,8 @@
 <?php include("includes/a_config.php"); 
 
 require_once 'bbdd/model/Usuario.php';
+require_once 'bbdd/Controller/ComicController.php';
+require_once 'bbdd/model/Comic.php';
 
 session_start();
 
@@ -56,7 +58,7 @@ session_start();
       </div>
 
       <!-- PRODUCTOS ORDENADOS POR CATEGORIAS -->
-      <!-- MARVEL -->
+      <!-- NOVEDADES -->
 
 
       <div class="row mt-5">
@@ -64,15 +66,44 @@ session_start();
           <div class="row">
             <div class="col">
               <div class="text-center bg-dark">
-                <h1 class=" text-white">novedades</h1>
+                <h1 class=" text-white">Novedades</h1>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <div class="card-deck">
+                <?php $arrayNovedades= ComicController::getNovedades(4);
+                  foreach ($arrayNovedades as $key => $value) {
+                  
+                
+                  ?>
+                  <?php 
+                      if($key ==2){
+                        ?>
+                        
+                        <div class="w-100 d-none d-sm-block d-md-none">
+                  <!-- wrap every 2 on sm-->
+                </div>
 
-                <div class="card">
+                        
+                        
+                        <?php
+                      }
+                      ?>
+                  
+                  
+                  <div class="card">
+                  <img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image">
+                  <div class="card-body text-center">
+                    <h2 class="card-title"><?php echo $value->titulo ?></h2>
+                    <p class="card-text"><?php echo $value->descripcion ?></p>
+                  </div>
+                  <a href="precio2.php?articulo=<?php echo $value->id?>" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
+                </div>
+                      
+                  <?php  } ?>
+  <!--              <div class="card">
                   <img class="card-img-top img-fluid" src="media/images/guantelete del infinito.png" alt="Card image">
                   <div class="card-body text-center">
                     <h2 class="card-title">El Guantelete del infinito</h2>
@@ -92,7 +123,7 @@ session_start();
                 </div>
 
                 <div class="w-100 d-none d-sm-block d-md-none">
-                  <!-- wrap every 2 on sm-->
+                  S
                 </div>
 
 
@@ -111,7 +142,7 @@ session_start();
                     <p class="card-text">La broma asesina es una historia centrada en el Joker, la antítesis de Batman por definición, y en la relación que éste y Batman han llegado a desarrollar a lo largo de los años.</p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -130,16 +161,34 @@ session_start();
           <div class="row">
             <div class="col">
               <div class="card-deck">
-
-                <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/figura_goku_migatte100.jpg" alt="Card image">
-                  <div class="card-body text-center">
-                    <h2 class="card-title">goku Ultra instinto 100%</h2>
-                    <p class="card-text">Figura del anime de dragon ball super en la que estan son goku con su tecnica mas poderosa y una pose legendaria</p>
-                  </div>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
+              <?php $arrayNovedades= ComicController::getComicPorTipo('figura',4);
+                  foreach ($arrayNovedades as $key => $value) {
+                  
+                
+                  ?>
+                  <?php 
+                      if($key ==2){
+                        ?>
+                        
+                        <div class="w-100 d-none d-sm-block d-md-none">
+                  <!-- wrap every 2 on sm-->
                 </div>
 
+                        
+                        
+                        <?php
+                      }
+                      ?>
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image">
+                  <div class="card-body text-center">
+                    <h2 class="card-title"><?php echo $value->titulo ?></h2>
+                    <p class="card-text"><?php echo $value->descripcion ?></p>
+                  </div>
+                  <a href="precio2.php?articulo=<?php echo $value->id?>" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
+                </div>
+                <?php  } ?>
+<!--
 
                 <div class="card">
                   <img class="card-img-top img-fluid" src="media/images/deku.jpg" alt="Card image">
@@ -151,7 +200,7 @@ session_start();
                 </div>
 
                 <div class="w-100 d-none d-sm-block d-md-none">
-                  <!-- wrap every 2 on sm-->
+                 
                 </div>
 
 
@@ -170,7 +219,7 @@ session_start();
                     <p class="card-text">Broly en una mitica transformacion dentro del no canon </p>
                   </div>
                   <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-                </div>
+                </div>-->
               </div>
             </div>
           </div>
@@ -189,45 +238,34 @@ session_start();
           <div class="row">
             <div class="col">
               <div class="card-deck">
-
-                <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/la broma asesina.png" alt="Card image">
-                  <div class="card-body text-center">
-                    <h2 class="card-title">la broma asesina</h2>
-                    <p class="card-text">La broma asesina es una historia centrada en el Joker, la antítesis de Batman por definición, y en la relación que éste y Batman han llegado a desarrollar a lo largo de los años.</p>
-                  </div>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-                </div>
-
-
-                <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/el caballero blancp.png" alt="Card image">
-                  <div class="card-body text-center">
-                    <h2 class="card-title">caballero blanco</h2>
-                    <p class="card-text">Cuando El Joker fue un héroe. ... Es difícil no caer rendido ante una premisa tan sugerente como un Joker convertido en héroe, un Batman venido a medio villano y un guion elaborado por el hombre que está detrás de Punk Rock Jesús, uno de los mejores cómics de la pasada década.</p>
-                  </div>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-                </div>
-                <div class="w-100 d-none d-sm-block d-md-none">
+              <?php $arrayNovedades= ComicController::getComicPorNombreEditorial("DC",4);
+                  foreach ($arrayNovedades as $key => $value) {
+                  
+                
+                  ?>
+                  <?php 
+                      if($key ==2){
+                        ?>
+                        
+                        <div class="w-100 d-none d-sm-block d-md-none">
                   <!-- wrap every 2 on sm-->
                 </div>
 
+                        
+                        
+                        <?php
+                      }
+                      ?>
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/muerte de la familia.png" alt="Card image">
+                  <img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image">
                   <div class="card-body text-center">
-                    <h2 class="card-title">Una Muerte En La Familia</h2>
-                    <p class="card-text">Publicado originalmente en diciembre de 1983. La primera aparición de Jason Todd como Robin. El nuevo compañero de Batman acudirá en su rescate en plena batalla contra el Joker en Guatemala.</p>
+                    <h2 class="card-title"><?php echo $value->titulo ?></h2>
+                    <p class="card-text"><?php echo $value->descripcion ?></p>
                   </div>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
+                  <a href="precio2.php?articulo=<?php echo $value->id?>" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
-                <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/PP.png" alt="Card image">
-                  <div class="card-body text-center">
-                    <h2 class="card-title">Principe payaso del crimen</h2>
-                    <p class="card-text">Conmemora los 80 años transcurridos desde la presentación del Joker, uno de los villanos más célebres de la historia de la cultura pop... ¡El Príncipe del Crimen!</p>
-                  </div>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-                </div>
+                <?php  } ?>
+                
               </div>
             </div>
           </div>
