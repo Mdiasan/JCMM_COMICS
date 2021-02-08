@@ -64,9 +64,14 @@ session_start();
                         
 
                     </div>
+                    <div class="form-group">
+                        <?php include("includes/captcha.php"); ?>
+                    
+                    </div>
                         <div class="text-center"> 
-                            <input class="form-control-3 btn btn-warning mt-3" type="submit" id="btn"  name="enviar"  disabled >
+                            <input class="form-control-3 btn btn-warning mt-3"  onclick="ValidaWeb()" type="submit" id="btn"  value="Enviar"  disabled >
 
+                        
                         </div>
                     </form>
                 </div>
@@ -78,6 +83,7 @@ session_start();
     </div>
 </body>
 <script>
+
 // Disable form submissions if there are invalid fields
 (function() {
   'use strict';
@@ -123,5 +129,7 @@ session_start();
 
 
     setInterval('validarContraseña()',10);
+
+
 </script>
 </html>
