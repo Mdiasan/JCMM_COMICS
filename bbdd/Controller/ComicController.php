@@ -1,22 +1,46 @@
 <?php 
 require_once 'Conexion.php';
-require_once '../model/Comic.php';
+require_once './bbdd/model/Comic.php';
 class ComicController {
-    static function getComicPorEditorial($editorial, $numero=false){
+    static function getComicPorTipo($tipo, $numero=false){
         $c= new Conexion();
        
         if($numero){
-            $result = $c->query("select * from comic where editorial='$editorial' limit $numero");
+            $result = $c->query("select c.* FROM comic as c , editorial  as e where e.tipo='$tipo' and e.id=c.editorial_id limit $numero");
 
         }else{
-            $result = $c->query("select * from comic where editorial='$editorial' ");
+            $result = $c->query("select c.* FROM comic as c , editorial  as e where e.tipo='$tipo' and e.id=c.editorial_id ");
         }
       
 
         if($result->rowCount()){
            $comic= new Comic();
            while($a=$result->fetchObject()){
-            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->editorial,$a->stock);
+            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->imagen,$a->editorial_id,$a->stock);
+            $arrayComic[]=clone($comic);
+            
+           }
+           return $arrayComic;
+        }else{
+            return false;
+        }
+    }
+
+    static function getComicPorNombreEditorial($nombre, $numero=false){
+        $c= new Conexion();
+       
+        if($numero){
+            $result = $c->query("select c.* FROM comic as c , editorial  as e where e.nombre='$nombre' and e.id=c.editorial_id limit $numero");
+
+        }else{
+            $result = $c->query("select c.* FROM comic as c , editorial  as e where e.nombre='$nombre' and e.id=c.editorial_id  ");
+        }
+      
+
+        if($result->rowCount()){
+           $comic= new Comic();
+           while($a=$result->fetchObject()){
+            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->imagen,$a->editorial_id,$a->stock);
             $arrayComic[]=clone($comic);
             
            }
@@ -29,17 +53,17 @@ class ComicController {
         $c= new Conexion();
        
         if($numero){
-            $result = $c->query("select * from comic limit $numero");
+            $result = $c->query("SELECT * FROM comic  order by id  desc limit $numero");
 
         }else{
-            $result = $c->query("select * from comic ");
+            $result = $c->query("select * from comic  order by id  desc ");
         }
       
 
         if($result->rowCount()){
            $comic= new Comic();
            while($a=$result->fetchObject()){
-            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->editorial,$a->stock);
+            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->imagen,$a->editorial_id,$a->stock);
             $arrayComic[]=clone($comic);
             
            }
@@ -52,7 +76,7 @@ class ComicController {
         $c= new Conexion();
        
         if($numero){
-            $result = $c->query("select * from comic order by precio desc limit $numero ");
+            $result = $c->query("select * from comic order by precio asc limit $numero ");
 
         }else{
             $result = $c->query("select * from comic order by precio desc ");
@@ -62,7 +86,7 @@ class ComicController {
         if($result->rowCount()){
            $comic= new Comic();
            while($a=$result->fetchObject()){
-            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->editorial,$a->stock);
+            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->imagen,$a->editorial_id,$a->stock);
             $arrayComic[]=clone($comic);
             
            }

@@ -1,12 +1,17 @@
 <?php include("includes/a_config.php"); ?>
 <?php 
+require_once 'bbdd/Controller/UsuarioController.php';
 require_once 'bbdd/model/Usuario.php';
-require_once 'bbdd/Controller/usuarioController.php';
+session_start();
 
-if(isset($_POST['enviar'])){
 
+if(isset($_POST['Enviar'])){
+    
+    $cliente = UsuarioController::logueoCliente($_POST['usuario'],$_POST['contraseña']);
+    $_SESSION['usuario']=$cliente;
+
+    header("Location:./index.php");
 }
-
 
 
 
@@ -31,7 +36,7 @@ if(isset($_POST['enviar'])){
 
                    
                     <div class="p-1 formLogeo">
-                    <h1>logueate</h1>
+                    <h1 class="text-dark">logueate</h1>
                     <div class="errorDiv">usuario o  contraseña incorrectos vuelva a intentarlo</div>
                         <form action=""  class="needs-validation"   method="POST" novalidate>
 
@@ -50,7 +55,7 @@ if(isset($_POST['enviar'])){
                                 <div class="invalid-feedback">Please fill out this field.</div>
                             </div>  <!-- fin DIV GROUP DE CONTRASEÑA-->
                          <div class="text-center">
-                         <input type="submit" class="form-control-3 btn btn-warning mt-3" value="Enviar">
+                         <input type="submit" class="form-control-3 btn btn-warning mt-3" name="Enviar">
                         </div>
 
 

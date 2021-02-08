@@ -1,4 +1,12 @@
-<?php include("includes/a_config.php"); ?>
+<?php include("includes/a_config.php"); 
+require_once 'bbdd/model/Usuario.php';
+require_once 'bbdd/Controller/ComicController.php';
+require_once 'bbdd/model/Comic.php';
+
+session_start();
+
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -25,33 +33,24 @@
         <div class="col mt-5 mb-5">
           <div class="card-deck">
 
-            <div class="card">
-              <img class="card-img-top img-fluid" src="media/images/PP.png" alt="Card image">
-              <div class="card-body text-center">
-                <h4 class="card-title">Principe payaso del crimen</h4>
-                <p class="card-text">Conmemora los 80 años transcurridos desde la presentación del Joker, uno de los villanos más célebres de la historia de la cultura pop... ¡El Príncipe del Crimen!</p>
-              </div>
-              <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-            </div>
-
-
-            <div class="card">
-              <img class="card-img-top img-fluid" src="media/images/muerte de la familia.png" alt="Card image">
-              <div class="card-body text-center">
-                <h4 class="card-title">Una Muerte En La Familia</h4>
-                <p class="card-text">Publicado originalmente en diciembre de 1983. La primera aparición de Jason Todd como Robin. El nuevo compañero de Batman acudirá en su rescate en plena batalla contra el Joker en Guatemala.</p>
-              </div>
-              <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-            </div>
-
-            <div class="card">
-              <img class="card-img-top img-fluid" src="media/images/la broma asesina.png" alt="Card image">
-              <div class="card-body text-center">
-                <h4 class="card-title">la broma asesina</h4>
-                <p class="card-text">La broma asesina es una historia centrada en el Joker, la antítesis de Batman por definición, y en la relación que éste y Batman han llegado a desarrollar a lo largo de los años.</p>
-              </div>
-              <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-            </div>
+          <?php $arrayNovedades= ComicController::getComicPorNombreEditorial("DC");
+                  foreach ($arrayNovedades as $key => $value) {
+                  
+                
+                  ?>
+                
+                <div class="w-100 d-none d-sm-block d-lg-none">
+                  <!-- wrap every 2 on sm-->
+                </div>
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image">
+                  <div class="card-body text-center">
+                    <h2 class="card-title"><?php echo $value->titulo ?></h2>
+                    <p class="card-text"><?php echo $value->descripcion ?></p>
+                  </div>
+                  <a href="precio2.php?articulo=<?php echo $value->id?>" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
+                </div>
+                <?php  } ?>
             
           </div>
         </div>

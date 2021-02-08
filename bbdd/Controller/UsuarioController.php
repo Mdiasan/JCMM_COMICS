@@ -1,5 +1,6 @@
 <?php 
 require_once 'Conexion.php';
+require_once './bbdd/model/Usuario.php';
 class UsuarioController {
     static function logueoCliente($usu,$pass){
         $c= new Conexion();
@@ -7,7 +8,7 @@ class UsuarioController {
 
         if($result->rowCount()){
             $a = $result->fetchObject();
-            $cliente = $a;
+            $cliente = new Usuario($a->id,$a->usuario,"",$a->nombre,$a->apellido,$a->fecha_creacion);
             return $cliente;
         }else{
             return false;
