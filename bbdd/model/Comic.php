@@ -8,8 +8,9 @@ class Comic {
     private $imagen;
     private $editorial;
     private $stock;
+    private $cantidad;
 
-    function __construct($id="",$titulo="",$descripcion="",$precio="", $imagen="", $editorial="",$stock=""){
+    function __construct($id="",$titulo="",$descripcion="",$precio="", $imagen="", $editorial="",$stock="",$cantidad=""){
         $this->id =$id;
         $this->titulo = $titulo;
         $this->descripcion = $descripcion;
@@ -17,6 +18,8 @@ class Comic {
         $this->editorial = $editorial;
         $this->stock = $stock;
         $this->imagen=$imagen;
+        $this->cantidad=$cantidad;
+        
     }
 
     public function __get($name){
@@ -26,7 +29,7 @@ class Comic {
        $this->$name=$value; 
     }
 
-    function nuevoComic($id="",$titulo="",$descripcion="",$precio="",$imagen="",$editorial="",$stock=""){
+    function nuevoComic($id="",$titulo="",$descripcion="",$precio="",$imagen="",$editorial="",$stock="",$cantidad=""){
       $this->id =$id;
       $this->titulo = $titulo;
       $this->descripcion = $descripcion;
@@ -34,6 +37,7 @@ class Comic {
       $this->editorial = $editorial;
       $this->stock = $stock;
       $this->imagen=$imagen;
+      $this->cantidad=$cantidad;
 
   }
 }

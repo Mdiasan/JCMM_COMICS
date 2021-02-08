@@ -1,4 +1,22 @@
-<?php include("includes/a_config.php"); ?>
+<?php include("includes/a_config.php");
+
+require_once 'bbdd/Controller/UsuarioController.php';
+require_once 'bbdd/model/Usuario.php';
+require_once 'bbdd/model/Comic.php';
+
+session_start();
+
+
+    if(isset($_POST["usuario"])){
+        
+        $passwordCifrada =   md5($_POST['contraseña']);
+        $usuario =  new Usuario("",$_POST['usuario'],$passwordCifrada,$_POST['nombre'],$_POST['apellidos'],$_POST['mail']);
+        UsuarioController::registrar($usuario);
+    }
+
+
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -47,7 +65,7 @@
 
                     </div>
                         <div class="text-center"> 
-                            <input class="form-control-3 btn btn-warning mt-3  " type="submit" id="btn"  value="Enviar"  disabled >
+                            <input class="form-control-3 btn btn-warning mt-3" type="submit" id="btn"  name="enviar"  disabled >
 
                         </div>
                     </form>

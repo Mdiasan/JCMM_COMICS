@@ -1,3 +1,13 @@
+<?php 
+if(isset($_SESSION['carrito'])){
+  $total=0;
+  foreach ($_SESSION["carrito"] as $key => $value) {
+    $total += $value->precio * $value->cantidad;
+  }
+ 
+}
+
+?>
 <nav class="navbar navbar-dark bg-danger navbar-expand-lg">
   <a class="navbar-brand" href="index.php">
     <img src="/media/images/logo-jcmm-128x128.png" width="30" height="30" alt="logo">
@@ -71,7 +81,12 @@
     <div class="ml-auto">
       <form class="form-inline">
         <div class="mr-3"> <a class="fas fa-shopping-cart text-white" href="carrito.php"></a>
-          <a class="text-white" href="carrito.php"> 0,00€</a></div>
+          <a class="text-white" href="carrito.php"> <?php 
+          if(isset($_SESSION['carrito'])){
+            echo $total ."€";}else
+            { echo " 0,00€"; 
+            } ?>
+            </a></div>
 
         <input class="form-control mr-3 " type="text" placeholder="Busca aqui tu cómic">
         <button class="btn btn-warning  d-block d-sm-inline" type="submit">Buscar</button>

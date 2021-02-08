@@ -4,6 +4,28 @@ require_once 'bbdd/Controller/ComicController.php';
 require_once 'bbdd/model/Comic.php';
 
 session_start();
+
+if(!isset($_GET["articulo"])){
+  header("Location:/index.php");
+}
+
+
+if(isset($_POST['enviar'])){
+  $c = ComicController::getComicById($_POST['enviar']);
+  if(isset( $_SESSION['carrito'][$c->id])){
+     $_SESSION['carrito'][$c->id]->cantidad ++ ;
+
+  }else{
+    $c->cantidad=1;
+    $_SESSION['carrito'][$c->id]=$c;
+  }
+
+  header("Location:/carrito.php");
+}
+$comic = ComicController::getComicById($_GET['articulo']);
+
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,32 +50,25 @@ session_start();
         <div class="row">
           <div class="col">
             <div class="text-center">
-              <img id="imagenComic" src="media/images/archivo de las tormentas.png" alt="">
+              <img id="imagenComic" src="media/images/<?php echo $comic->imagen ?>" alt="">
             </div>
 
           </div>
           <div class="col">
-            <div class="row">
-              <div class="col">
-                <div class="bg-danger text-center">
-                  <h4>BRANDON ANDERSON</h4>
-                </div>
-
-              </div>
-            </div>
+            
             <div class="row">
               <div class="col">
                 <div class="row">
                   <div class="col">
                     <div class="bg-danger text-center">
-                      <h4>palabras radiantes</h4>
+                      <h4><?php echo $comic->titulo ?></h4>
                     </div>
 
                   </div>
                 </div>
                 <div class="row">
                   <div class="col">
-                    <h3>35$</h3>
+                    <h3><?php echo $comic->precio ?>€</h3>
                   </div>
                   <div class="col">
                     <form id="form">
@@ -86,7 +101,7 @@ session_start();
                 </div>
                 <div class="row">
                   <div class="col">
-                    <p>La aclamada continuación de El camino de los reyes es, como el primer volumen de "El Archivo de las Tormentas", el resultado de más de una decada de construcción y escritura de universos, convertida en una obra maestra de la fantasía contemporánea en diez volúmenes.</p>
+                    <p><?php echo $comic->descripcion ?></p>
                   </div>
                 </div>
 
@@ -98,8 +113,8 @@ session_start();
 
             <div class="row">
               <div class="col">
-                <form action="carrito.php">
-                  <button class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                <form action="" method="POST">
+                  <button class="btn btn-warning" type="submit" name="enviar" value=<?php echo $comic->id ?>><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                 </form>
               </div>
             </div>

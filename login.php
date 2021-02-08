@@ -2,15 +2,25 @@
 <?php 
 require_once 'bbdd/Controller/UsuarioController.php';
 require_once 'bbdd/model/Usuario.php';
+require_once 'bbdd/model/Comic.php';
+
 session_start();
 
 
 if(isset($_POST['Enviar'])){
-    
-    $cliente = UsuarioController::logueoCliente($_POST['usuario'],$_POST['contraseña']);
-    $_SESSION['usuario']=$cliente;
+    $errorEnLogueo=false;
+    $pass =  md5($_POST['contraseña']);
+    $cliente = UsuarioController::logueoCliente($_POST['usuario'],$pass);
+    if(!$cliente){
+        $errorEnLogueo=true;
 
-    header("Location:./index.php");
+    }else{
+        $_SESSION['usuario']=$cliente;
+        header("Location:./index.php");
+    }
+   
+
+   
 }
 
 

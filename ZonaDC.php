@@ -4,7 +4,9 @@ require_once 'bbdd/Controller/ComicController.php';
 require_once 'bbdd/model/Comic.php';
 
 session_start();
-
+if(!isset($_POST['pagina'])){
+    $_POST['pagina']=0;
+}
 
 ?>
 <!DOCTYPE html>
@@ -32,8 +34,10 @@ session_start();
         </div>
         <div class="col mt-5 mb-5">
           <div class="card-deck">
-
-          <?php $arrayNovedades= ComicController::getComicPorNombreEditorial("DC");
+    
+            <?php
+          
+            $arrayNovedades= ComicController::getComicPorNombreEditorialPaginado($_POST['pagina'],3,"DC");
                   foreach ($arrayNovedades as $key => $value) {
                   
                 
@@ -53,6 +57,28 @@ session_start();
                 <?php  } ?>
             
           </div>
+          <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+
+            
+                  <li class="page-item disabled">
+                     <a class="page-link" href="#" >Previous</a>
+                  </li>
+                  <?php 
+
+                   $numero= ComicController::getNumeroComicPorNombreEditorialPaginado("DC");
+                    $numero = ceil(($numero/3));
+                      for ($i=0; $i <$numero ; $i++) { 
+                      
+              ?>
+                  <li class="page-item"><a class="page-link" ><form action="" method="POST"><button type="submit" name="pagina"value=<?php echo ($i)  ?> ><?php echo ($i+1) ?></button></form></a></li>
+
+                  <?php }?>
+                 
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+  </ul>
+</nav>
         </div>
       </div>
     </div>
