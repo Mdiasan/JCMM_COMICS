@@ -46,9 +46,14 @@
                         
 
                     </div>
+                    <div class="form-group">
+                        <?php include("includes/captcha.php"); ?>
+                    
+                    </div>
                         <div class="text-center"> 
-                            <input class="form-control-3 btn btn-warning mt-3  " type="submit" id="btn"  value="Enviar"  disabled >
+                            <input class="form-control-3 btn btn-warning mt-3"  onclick="ValidaWeb()" type="submit" id="btn"  value="Enviar"  disabled >
 
+                        
                         </div>
                     </form>
                 </div>
@@ -60,6 +65,7 @@
     </div>
 </body>
 <script>
+
 // Disable form submissions if there are invalid fields
 (function() {
   'use strict';
@@ -105,5 +111,7 @@
 
 
     setInterval('validarContraseña()',10);
+
+
 </script>
 </html>
