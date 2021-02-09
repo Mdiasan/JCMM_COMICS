@@ -255,8 +255,7 @@ label {
   direction: rtl;
   unicode-bidi: bidi-override; }
 
-label:hover,
-label:hover ~ label {
+.estrellas:hover {
   color: orange; }
 
 input[type="radio"]:checked ~ label {

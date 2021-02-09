@@ -64,19 +64,23 @@ session_start();
                         
 
                     </div>
-                    <div class="form-group">
-                        <?php include("includes/captcha.php"); ?>
                     
                     </div>
                         <div class="text-center"> 
-                            <input class="form-control-3 btn btn-warning mt-3"  onclick="ValidaWeb()" type="submit" id="btn"  value="Enviar"  disabled >
+                            <input class="form-control-3 btn btn-warning mt-3"  type="submit" id="btn"  value="Enviar"  disabled >
 
                         
                         </div>
                     </form>
+                    <div class="form-group text-center formLogeo" >
+                        
+                    <div id="mainCaptcha">
+                    
+
+                    </div>
                 </div>
             </div>
-
+           
         </main>
 
         <?php include("includes/footer.php"); ?>
@@ -103,8 +107,10 @@ session_start();
   }, false);
 })();
 </script>
+<?php include("includes/captcha.php"); ?>
 
 <script>
+var chaptcha= false;
    function validarContraseña(){
         var contrasena= document.getElementById('contraseña').value;
         var repite = document.getElementById('recontraseña').value;
@@ -127,9 +133,29 @@ session_start();
     }
     }
 
+    function comprobarValidacionCaptcha(){
+        
+        if(ValidaWeb()){
+            chaptcha=true;
+            console.log(chaptcha);
+        }else{
+            chaptcha=false;
+        }
+    }
 
-    setInterval('validarContraseña()',10);
+    setInterval("valido()",10);
 
+   function valido(){
+    console.log(chaptcha);
+        if(chaptcha){
+        setInterval('validarContraseña()',10);
+    }
+    }
+   
+    
+    
 
 </script>
+
+
 </html>

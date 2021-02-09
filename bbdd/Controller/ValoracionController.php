@@ -1,6 +1,6 @@
 <?php 
 require_once 'Conexion.php';
-require_once '../model/Valoracion.php';
+require_once 'bbdd/model/Valoracion.php';
 class ValoracionController {
 
     static function getAll($comic){
@@ -25,7 +25,7 @@ class ValoracionController {
         $resultado = $c->query("select avg(valoracion) from valoracion where comics_id=$comic->id");
 
         $media =$resultado->fetchColumn(0);
-        $numero = ceil(($media/3));
+        $numero = ceil(($media));
          return $numero;
          
     }

@@ -308,8 +308,7 @@ label {
   unicode-bidi: bidi-override;
 }
 
-label:hover,
-label:hover ~ label {
+.estrellas:hover {
   color: orange;
 }
 

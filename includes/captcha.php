@@ -46,6 +46,15 @@ function Captcha(mainCaptcha, inputName) {
     input.id = inputName;
     input.className = "form-control";
     div1.appendChild(input);
+    var boton = document.createElement("button");
+    boton.className="btn btn-success"
+    boton.addEventListener("click",function(){
+        comprobarValidacionCaptcha();
+    });
+    boton.value="validar";
+    boton.innerHTML = "validar captcha";
+
+    div1.appendChild(boton);
     div.appendChild(div1);
     contenedor.appendChild(div);
     //columna para el boton
@@ -65,7 +74,12 @@ function Captcha(mainCaptcha, inputName) {
 function ValidCaptcha(mainCaptcha, inputName) {
    
     var string1 = document.cookie;//removeSpaces(readCookie('c'));
+    string1 = string1.split(";");
+    string1=string1[2];
+    string1=string1.replace(/ /g, "");
     var string2 = removeSpaces(getElementValue(inputName));
+    console.log(string1);
+    console.log(string2);
     if (string1 == string2) {
         return true;
     }
@@ -73,6 +87,11 @@ function ValidCaptcha(mainCaptcha, inputName) {
         Captcha(mainCaptcha, inputName);
         return false;
     }
+}
+
+function getElementValue(inputName){
+    var value = document.getElementById(inputName).value;
+    return value;
 }
 
 function removeSpaces(string) {
@@ -128,12 +147,13 @@ function CreaIMG(texto) {
          function ValidaWeb() {
                 if (ValidCaptcha('mainCaptcha', 'txtInput')) {
                      // tu codigo una vez validado
-                     document.write("esto si esta validado");
+                     return true;
                 }else{
-                    document.write("esto no esta validado");
+                    Captcha('mainCaptcha', 'txtInput');
+                    return false;
                 }
          }        
     </script>
-     <div id="mainCaptcha"></div>
+     
     
 
