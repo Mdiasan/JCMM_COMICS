@@ -28,5 +28,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="media/icons/css/animation.css">
 <link rel="stylesheet" href="media/icons/css/fontello.css">
+<script src="https://apis.google.com/js/api:client.js"></script>
+<script type="text/javascript" src="js/google-signin.js"></script>
 
 <link rel="stylesheet" href="css/mystyle.css">
