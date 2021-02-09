@@ -1,6 +1,6 @@
 <?php 
 require_once 'Conexion.php';
-require_once 'bbdd/model/Valoracion.php';
+require_once './bbdd/model/Valoracion.php';
 class ValoracionController {
 
     static function getAll($comic){
@@ -9,7 +9,7 @@ class ValoracionController {
         if($resultado->rowCount()){
             $valoracion =  new Valoracion();
             while($a=$resultado->fetchObject()){
-             $valoracion = $valoracion->nuevaValoracion($resultado->id,$resultado->valoracion,$resultado->comentario,$resultado->usuario_id,$resultado->comics_id);
+             $valoracion->nuevaValoracion($a->id,$a->valoracion,$a->comentario,$a->usuario_id,$a->comics_id);
              $arrayValoraciones[]=clone($valoracion);
              
             }

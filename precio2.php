@@ -1,8 +1,11 @@
 <?php include("includes/a_config.php"); 
 require_once 'bbdd/model/Usuario.php';
 require_once 'bbdd/Controller/ComicController.php';
+require_once 'bbdd/Controller/UsuarioController.php';
 require_once 'bbdd/Controller/ValoracionController.php';
 require_once 'bbdd/model/Comic.php';
+require_once 'bbdd/model/Valoracion.php';
+
 
 
 session_start();
@@ -29,11 +32,7 @@ $comic = ComicController::getComicById($_GET['articulo']);
 $valoracion = ValoracionController::getMediaValoraciones($comic);
 $arrayComentarios= ValoracionController::getAll($comic);
 
-foreach ($arrayComentarios as $key => $value) {
-  echo $value;
 
-
-}
 
 ?>
 <!DOCTYPE html>
@@ -146,12 +145,13 @@ foreach ($arrayComentarios as $key => $value) {
 
         }else{
           foreach ($arrayComentarios as $key => $valora) {
+            
             ?>
             
             <div style="margin-top: 5%; " name="comentarios" >
-               <h5 class="text-dark"></h5>
+               <h5 class="text-dark"><?php  echo  UsuarioController::getNombre($valora->usuario)  ?></h5>
               <hr>
-              <textarea style="width: 100%; resize: none;" disabled></textarea>
+              <textarea style="width: 100%; resize: none;" disabled><?php echo $valora->comentario ?></textarea>
             </div>
 
             
@@ -164,50 +164,13 @@ foreach ($arrayComentarios as $key => $value) {
 
 
        
-        <div style="margin-top: 5%;" name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
-        <div style="margin-top: 5%; display: none; " name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
-
-        <div style="margin-top: 5%; display: none;" name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
-        <div style="margin-top: 5%; display: none; " name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
-
-        <div style="margin-top: 5%; display: none;" name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
-        <div style="margin-top: 5%; display: none; " name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
-
-        <div style="margin-top: 5%; display: none;" name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
+        
         <div class="text-center">
           <button class="btn btn-primary"  style="margin: auto;" onclick="verTodosLosComentarios()" id="mas">ver más</button>
           <button class="btn btn-primary " style="display: none; margin: auto;" onclick="verMenosComentarios()" id="menos" >ver menos</button>
+        
       
-      
-      </div>
+        </div>
       </div>
     </div>
 

@@ -54,4 +54,13 @@ class UsuarioController {
 
        return $id;
     }
+
+    static function getNombre($id){
+        $c =  new Conexion();
+        $result=$c->query("select nombre from usuario where id = $id");
+
+       $nombre = $result->fetchColumn();
+
+       return $nombre;
+    }
 }
