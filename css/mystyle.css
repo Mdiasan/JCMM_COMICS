@@ -90,6 +90,9 @@ h5 {
 .card-body {
   background-color: #34A9DA; }
 
+.card-body-user {
+  background-color: #EF2131; }
+
 .card-img,
 .card-img-botton,
 .card-img-top {
