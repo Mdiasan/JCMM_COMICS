@@ -8,7 +8,7 @@ class UsuarioController {
 
         if($result->rowCount()){
             $a = $result->fetchObject();
-            $cliente = new Usuario($a->id,$a->usuario,"",$a->nombre,$a->apellido,$a->fecha_creacion);
+            $cliente = new Usuario($a->id,$a->usuario,"",$a->nombre,$a->apellido,$a->mail);
             return $cliente;
         }else{
             return false;
