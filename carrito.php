@@ -1,5 +1,11 @@
 <?php include("includes/a_config.php"); 
+
+require_once 'bbdd/model/Usuario.php';
+require_once 'bbdd/Controller/ComicController.php';
+require_once 'bbdd/model/Comic.php';
 session_start();
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -35,30 +41,59 @@ session_start();
                             <h1 class="text-dark">carrito</h1>
                         </div>
                     </div>
-                    <div class="row  mt-5">
-                        <div class="col"><img src="media/images/spiderman negro.png" alt="" class="imagencarrito "></div>
-                        <div class="col">
-                            <p>Superior-Spiderman</p>
-                        </div>
-                        <div class="col">Precio:0,0€</div>
+                    <?php if(isset( $_SESSION['carrito'])){
+                            foreach ( $_SESSION['carrito'] as $key => $value) {
+                                ?>
+                                
+                                
+                                <div class="row  mt-5">
+                                    <div class="col"><img src="media/images/<?php echo $value->imagen ?>" alt="" class="imagencarrito "></div>
+                                    <div class="col">
+                                        <p><?php echo $value->titulo ?></p>
+                                    </div>
+                                    
+                                    <div class="col">X <?php echo $value->cantidad?> </div>
 
-                    </div>
-                    <hr>
-                    <div class="row  mt-5">
-                        <div class="col "><img src="media/images/spiderman negro.png" alt="" class="imagencarrito "></div>
-                        <div class="col">
-                            <p>Superior-Spiderman</p>
-                        </div>
-                        <div class="col">Precio:0,0€</div>
+                                    <div class="col">Precio: <?php echo ($value->precio * $value->cantidad )?> €</div>
 
-                    </div>
-                    <hr>
+                                </div>
+                                 <hr>
+                                
+                                
+                                <?php
+                            }
+                    } else{ 
+?>
+
+                                
+                                    No has seleccionado ningun articulo
+
+                             
+
+              <?php      }?>
+                    
+                    
                     <div class="row">
                         <div class="col">                            <form action="/index.php" class=" form-inline"><button class="btn btn-orange form-control" >Seguir Comprando</button> </form>
  </div>
                         <div class="col"> </div>
                         <div class="col text-inline">
-                            <form action="" class=" form-inline">Total : 0,00€<button class="btn btn-orange form-control" disabled>Pagar</button> </form>
+                            <form action="" class=" form-inline">      
+                            <?php if(isset($_SESSION["carrito"])){
+                                $total=0;
+                                    foreach ($_SESSION["carrito"] as $key => $value) {
+                                      $total += $value->precio * $value->cantidad;
+                                    }
+
+                                    echo "Total : $total € ";
+                            }else{
+                                echo "Total : 0,00€ ";
+                            } ?>
+                            
+                            
+                            
+                            
+                              <button class="btn btn-orange form-control" <?php if(!isset($_SESSION["carrito"])){echo "disabled";} ?> >Pagar</button> </form>
                         </div>
                     </div>
                 </div>

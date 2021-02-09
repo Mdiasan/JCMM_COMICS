@@ -6,14 +6,16 @@ class Usuario {
     private $password;
     private $nombre;
     private $apellidos;
+    private $mail;
     private $fechaCreacion;
 
-    function __construct($id="",$usuario="",$password="",$nombre="",$apellidos="",$fechaCreacion=""){
+    function __construct($id="",$usuario="",$password="",$nombre="",$apellidos="",$mail="",$fechaCreacion=""){
         $this->id =$id;
         $this->usuario = $usuario;
         $this->password = $password;
         $this->nombre = $nombre;
         $this->apellidos = $apellidos;
+        $this->mail = $mail;
         $this->fechaCreacion = $fechaCreacion;
     }
 

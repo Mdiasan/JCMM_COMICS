@@ -119,4 +119,101 @@ class ComicController {
 
 
     }
+
+
+    static function getComicPorTipoPaginado($pagina , $numeroPorPagina , $tipo){
+        $c= new Conexion();
+       
+       $pagina = $pagina * $numeroPorPagina;
+            $result = $c->query("select c.* FROM comic as c , editorial  as e where e.tipo='$tipo' and e.id=c.editorial_id  limit $numeroPorPagina offset $pagina");
+
+       
+      
+
+
+        if($result->rowCount()){
+           $comic= new Comic();
+           while($a=$result->fetchObject()){
+            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->imagen,$a->editorial_id,$a->stock);
+            $arrayComic[]=clone($comic);
+            
+           }
+           return $arrayComic;
+        }else{
+            return false;
+        }
+    }
+
+    static function getComicPorNombreEditorialPaginado($pagina , $numeroPorPagina , $editorial){
+        $c= new Conexion();
+        $pagina=$pagina*$numeroPorPagina;
+       
+        $result = $c->query("select c.* FROM comic as c , editorial  as e where e.nombre='$editorial' and e.id=c.editorial_id limit $numeroPorPagina offset $pagina");
+       
+      
+
+
+        if($result->rowCount()){
+           $comic= new Comic();
+           while($a=$result->fetchObject()){
+            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->imagen,$a->editorial_id,$a->stock);
+            $arrayComic[]=clone($comic);
+            
+           }
+           return $arrayComic;
+        }else{
+            return false;
+        }
+    }
+    static function getNumeroComicPorNombreEditorialPaginado($editorial){
+        $c= new Conexion();
+       
+       
+        $result = $c->query("select count(*) from comic as c , editorial  as e where e.nombre='$editorial' and e.id=c.editorial_id ; ");
+       
+    
+
+
+        
+           return $result->fetchColumn();
+       
+    }
+
+
+    static function getNumeroComicPorTipoPaginado($tipo){
+        $c= new Conexion();
+       
+       
+        $result = $c->query("select count(*) from comic as c , editorial  as e where e.tipo='$tipo' and e.id=c.editorial_id ; ");
+       
+    
+
+
+        
+           return $result->fetchColumn();
+       
+    }
+
+    static function getComicById($id){
+
+ $c= new Conexion();
+       
+       
+        $result = $c->query("select c.* FROM comic as c  where c.id=$id");
+       
+      
+
+
+        if($result->rowCount()){
+           $comic= new Comic();
+           while($a=$result->fetchObject()){
+            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->imagen,$a->editorial_id,$a->stock);
+           
+            
+           }
+           return $comic;
+        }else{
+            return false;
+        }
+    }
 }
