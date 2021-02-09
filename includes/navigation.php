@@ -23,7 +23,7 @@ if(isset($_SESSION['carrito'])){
 
         <a class="nav-link" href="login.php"><i class="fas fa-user"></i> Iniciar Sesion <span class="sr-only"></span></a>
         <?php }else{ ?>
-          <a class="nav-link" href="login.php"><i class="fas fa-user"></i> <?php echo $_SESSION['usuario']->nombre ?> <span class="sr-only"></span></a>
+          <a class="nav-link" href="usuario.php"><i class="fas fa-user"></i> <?php echo $_SESSION['usuario']->nombre ?> <span class="sr-only"></span></a>
 
         <?php } ?>
         </li>
