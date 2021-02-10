@@ -294,6 +294,7 @@ label {
 .cookiealert .acceptcookies {
   margin-left: 10px;
   vertical-align: baseline; }
+
 input[type="radio"]:checked ~ label {
   color: orange; }
 
