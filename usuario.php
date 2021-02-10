@@ -1,5 +1,7 @@
 <?php include("includes/a_config.php");
 require_once 'bbdd/model/Usuario.php';
+require_once 'bbdd/model/Comic.php';
+
 session_start();
 ?>
 <!DOCTYPE html>

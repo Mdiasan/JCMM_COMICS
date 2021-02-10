@@ -309,21 +309,19 @@ label {
 
 .clasificacion {
   direction: rtl;
+
   unicode-bidi: bidi-override;
 }
 
-.estrellas:hover {
-  color: orange;
-}
 
-input[type="radio"]:checked ~ label {
+.dinamico:hover,.dinamico:hover ~ label {
   color: orange;
+
 }
 
 .errorDiv{
   color: $primario;
   display: none;
-
 }
 .formLogeo{
  
@@ -331,4 +329,20 @@ input[type="radio"]:checked ~ label {
   margin-left: 20%;
   margin-right: 20%;
 
+}
+input[type = "radio"]:checked ~ label{color:orange;}
+
+
+
+
+
+
+/* text area de los comentarios*/
+
+.standalone-container {
+  margin: 25px auto;
+  max-width: 1200px;
+}
+#snow-container {
+  height: 100px;
 }

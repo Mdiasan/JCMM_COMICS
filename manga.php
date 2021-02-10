@@ -5,7 +5,7 @@ require_once 'bbdd/model/Comic.php';
 
 session_start();
 if(!isset($_POST['pagina'])){
-    $_POST['pagina']=1;
+    $_POST['pagina']=0;
 }
 
 ?>
@@ -34,9 +34,9 @@ if(!isset($_POST['pagina'])){
                 </div>
                 <div class="col mt-5 mb-5">
                     <div class="card-deck mt-5">
-                    <?php $arrayNovedades= ComicController::getComicPorTipoPaginado($_POST['pagina'],3,"Manga");
+                    <?php $arrayNovedades = ComicController::getComicPorTipoPaginado($_POST['pagina'],3,"Manga");
                   foreach ($arrayNovedades as $key => $value) {
-                  
+                      
                 
                   ?>
                 
@@ -89,7 +89,7 @@ if(!isset($_POST['pagina'])){
                       for ($i=0; $i <$numero ; $i++) { 
                       
               ?>
-                  <li class="page-item"><a class="page-link" ><form action="" method="POST"><button type="submit" name="pagina"value=<?php echo ($i+1)  ?> ><?php echo ($i+1) ?></button></form></a></li>
+                  <li class="page-item"><a class="page-link" ><form action="" method="POST"><button type="submit" name="pagina"value=<?php echo ($i)  ?> ><?php echo ($i+1) ?></button></form></a></li>
 
                   <?php }?>
                  

@@ -79,7 +79,7 @@ if(isset($_POST['Enviar'])){
                         <br>
                         <div id="customBtn" class="customGPlusSignIn">
                             <span class="icon"></span>
-                            <span class="buttonText">Google</span>
+                            <span class="buttonText" id="googleSignInBtn">Google</span>
                         </div>
                     </div>
                     <div class="text-center">
@@ -118,4 +118,6 @@ if(isset($_POST['Enviar'])){
   }, false);
 })();
 </script>
+<script>startApp();</script>
+
 </html>
