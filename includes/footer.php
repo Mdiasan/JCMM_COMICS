@@ -30,9 +30,9 @@
                     <div class="row">
                         <h5>Destacados</h5>
                     </div>
-                    <div class="row"><a href="./fantasia.php">Libros</a></div>
-                    <div class="row"><a href="./ZonaMarvel.php">Marvel</a></div>
-                    <div class="row"><a href="./ZonaDC.php">DC</a></div>
+                    <div class="row"><a class ="text-white" href="./fantasia.php">Libros</a></div>
+                    <div class="row"><a class ="text-white" href="./ZonaMarvel.php">Marvel</a></div>
+                    <div class="row"><a class ="text-white" href="./ZonaDC.php">DC</a></div>
 
                 </div>
                 <div class="col col-sm-4 col-md">
@@ -43,12 +43,12 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <a href="./login.php">Inicio sesión</a>
+                            <a class ="text-white" href="./login.php">Inicio sesión</a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <a href="./crearUsuario.php">Registrate</a>
+                            <a class ="text-white" href="./crearUsuario.php">Registrate</a>
                         </div>
                     </div>
                 </div>
@@ -62,34 +62,34 @@
 
                     <div class="row">
                         <div class="col">
-                            <a href="/avisoLegal.php">Aviso legal</a>
+                            <a class ="text-white"href="/avisoLegal.php">Aviso legal</a>
                         </div>
                     </div>
 
 
                     <div class="row">
                         <div class="col">
-                            <a href="politicaDePrivacidad.php">Politica de privacidad</a>
+                            <a  class ="text-white" href="politicaDePrivacidad.php">Politica de privacidad</a>
                         </div>
                     </div>
 
 
                     <div class="row">
                         <div class="col">
-                            <a href="Devoluciones.php">Entregas y devoluciones</a>
+                            <a  class ="text-white" href="Devoluciones.php">Entregas y devoluciones</a>
                         </div>
                     </div>
 
 
                     <div class="row">
                         <div class="col">
-                            <a href="Cookies.php">Cookies</a>
+                            <a  class ="text-white" href="Cookies.php">Cookies</a>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col">
-                            <a href="contact.php">Contacto</a>
+                            <a  class ="text-white" href="contact.php">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -98,16 +98,16 @@
             <div class="row">
                 <div class="col-4">
 
-                    <a class="fab fa-instagram" href="https://www.instagram.com/" target="_blank"></a>
+                    <a class="fab fa-instagram text-white"  href="https://www.instagram.com/" target="_blank"></a>
 
 
-                    <a class="fab fa-facebook-f" href="https://es-es.facebook.com/" target="_blank"></a>
+                    <a class="fab fa-facebook-f text-white" href="https://es-es.facebook.com/" target="_blank"></a>
 
 
-                    <a class="fab fa-twitter" href="https://mobile.twitter.com/" target="_blank"></a>
+                    <a class="fab fa-twitter text-white" href="https://mobile.twitter.com/" target="_blank"></a>
                 </div>
                 <div class="col-8">
-                    <i class="far fa-copyright"></i> 2020 JCMMCOMICS Todos los derechos reservados
+                    <i class="far fa-copyright "></i> 2020 JCMMCOMICS Todos los derechos reservados
                 </div>
             </div>
         </div>

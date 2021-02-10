@@ -1,4 +1,5 @@
 <?php 
+
 if(isset($_SESSION['carrito'])){
   $total=0;
   foreach ($_SESSION["carrito"] as $key => $value) {

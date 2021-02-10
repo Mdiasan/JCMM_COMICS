@@ -34,3 +34,23 @@
 <script type="text/javascript" src="js/google-signin.js"></script>
 
 <link rel="stylesheet" href="css/mystyle.css">
+
+
+<!-- texto de los comentarios  -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://quilljs.com/standalone/snow/">
+<meta property="og:image" content="https://quilljs.com/assets/images/brand-asset.png">
+<meta property="og:title" content="Snow Theme - Quill">
+<meta property="og:site_name" content="Quill">
+ 
+<link rel="canonical" href="https://quilljs.com/standalone/snow/">
+<link type="application/atom+xml" rel="alternate" href="https://quilljs.com/feed.xml" title="Quill - Your powerful rich text editor" />
+  
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css" />
+
+<link rel="stylesheet" href="../quill/quill.snow.css" />
+<script src="https://apis.google.com/js/api:client.js"></script>
+<script type="text/javascript" src="./includes/registro_google.js"></script>

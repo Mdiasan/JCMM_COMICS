@@ -124,7 +124,7 @@ class ComicController {
     static function getComicPorTipoPaginado($pagina , $numeroPorPagina , $tipo){
         $c= new Conexion();
        
-       $pagina = $pagina * $numeroPorPagina;
+            $pagina = $pagina * $numeroPorPagina;
             $result = $c->query("select c.* FROM comic as c , editorial  as e where e.tipo='$tipo' and e.id=c.editorial_id  limit $numeroPorPagina offset $pagina");
 
        
@@ -196,7 +196,7 @@ class ComicController {
 
     static function getComicById($id){
 
- $c= new Conexion();
+        $c= new Conexion();
        
        
         $result = $c->query("select c.* FROM comic as c  where c.id=$id");
@@ -216,4 +216,94 @@ class ComicController {
             return false;
         }
     }
+
+    static function getAll(){
+        $c= new Conexion();
+       
+       
+        $result = $c->query("select c.* FROM comic as c  ");
+       
+      
+
+
+        if($result->rowCount()){
+           $comic= new Comic();
+           while($a=$result->fetchObject()){
+            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->imagen,$a->editorial_id,$a->stock);
+            $arrayComic[]=clone($comic);
+            
+           }
+           return $arrayComic;
+        }else{
+            return false;
+        }
+    }
+
+
+    static function sumarUnidades($id){
+        $c= new Conexion();
+       
+       
+        $result = $c->query("select c.* FROM comic as c  where c.id=$id");
+       
+      
+
+
+        if($result->rowCount()){
+           $comic= new Comic();
+           while($a=$result->fetchObject()){
+            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->imagen,$a->editorial_id,$a->stock +1);
+           
+            
+           }
+        }
+
+        ComicController::editar($comic);
+    }
+
+    static function restarUnidades($id){
+        $c= new Conexion();
+       
+       
+        $result = $c->query("select c.* FROM comic as c  where c.id=$id");
+       
+      
+
+
+        if($result->rowCount()){
+           $comic= new Comic();
+           while($a=$result->fetchObject()){
+            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->imagen,$a->editorial_id,$a->stock -1);
+           
+            
+           }
+        }
+
+        ComicController::editar($comic);
+    }
+
+
+
+
+static function editar($comic){
+    $c = new Conexion();
+    $c->beginTransaction();
+    $b = $c->prepare('update  comic set titulo=?, descripcion=?,precio=?,imagen=?,editorial_id=?,stock=? where id=?');
+    $id =$comic->id;
+    $titulo=$comic->titulo;
+    $des=$comic->descripcion;
+    $precio=$comic->precio;
+    $img=$comic->imagen;
+    $editorial=$comic->editorial;
+    $stock=$comic->stock;
+    $b->bindParam(7,$id);
+    $b->bindParam(1,$titulo);
+    $b->bindParam(2,$des);
+    $b->bindParam(3,$precio);
+    $b->bindParam(4,$img);
+    $b->bindParam(5,$editorial);
+    $b->bindParam(6,$stock);
+    $b->execute();
+    $c->commit();
+}
 }

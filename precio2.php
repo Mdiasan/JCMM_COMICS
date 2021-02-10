@@ -1,8 +1,11 @@
 <?php include("includes/a_config.php"); 
 require_once 'bbdd/model/Usuario.php';
 require_once 'bbdd/Controller/ComicController.php';
+require_once 'bbdd/Controller/UsuarioController.php';
 require_once 'bbdd/Controller/ValoracionController.php';
 require_once 'bbdd/model/Comic.php';
+require_once 'bbdd/model/Valoracion.php';
+
 
 
 session_start();
@@ -10,6 +13,7 @@ session_start();
 if(!isset($_GET["articulo"])){
   header("Location:/index.php");
 }
+
 
 
 if(isset($_POST['enviar'])){
@@ -26,14 +30,16 @@ if(isset($_POST['enviar'])){
 }
 $comic = ComicController::getComicById($_GET['articulo']);
 
+if(isset($_POST['resena'])){
+ 
+ $v= new Valoracion(null,$_POST['hiddenEstrellas'],$_POST['resena'],$_SESSION['usuario']->id,$comic->id);
+ ValoracionController::guardar($v);
+}
 $valoracion = ValoracionController::getMediaValoraciones($comic);
+
 $arrayComentarios= ValoracionController::getAll($comic);
 
-foreach ($arrayComentarios as $key => $value) {
-  echo $value;
 
-
-}
 
 ?>
 <!DOCTYPE html>
@@ -83,25 +89,25 @@ foreach ($arrayComentarios as $key => $value) {
                     <form id="form">
                       <p class="clasificacion">
                         
-                        <input id="radio1" type="radio" name="estrellas" value="5"  disabled <?php if($valoracion == 5){echo 'checked';} ?> >
+                        <input id="radio11" type="radio" name="estrellas" value="5" disabled   <?php if($valoracion == 5){echo 'checked';} ?> >
                         <!--
-    --><label for="radio1">★</label>
+    --><label for="radio11">★</label>
                         <!--
-    --><input id="radio2" type="radio" name="estrellas" disabled value="4"  <?php if($valoracion == 4){echo 'checked';} ?>>
+    --><input id="radio21" type="radio" name="estrellas" disabled value="4"  <?php if($valoracion == 4){echo 'checked';} ?>>
                         <!--
-    --><label for="radio2">★</label>
+    --><label for="radio21">★</label>
                         <!--
-    --><input id="radio3" type="radio" name="estrellas" disabled  value="3"<?php if($valoracion == 3){echo 'checked';} ?> >
+    --><input id="radio31" type="radio" name="estrellas" disabled  value="3"<?php if($valoracion == 3){echo 'checked';} ?> >
                         <!--
-    --><label for="radio3">★</label>
+    --><label for="radio31">★</label>
                         <!--
-    --><input id="radio4" type="radio" name="estrellas" disabled value="2"<?php if($valoracion == 2){echo 'checked';} ?>>
+    --><input id="radio41" type="radio" name="estrellas"  disabled value="2"<?php if($valoracion == 2){echo 'checked';} ?>>
                         <!--
-    --><label for="radio4">★</label>
+    --><label for="radio41">★</label>
                         <!--
-    --><input id="radio5" type="radio" name="estrellas" disabled value="1"<?php if($valoracion == 1){echo 'checked';} ?>>
+    --><input id="radio51" type="radio" name="estrellas" disabled  value="1"<?php if($valoracion == 1){echo 'checked';} ?>>
                         <!--
-    --><label for="radio5">★</label>
+    --><label for="radio51">★</label>
 
                       </p>
                     </form>
@@ -139,19 +145,56 @@ foreach ($arrayComentarios as $key => $value) {
         if($arrayComentarios==false){
         ?>
         
-        <p>Aún no hay comentarios puedes escribir el primero </p>
+        <h3 class="text-center">Aún no hay comentarios puedes escribir el primero </h3>
         
         <?php 
 
 
         }else{
-          foreach ($arrayComentarios as $key => $valora) {
+
+          for ($i=0; $i < count( $arrayComentarios) ; $i++) { 
+            
+          
+          
+            
             ?>
             
-            <div style="margin-top: 5%; " name="comentarios" >
-               <h5 class="text-dark"></h5>
+            <div style="margin-top: 5%; <?php if($i>=2 ) {echo "display:none" ;}?>" name="comentarios" >
+               <h5 class="text-dark"><?php  echo  UsuarioController::getNombre($arrayComentarios[$i]->usuario)  ?></h5>
+               
+                <form >
+                <p class="clasificacion">
+                  
+                  <input id="radio12" type="radio"  value="5"   disabled  <?php if( $arrayComentarios[$i]->valoracion == 5){echo 'checked';}  ?> >
+                  <!--
+--><label for="radio12" >★</label>
+                  <!--
+--><input id="radio22" type="radio"  disabled value="4"  <?php if( $arrayComentarios[$i]->valoracion == 4){echo 'checked';} ?>>
+                  <!--
+--><label for="radio22">★</label>
+                  <!--
+--><input id="radio32" type="radio"  disabled  value="3"<?php if( $arrayComentarios[$i]->valoracion== 3){echo 'checked';} ?> >
+                  <!--
+--><label for="radio32">★</label>
+                  <!--
+--><input id="radio42" type="radio"  disabled value="2"<?php if( $arrayComentarios[$i]->valoracion == 2){echo 'checked';} ?>>
+                  <!--
+--><label for="radio42">★</label>
+                  <!--
+--><input id="radio52" type="radio" disabled value="1"<?php if( $arrayComentarios[$i]->valoracion == 1){echo 'checked';} ?>>
+                  <!--
+--><label for="radio52">★</label>
+</p>
+                
+              </form>
+               
+               
+               
+               
+                
+               
               <hr>
-              <textarea style="width: 100%; resize: none;" disabled></textarea>
+              <textarea style="width: 100%; resize: none;" disabled><?php echo $arrayComentarios[$i]->comentario ?></textarea>
             </div>
 
             
@@ -163,51 +206,14 @@ foreach ($arrayComentarios as $key => $value) {
         ?>
 
 
-       
-        <div style="margin-top: 5%;" name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
-        <div style="margin-top: 5%; display: none; " name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
-
-        <div style="margin-top: 5%; display: none;" name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
-        <div style="margin-top: 5%; display: none; " name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
-
-        <div style="margin-top: 5%; display: none;" name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
-        <div style="margin-top: 5%; display: none; " name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
-
-        <div style="margin-top: 5%; display: none;" name="comentarios" >
-          <h5 class="text-dark">Nombre Usuario</h5>
-          <hr>
-          <textarea style="width: 100%; resize: none;" disabled>comentario...</textarea>
-        </div>
+        
         <div class="text-center">
-          <button class="btn btn-primary"  style="margin: auto;" onclick="verTodosLosComentarios()" id="mas">ver más</button>
+          <button class="btn btn-primary"  style="margin: auto; <?php if($arrayComentarios==false){echo "display:none";} ?>" onclick="verTodosLosComentarios()" id="mas">ver más</button>
           <button class="btn btn-primary " style="display: none; margin: auto;" onclick="verMenosComentarios()" id="menos" >ver menos</button>
+        
       
-      
-      </div>
+        </div>
+        
       </div>
     </div>
 
@@ -240,5 +246,23 @@ foreach ($arrayComentarios as $key => $value) {
     document.getElementById('mas').style.display='block';
     document.getElementById('menos').style.display='none';
   }
+
+
+  function darValorReseña(){
+    var btnResena= document.getElementById("resena");
+    var radios= document.getElementsByName("valoracion");
+    var estrella= document.getElementById("hiddenEstrellas");
+    radios.forEach(element => {
+      
+      if(element.checked==true){
+          estrella.value=element.value;
+          console.log(estrella)
+      }
+    });
+    btnResena.value=quill.root.innerText;
+    
+  }
+
+  
 </script>
 </html>

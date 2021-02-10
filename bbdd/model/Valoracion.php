@@ -15,7 +15,7 @@ class Valoracion{
     }
 
     public function __get($name){
-        $this->$name;
+        return $this->$name;
     }
 
     public function __set($name, $value){
