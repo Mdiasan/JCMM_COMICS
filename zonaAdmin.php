@@ -73,7 +73,7 @@ $arrayComics=ComicController::getAll();
                         <td><?php echo EditorialController::getNombre( $value->editorial) ?></td>
                         <td><?php echo $value->stock ?></td>
                         <td><form action="" method="POST" ><button class="btn btn-primary" name="anadir" value=<?php echo $value->id ?>>+1</button></form></td>
-                        <td><form action="" method="POST" ><button class="btn btn-orange" name="retirar"  value=<?php echo $value->id ?>>-1</button></form></td>
+                        <td><form action="" method="POST" ><button class="btn btn-danger" name="retirar"  value=<?php echo $value->id ?>>-1</button></form></td>
                         <td><form action="" method="POST" ><button class="btn btn-warning" name="editar"  value=<?php echo $value->id ?>>Editar</button></form></td>
                         </tr>
                     <?php } ?> 
