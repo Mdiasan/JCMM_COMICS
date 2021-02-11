@@ -271,6 +271,7 @@ session_start();
           </div>
         </div>
       </div>
+      
     </main>
 
     <?php include("includes/footer.php"); ?>
