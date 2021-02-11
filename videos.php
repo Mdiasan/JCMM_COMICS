@@ -10,6 +10,7 @@
 	<body>
 
 		<?php include("includes/design-top.php"); ?>
+		
 		<div>
 			<div class="row">
 				<div class="col  bg-dark text-center ">
@@ -72,13 +73,16 @@
 
 				
 			</div>
-
+			
+			<?php include("includes/contenedorCookie.php"); ?>
 		<?php include("includes/footer.php"); ?>
+
 
 </div>
 
 </body>
 
 <script src="js/video.js"></script>
+
 
 </html>
