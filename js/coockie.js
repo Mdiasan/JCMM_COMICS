@@ -1,3 +1,7 @@
+function alertaEnConsola(){
+    console.log('entro');
+
+}
 (function () {
     "use strict";
 
