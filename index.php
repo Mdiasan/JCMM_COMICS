@@ -94,7 +94,7 @@ session_start();
                   
                   
                   <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image">
+                   <a href="precio2.php?articulo=<?php echo $value->id; ?>" ><img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image"> </a>
                   <div class="card-body text-center">
                     <h2 class="card-title"><?php echo $value->titulo ?></h2>
                     <p class="card-text"><?php echo $value->descripcion ?></p>
@@ -103,46 +103,6 @@ session_start();
                 </div>
                       
                   <?php  } ?>
-  <!--              <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/guantelete del infinito.png" alt="Card image">
-                  <div class="card-body text-center">
-                    <h2 class="card-title">El Guantelete del infinito</h2>
-                    <p class="card-text">Cuando Jim Starlin decidió resucitar a Thanos, que llevaba veinte años muerto (unos diez en tiempo Marvel) lo hizo en la colección de Estela Plateada, la cual era perfecta para narrar eventos de índole cósmica, pero el problema, más por suerte que por desgracia, era que lo que Starlin había pensado para Thanos tenía que incluir por fuerza a casi todos los héroes Marvel del momento.</p>
-                  </div>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-                </div>
-
-
-                <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/spiderman ultimate.png" alt="Card image">
-                  <div class="card-body text-center">
-                    <h2 class="card-title">Ultimate Spider-man</h2>
-                    <p class="card-text">Ultimate Spider-man: Origen es el tomo con el que arranca la reedición de la colección Ultimate Spider-man que Panini está publicado actualmente. Así fue el origen y actualización de Spider-man, si hubiera nacido en el siglo XXI.</p>
-                  </div>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-                </div>
-
-                <div class="w-100 d-none d-sm-block d-md-none">
-                  S
-                </div>
-
-
-                <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/muerte de la familia.png" alt="Card image">
-                  <div class="card-body text-center">
-                    <h2 class="card-title">Una Muerte En La Familia</h2>
-                    <p class="card-text">Publicado originalmente en diciembre de 1983. La primera aparición de Jason Todd como Robin. El nuevo compañero de Batman acudirá en su rescate en plena batalla contra el Joker en Guatemala.</p>
-                  </div>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-                </div>
-                <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/la broma asesina.png" alt="Card image">
-                  <div class="card-body text-center">
-                    <h2 class="card-title">la broma asesina</h2>
-                    <p class="card-text">La broma asesina es una historia centrada en el Joker, la antítesis de Batman por definición, y en la relación que éste y Batman han llegado a desarrollar a lo largo de los años.</p>
-                  </div>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-                </div> -->
               </div>
             </div>
           </div>
@@ -180,7 +140,7 @@ session_start();
                       }
                       ?>
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image">
+                <a href="precio2.php?articulo=<?php echo $value->id; ?>" ><img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image"> </a>
                   <div class="card-body text-center">
                     <h2 class="card-title"><?php echo $value->titulo ?></h2>
                     <p class="card-text"><?php echo $value->descripcion ?></p>
@@ -188,38 +148,6 @@ session_start();
                   <a href="precio2.php?articulo=<?php echo $value->id?>" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
                 </div>
                 <?php  } ?>
-<!--
-
-                <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/deku.jpg" alt="Card image">
-                  <div class="card-body text-center">
-                    <h2 class="card-title">deku</h2>
-                    <p class="card-text">Protagonista de la serie de heroes my hero academia en una mitica pose </p>
-                  </div>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-                </div>
-
-                <div class="w-100 d-none d-sm-block d-md-none">
-                 
-                </div>
-
-
-                <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/figura de goku.jpg" alt="Card image">
-                  <div class="card-body text-center">
-                    <h2 class="card-title">son goku</h2>
-                    <p class="card-text">Protagonista de la serie de dragon ball en una fantastica pose.</p>
-                  </div>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-                </div>
-                <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/broly ssj4.jpg" alt="Card image">
-                  <div class="card-body text-center">
-                    <h2 class="card-title">broly super saiyan 4</h2>
-                    <p class="card-text">Broly en una mitica transformacion dentro del no canon </p>
-                  </div>
-                  <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
-                </div>-->
               </div>
             </div>
           </div>
@@ -257,7 +185,7 @@ session_start();
                       }
                       ?>
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image">
+                <a href="precio2.php?articulo=<?php echo $value->id; ?>" ><img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image"> </a>
                   <div class="card-body text-center">
                     <h2 class="card-title"><?php echo $value->titulo ?></h2>
                     <p class="card-text"><?php echo $value->descripcion ?></p>
