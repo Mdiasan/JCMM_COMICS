@@ -19,6 +19,7 @@
 -- Table structure for table `comic`
 --
 
+CREATE DATABASE IF NOT EXISTS `jcmm-comics`;
 USE `jcmm-comics`;
 DROP TABLE IF EXISTS `comic`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -34,7 +35,7 @@ CREATE TABLE `comic` (
   PRIMARY KEY (`id`),
   KEY `fk_comic_editorial1_idx` (`editorial_id`),
   CONSTRAINT `fk_comic_editorial1` FOREIGN KEY (`editorial_id`) REFERENCES `editorial` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,7 +64,7 @@ CREATE TABLE `compras` (
   KEY `fk_compras_usuario1_idx` (`usuario_id`),
   CONSTRAINT `fk_compras_comic1` FOREIGN KEY (`comic_id`) REFERENCES `comic` (`id`),
   CONSTRAINT `fk_compras_usuario1` FOREIGN KEY (`usuario_id`) REFERENCES `usuario` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB ;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,7 +89,7 @@ CREATE TABLE `editorial` (
   `nombre` varchar(45) DEFAULT NULL,
   `tipo` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -118,7 +119,7 @@ CREATE TABLE `usuario` (
   `fecha_creacion` date DEFAULT NULL,
   `mail` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -149,7 +150,7 @@ CREATE TABLE `valoracion` (
   KEY `fk_valoraciones_comics1_idx` (`comics_id`),
   CONSTRAINT `fk_valoraciones_comics1` FOREIGN KEY (`comics_id`) REFERENCES `comic` (`id`),
   CONSTRAINT `fk_valoraciones_usuario` FOREIGN KEY (`usuario_id`) REFERENCES `usuario` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

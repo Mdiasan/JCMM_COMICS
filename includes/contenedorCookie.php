@@ -9,5 +9,5 @@
                 NO Deseo ir directamente a la pantalla de login
             </button>
         </div>
-
+        <script src="js/coockie.js"> </script>
    

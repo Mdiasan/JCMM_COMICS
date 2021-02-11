@@ -83,6 +83,6 @@
 </body>
 
 <script src="js/video.js"></script>
-<script>src="js/coockie.js" </script>
+
 
 </html>
