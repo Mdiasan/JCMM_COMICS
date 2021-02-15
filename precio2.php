@@ -14,7 +14,7 @@ if(!isset($_GET["articulo"])){
   header("Location:/index.php");
 }
 
-
+$yaComentado=false;
 
 if(isset($_POST['enviar'])){
   $c = ComicController::getComicById($_POST['enviar']);
@@ -31,9 +31,14 @@ if(isset($_POST['enviar'])){
 $comic = ComicController::getComicById($_GET['articulo']);
 
 if(isset($_POST['resena'])){
- 
- $v= new Valoracion(null,$_POST['hiddenEstrellas'],$_POST['resena'],$_SESSION['usuario']->id,$comic->id);
- ValoracionController::guardar($v);
+
+$yaComentado=ValoracionController::buscarReseñaDelUsuarioAutenticado($_SESSION['usuario'],$comic);
+
+ if(!$yaComentado){
+  $v= new Valoracion(null,$_POST['hiddenEstrellas'],$_POST['resena'],$_SESSION['usuario']->id,$comic->id);
+  ValoracionController::guardar($v);
+}
+
 }
 $valoracion = ValoracionController::getMediaValoraciones($comic);
 
@@ -84,6 +89,10 @@ $arrayComentarios= ValoracionController::getAll($comic);
                 <div class="row">
                   <div class="col">
                     <h3><?php echo $comic->precio ?>€</h3>
+                    <?php if ($comic->stock <=0){ ?>
+                    <p class="noStock">no disponible en este momento  </p>
+
+                   <?php } ?>
                   </div>
                   <div class="col">
                     <form id="form">
@@ -129,7 +138,7 @@ $arrayComentarios= ValoracionController::getAll($comic);
             <div class="row">
               <div class="col">
                 <form action="" method="POST">
-                  <button class="btn btn-warning" type="submit" name="enviar" value=<?php echo $comic->id ?>><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  <button class="btn btn-warning" type="submit" name="enviar" value=<?php echo $comic->id ?> <?php if ($comic->stock <=0){ echo "disabled";} ?>><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                 </form>
               </div>
             </div>
@@ -140,7 +149,8 @@ $arrayComentarios= ValoracionController::getAll($comic);
         
         <?php include("includes/Editor.php"); ?>
 
-
+       
+        
         <?php 
         if($arrayComentarios==false){
         ?>
@@ -220,6 +230,34 @@ $arrayComentarios= ValoracionController::getAll($comic);
     <?php include("includes/footer.php"); ?>
   </div>
 
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+     
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+           <div class="alert alert-danger alert-dismissible fade show">
+    		 <button type="button" class="close" data-dismiss="modal">&times;</button>
+    		<strong>error!</strong> ya has realizado un comentario de este comic
+  			</div>
+        </div>
+        
+       
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <?php if($yaComentado){ ?>
+          <div class="alert alert-danger text-center" role="alert">Ya has realizado una reseña de este comic</div>
+          <script> $('#myModal').modal('show');</script>
+        <?php }?>
 
 </body>
 <script>

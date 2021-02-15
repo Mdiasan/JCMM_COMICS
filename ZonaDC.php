@@ -47,7 +47,7 @@ if(!isset($_POST['pagina'])){
                   <!-- wrap every 2 on sm-->
                 </div>
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image">
+                <a href="precio2.php?articulo=<?php echo $value->id; ?>" ><img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image"> </a>
                   <div class="card-body text-center">
                     <h2 class="card-title"><?php echo $value->titulo ?></h2>
                     <p class="card-text"><?php echo $value->descripcion ?></p>
@@ -61,23 +61,29 @@ if(!isset($_POST['pagina'])){
               <ul class="pagination justify-content-center">
 
             
-                  <li class="page-item disabled">
-                     <a class="page-link" href="#" >Previous</a>
-                  </li>
+              <li class="page-item ">
+                <a class="page-link">
+                  <form action="" method="POST"><button type="submit" class="btn btn-primary" name="pagina" value=0>Primera</button></form>
+                </a>
+              </li>
                   <?php 
 
                    $numero= ComicController::getNumeroComicPorNombreEditorialPaginado("DC");
                     $numero = ceil(($numero/3));
-                      for ($i=0; $i <$numero ; $i++) { 
-                      
-              ?>
-                  <li class="page-item"><a class="page-link" ><form action="" method="POST"><button type="submit" name="pagina"value=<?php echo ($i)  ?> ><?php echo ($i+1) ?></button></form></a></li>
+                    for ($i = 0; $i < $numero; $i++) {
 
-                  <?php }?>
-                 
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-  </ul>
+                      ?>
+                        <li class="page-item"><a class="page-link">
+                            <form action="" method="POST"><button type="submit" class="btn btn-primary" name="pagina" value=<?php echo ($i)  ?>><?php echo ($i + 1) ?></button></form>
+                          </a></li>
+        
+                      <?php } ?>
+                      <li>
+                        <a class="page-link">
+                          <form action="" method="POST"><button type="submit" class="btn btn-primary" name="pagina" value=<?php echo $numero - 1  ?>>Última</button></form>
+                        </a>
+                      </li>
+                    </ul>
 </nav>
         </div>
       </div>

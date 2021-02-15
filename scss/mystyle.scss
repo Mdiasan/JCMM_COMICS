@@ -137,7 +137,7 @@ h5 {
 }
 .bg-orange {
   background-color: $quinto !important;
-  
+
 }
 .btn-danger {
   background-color: $primario !important;
@@ -314,7 +314,9 @@ label {
   unicode-bidi: bidi-override;
 }
 
-
+.noStock{
+  color: $primario;
+}
 .dinamico:hover,.dinamico:hover ~ label {
   color: orange;
 
@@ -324,6 +326,7 @@ label {
   color: $primario;
   display: none;
 }
+
 .formLogeo{
  
  

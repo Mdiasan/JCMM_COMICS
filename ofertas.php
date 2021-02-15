@@ -51,7 +51,7 @@ session_start();
                       ?>
                          
                   <div class="card">
-                  <img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image">
+                  <a href="precio2.php?articulo=<?php echo $value->id; ?>"><img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image"> </a>
                   <div class="card-body text-center">
                     <h2 class="card-title"><?php echo $value->titulo ?></h2>
                     <p class="card-text"><?php echo $value->descripcion ?></p>

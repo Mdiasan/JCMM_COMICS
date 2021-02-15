@@ -62,5 +62,16 @@ class ValoracionController {
        return $id;
     }
 
+    static  function  buscarReseñaDelUsuarioAutenticado( $usuario ,$comic){
+        $c =  new Conexion();
+        $result=$c->query("select * from valoracion  where usuario_id=$usuario->id and comics_id=$comic->id");
+
+        if(!$result->rowCount()){
+                return false;
+        }else{
+            return true;
+        }
+    }
+
 }
     

@@ -258,6 +258,9 @@ label {
   direction: rtl;
   unicode-bidi: bidi-override; }
 
+.noStock {
+  color: #EF2131; }
+
 .dinamico:hover, .dinamico:hover ~ label {
   color: orange; }
 
