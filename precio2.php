@@ -13,9 +13,9 @@ session_start();
 if(!isset($_GET["articulo"])){
   header("Location:/index.php");
 }
-
+$usuarioNoAutenticado=true;
 $yaComentado=false;
-
+$comprado=false;
 if(isset($_POST['enviar'])){
   $c = ComicController::getComicById($_POST['enviar']);
   if(isset( $_SESSION['carrito'][$c->id])){
@@ -26,19 +26,25 @@ if(isset($_POST['enviar'])){
     $_SESSION['carrito'][$c->id]=$c;
   }
 
-  header("Location:/carrito.php");
+  $comprado=true;
 }
 $comic = ComicController::getComicById($_GET['articulo']);
 
 if(isset($_POST['resena'])){
-
+if(isset( $_SESSION['usuario'])){
 $yaComentado=ValoracionController::buscarReseñaDelUsuarioAutenticado($_SESSION['usuario'],$comic);
 
  if(!$yaComentado){
+
+  if( $_POST['hiddenEstrellas']==""){
+   $_POST['hiddenEstrellas']=0;
+  }
   $v= new Valoracion(null,$_POST['hiddenEstrellas'],$_POST['resena'],$_SESSION['usuario']->id,$comic->id);
   ValoracionController::guardar($v);
 }
-
+}else{
+  $usuarioNoAutenticado=false;
+}
 }
 $valoracion = ValoracionController::getMediaValoraciones($comic);
 
@@ -155,7 +161,10 @@ $arrayComentarios= ValoracionController::getAll($comic);
         if($arrayComentarios==false){
         ?>
         
-        <h3 class="text-center">Aún no hay comentarios puedes escribir el primero </h3>
+        <div class="alert alert-danger alert-dismissible fade show">
+    		 <button type="button" class="close" data-dismiss="alert">&times;</button>
+          no hay comentarios de este comic !puedes ser el primero en comentar¡
+  			</div>
         
         <?php 
 
@@ -218,7 +227,7 @@ $arrayComentarios= ValoracionController::getAll($comic);
 
         
         <div class="text-center">
-          <button class="btn btn-primary"  style="margin: auto; <?php if($arrayComentarios==false){echo "display:none";} ?>" onclick="verTodosLosComentarios()" id="mas">ver más</button>
+          <button class="btn btn-primary"  style="margin: auto; <?php if($arrayComentarios==false || count($arrayComentarios)<2){echo "display:none";} ?>" onclick="verTodosLosComentarios()" id="mas">ver más</button>
           <button class="btn btn-primary " style="display: none; margin: auto;" onclick="verMenosComentarios()" id="menos" >ver menos</button>
         
       
@@ -240,7 +249,45 @@ $arrayComentarios= ValoracionController::getAll($comic);
         <div class="modal-body">
            <div class="alert alert-danger alert-dismissible fade show">
     		 <button type="button" class="close" data-dismiss="modal">&times;</button>
-    		<strong>error!</strong> ya has realizado un comentario de este comic
+    		<strong>Error!</strong> ya has realizado un comentario de este comic
+  			</div>
+        </div>
+        
+       
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="usuario">
+    <div class="modal-dialog">
+      <div class="modal-content">
+     
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+           <div class="alert alert-danger alert-dismissible fade show">
+    		 <button type="button" class="close" data-dismiss="modal">&times;</button>
+    		<strong>Error!</strong> debes loguearte para añadir un comentario
+  			</div>
+        </div>
+        
+       
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalcompra">
+    <div class="modal-dialog">
+      <div class="modal-content">
+     
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+           <div class="alert alert-success alert-dismissible fade show">
+    		 <button type="button" class="close" data-dismiss="modal">&times;</button>
+    		<strong>Gracias!</strong> comic añadido al carrito 
   			</div>
         </div>
         
@@ -254,11 +301,17 @@ $arrayComentarios= ValoracionController::getAll($comic);
 
 
 
+
+
+  <?php if(!$usuarioNoAutenticado){ ?>
+          <script> $('#usuario').modal('show');</script>
+        <?php }?>
   <?php if($yaComentado){ ?>
-          <div class="alert alert-danger text-center" role="alert">Ya has realizado una reseña de este comic</div>
           <script> $('#myModal').modal('show');</script>
         <?php }?>
-
+        <?php if($comprado){ ?>
+          <script> $('#modalcompra').modal('show');</script>
+        <?php }?>
 </body>
 <script>
   function verTodosLosComentarios(){

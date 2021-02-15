@@ -7,8 +7,35 @@ require_once 'bbdd/model/Comic.php';
 session_start();
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// fin logueo google
+
+
+$errorEnLogueo=false;
+
 if(isset($_POST['Enviar'])){
-    $errorEnLogueo=false;
+    
     $pass =  md5($_POST['contraseña']);
     $cliente = UsuarioController::logueoCliente($_POST['usuario'],$pass);
     if(!$cliente){
@@ -79,7 +106,7 @@ if(isset($_POST['Enviar'])){
                         <br>
                         <div id="customBtn" class="customGPlusSignIn">
                             <span class="icon"></span>
-                            <span class="buttonText" id="googleSignInBtn">Google</span>
+                            <span class="buttonText" id="googleSignInBtn" ><a href="<?php echo $google_client->createAuthUrl() ?>">Google</a> </span>
                         </div>
                     </div>
                     <div class="text-center">
@@ -93,8 +120,27 @@ if(isset($_POST['Enviar'])){
       
         </main>
 
-
-
+        <div class="modal fade" id="errorLogueo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+     
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+           <div class="alert alert-danger alert-dismissible fade show">
+    		 <button type="button" class="close" data-dismiss="modal">&times;</button>
+    		<strong>Error!</strong> usuario o contraseña incorrectos
+  			</div>
+        </div>
+        
+       
+        
+      </div>
+    </div>
+  </div>
+  <?php if($errorEnLogueo){ ?>
+          <script> $('#errorLogueo').modal('show');</script>
+        <?php }?>
         <?php include("includes/footer.php"); ?>
     </div>
 </body>
@@ -118,6 +164,5 @@ if(isset($_POST['Enviar'])){
   }, false);
 })();
 </script>
-<script>startApp();</script>
 
 </html>

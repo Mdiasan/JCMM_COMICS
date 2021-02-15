@@ -2,9 +2,63 @@
 
 require_once 'bbdd/model/Usuario.php';
 require_once 'bbdd/Controller/ComicController.php';
+require_once 'bbdd/Controller/UsuarioController.php';
+
 require_once 'bbdd/model/Comic.php';
 
 session_start();
+if(isset($_GET["code"]))
+{
+ //It will Attempt to exchange a code for an valid authentication token.
+ $token = $google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
+
+ //This condition will check there is any error occur during geting authentication token. If there is no any error occur then it will execute if block of code/
+ if(!isset($token['error']))
+ {
+  //Set the access token used for requests
+  $google_client->setAccessToken($token['access_token']);
+
+  //Store "access_token" value in $_SESSION variable for future use.
+  $_SESSION['access_token'] = $token['access_token'];
+
+  //Create Object of Google Service OAuth 2 class
+  $google_service = new Google_Service_Oauth2($google_client);
+
+  //Get user profile data from google
+  $data = $google_service->userinfo->get();
+  $usuario = new Usuario();
+  //Below you can find Get profile data and store into $_SESSION variable
+  if(!empty($data['given_name']))
+  {
+    $usuario->nombre = $data['given_name'];
+  }
+
+  if(!empty($data['family_name']))
+  {
+   $usuario->apellidos = $data['family_name'];
+  }
+
+  if(!empty($data['email']))
+  {
+   $usuario->mail = $data['email'];
+  }
+
+
+
+  if(!empty($data['picture']))
+  {
+   $_SESSION['user_image'] = $data['picture'];
+  }
+
+  $_SESSION['google']=$usuario;
+  if(UsuarioController::BuscarMail($_SESSION['google']->mail)){
+      $_SESSION['usuario']=UsuarioController::logeoConMail($_SESSION['google']->mail);
+  }else {
+    header('Location:./registroGoogle.php');
+  }
+  
+ }
+}
 
 ?>
 <!DOCTYPE html>

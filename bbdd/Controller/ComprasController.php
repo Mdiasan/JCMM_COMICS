@@ -1,0 +1,52 @@
+<?php 
+require_once 'Conexion.php';
+require_once './bbdd/model/Comic.php';
+require_once './bbdd/Controller/ComicController.php';
+class ComprasController {
+    static function comprar($idUsuario,$idCommic){
+        $c = new Conexion();
+        $c->beginTransaction();
+        $b = $c->prepare('insert into compras values(?,?,?)');
+        $id = ComprasController::getSiguienteId();
+        
+       
+        $b->bindParam(1,$id);
+        $b->bindParam(2,$idCommic);
+        $b->bindParam(3,$idUsuario);
+        
+
+        $b->execute();
+       $result = $c->commit();
+        
+        ComicController::restarUnidades($idCommic);
+        return $result;
+    }
+
+    
+    static function getSiguienteId(){
+        $c =  new Conexion();
+        $result=$c->query("select idcompras from compras order by idcompras desc limit 1");
+
+       $id = $result->fetchColumn();
+       $id ++;
+
+       return $id;
+    }
+
+
+    static function getComprasUsuario($idUsuario){
+        $c =  new Conexion();
+        $result=$c->query("select * from compras where usuario_id=$idUsuario");
+        $compra = new Compras();
+        if($result->rowCount()){
+            while ($a=$result->fetchObject()) {
+                $compra->nuevaCompra($a->id,$a->comic_id,$a->usuario_id);
+                $compras[]=clone($compra);
+            }
+
+            return $compras;
+        }else{
+            return false;
+        }
+    }
+}

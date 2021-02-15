@@ -12,7 +12,7 @@ function Captcha(mainCaptcha, inputName) {
     }
     var code = a + ' ' + c + ' ' + d + ' ' + f + ' ' + g;
     
-    document.cookie=code //solo 3 minutos de cookie
+    document.cookie= 'captcha='+code //solo 3 minutos de cookie
     //crear el captcha en el div seleccionado
     var contenedor = document.getElementById(mainCaptcha);
     contenedor.innerHTML = '';
@@ -75,8 +75,13 @@ function ValidCaptcha(mainCaptcha, inputName) {
    
     var string1 = document.cookie;//removeSpaces(readCookie('c'));
     string1 = string1.split(";");
-    string1=string1[2];
-    string1=string1.replace(/ /g, "");
+    console.log(string1.length);
+    string1=string1[string1.length-1];
+    console.log(string1)
+    
+    string1=string1.replace("captcha=","");
+    string1 = removeSpaces(string1);
+
     var string2 = removeSpaces(getElementValue(inputName));
     console.log(string1);
     console.log(string2);

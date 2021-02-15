@@ -5,7 +5,9 @@ require_once 'bbdd/model/Usuario.php';
 require_once 'bbdd/model/Comic.php';
 
 session_start();
-
+if(isset($_SESSION['usuario'])){
+    header('Location:./index.php');
+}
 
     if(isset($_POST["usuario"])){
         
@@ -29,8 +31,8 @@ session_start();
         <?php include("includes/design-top.php"); ?>
 
         <main>
-
-            <div class="col ">
+        <div class="row">
+            <div class="col">
                 <h1>Crear usuario</h1>
                 <div class="formLogeo">
 
@@ -74,13 +76,13 @@ session_start();
                     </form>
                     <div class="form-group text-center formLogeo" >
                         
-                    <div id="mainCaptcha">
+                    <div  id="mainCaptcha">
                     
 
                     </div>
                 </div>
             </div>
-           
+        </div>
         </main>
 
         <?php include("includes/footer.php"); ?>

@@ -1,8 +1,27 @@
 <?php include("includes/a_config.php");
 require_once 'bbdd/model/Usuario.php';
 require_once 'bbdd/model/Comic.php';
+require_once 'bbdd/Controller/UsuarioController.php';
+
 
 session_start();
+
+if(!isset($_SESSION['usuario'])){
+    header('Location:login.php');
+}
+
+
+if(isset($_POST["usuario"])){
+        
+   
+    $usuario =  new Usuario("",$_POST['usuario'],"",$_POST['nombre'],$_POST['apellidos'],$_POST['mail']);
+    $_SESSION['usuario']->usuario=$usuario->usuario;
+    $_SESSION['usuario']->nombre=$usuario->nombre;
+    $_SESSION['usuario']->apellidos=$usuario->apellidos;
+    $_SESSION['usuario']->mail=$usuario->mail;
+    
+    UsuarioController::update($_SESSION['usuario']);
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,9 +38,9 @@ session_start();
         <main>
             <div class=row>
                 <div class="col-8 ">
-                    <h1>Crear usuario</h1>
+                    
                     <div class="formLogeo">
-
+                                <div class="text-center"><h1 class=" text-dark">Modificar mis datos </h1></div>
                         <form action="" class="needs-validation" method="POST" novalidate>
                             <div class="form-group">
                                 <label for="usuario">Usuario</label>
@@ -40,7 +59,7 @@ session_start();
                                 <input type="text" name="mail" class="form-control" value="<?php echo $_SESSION['usuario']->mail ?>" required>
                             </div>                       
                             <div class="text-center">
-                                <input class="form-control-3 btn btn-warning mt-3  " type="submit" id="btn" value="Enviar" disabled>
+                                <input class="form-control-3 btn btn-warning mt-3  " type="submit" id="btn" value="Enviar" >
 
                             </div>
                         </form>
@@ -49,10 +68,15 @@ session_start();
 
                 <div class="col">
                     <div class="card">
+                    <?php if(isset($_SESSION['user_image'])){ ?> 
+                        <img class=" card-body-user bg-white img-fluid" src="<?php echo $_SESSION['user_image'] ?>" alt="Card image">
+                 <?php   }else{ ?>
                   <img class=" card-body-user bg-white img-fluid" src="media/images/user.png" alt="Card image">
+
+                 <?php } ?>
                   <div class="card-body-user  text-center">
-                    <h2 class="card-title text-white">Nombre de usuario</h2>
-                    <p class="card-text text-white">Correo Electrónico</p>
+                    <h2 class="card-title text-white"><?php echo $_SESSION['usuario']->usuario ?></h2>
+                    <p class="card-text text-white"> <?php echo $_SESSION['usuario']->mail ?></p>
                   </div>
                 </div>
                 </div>
