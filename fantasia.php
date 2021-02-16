@@ -28,7 +28,7 @@ if (!isset($_POST['pagina'])) {
 
 <div class="row">
   <div class="col  bg-dark text-center ">
-    <h4>Manga</h4>
+    <h4>libros fantasia</h4>
   </div>
 </div>
 <div class="col mt-5 mb-5">
