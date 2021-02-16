@@ -67,16 +67,17 @@ if(isset($_SESSION['usuario'])){
 
                     </div>
                     
-                    </div>
+                    
                         <div class="text-center"> 
                             <input class="form-control-3 btn btn-warning mt-3"  type="submit" id="btn"  value="Enviar"  disabled >
 
                         
                         </div>
                     </form>
-                    <div class="form-group text-center formLogeo" >
+                    
+                    <div class=" text-center formLogeo" >
                         
-                    <div  id="mainCaptcha">
+                                 <div  class="text-center formLogeo" id="mainCaptcha"></div>
                     
 
                     </div>

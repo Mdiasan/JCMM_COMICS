@@ -18,17 +18,17 @@ function Captcha(mainCaptcha, inputName) {
     contenedor.innerHTML = '';
     //primera columna
     var div = document.createElement('div');
-    div.className = "col-lg-6 col-md-6 col-sm-6 col-xs-6";
+    div.className = "col";
     //columna para la imagen
     var div1 = document.createElement('div');
-    div1.className = "col-lg-10 col-md-10 col-sm-10 col-xs-10";
+    div1.className = "col";
     var captcha = document.createElement('canvas');
     captcha.id = 'captcha';
     div1.appendChild(captcha);
     div.appendChild(div1);
     //columna para el refresh
     div1 = document.createElement('div');
-    div1.className = "col-lg-2 col-md-2 col-sm-2 col-xs-2";
+    div1.className = "col";
     var refresh = document.createElement('a');
     refresh.id = "refresh";
     refresh.innerHTML = '';
@@ -39,7 +39,7 @@ function Captcha(mainCaptcha, inputName) {
     contenedor.appendChild(div);
     //columna para el texto
     div = document.createElement('div');
-    div.className = "col-lg-6 col-md-6 col-sm-6 col-xs-6";
+    div.className = "col text-center";
     div1 = document.createElement('div');
     div1.className = "form-horizontal";
     var input = document.createElement('input');
