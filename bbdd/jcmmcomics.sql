@@ -18,7 +18,7 @@
 --
 -- Table structure for table `comic`
 --
-CREATE DATABASE IF NOT EXISTS `jcmm-comics`;
+CREATE DATABASE IF NOT EXISTS `jcmm-comics` DEAFULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `jcmm-comics`;
 DROP TABLE IF EXISTS `comic`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
