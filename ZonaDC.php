@@ -84,7 +84,7 @@ if(!isset($_POST['pagina'])){
                         </a>
                       </li>
                     </ul>
-</nav>
+            </nav>
         </div>
       </div>
     </div>
