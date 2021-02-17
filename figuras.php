@@ -53,25 +53,6 @@ if (!isset($_POST['pagina'])) {
     <?php  } ?>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </div>
   <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
@@ -108,12 +89,6 @@ if (!isset($_POST['pagina'])) {
 
 </div>
 </div>
-</div>
-
-
-
-
-
 
 
 <div class="row"></div>

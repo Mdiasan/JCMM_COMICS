@@ -108,7 +108,6 @@ if (!isset($_POST['pagina'])) {
 
 </div>
 </div>
-</div>
 
 
 

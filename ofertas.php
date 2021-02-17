@@ -65,12 +65,6 @@ session_start();
             </div>
         </div>
 
-
-
-
-
-
-       
         <div class="row"></div>
 
 

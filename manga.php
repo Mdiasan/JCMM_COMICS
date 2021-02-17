@@ -53,32 +53,11 @@ if (!isset($_POST['pagina'])) {
               </div>
             <?php  } ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           </div>
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
 
-
-            <li class="page-item ">
+              <li class="page-item ">
                 <a class="page-link">
                   <form action="" method="POST"><button type="submit" class="btn btn-primary" name="pagina" value=0>Primera</button></form>
                 </a>
@@ -91,7 +70,7 @@ if (!isset($_POST['pagina'])) {
               for ($i = 0; $i < $numero; $i++) {
 
               ?>
-                 <li class="page-item"><a class="page-link">
+                <li class="page-item"><a class="page-link">
                     <form action="" method="POST"><button type="submit" class="btn btn-primary" name="pagina" value=<?php echo ($i)  ?>><?php echo ($i + 1) ?></button></form>
                   </a></li>
 
@@ -109,18 +88,12 @@ if (!isset($_POST['pagina'])) {
 
       </div>
     </div>
-  </div>
 
 
+    <div class="row"></div>
 
 
-
-
-
-  <div class="row"></div>
-
-
-  <?php include("includes/footer.php"); ?>
+    <?php include("includes/footer.php"); ?>
   </div>
 </body>
 

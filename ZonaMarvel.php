@@ -35,16 +35,8 @@ if (!isset($_POST['pagina'])) {
         <div class="col mt-5 mb-5">
           <div class="card-deck">
 
-
-
-
-
-
-
             <?php $arrayNovedades = ComicController::getComicPorNombreEditorialPaginado($_POST['pagina'], 3, "Marvel");
             foreach ($arrayNovedades as $key => $value) {
-
-
             ?>
 
               <div class="w-100 d-none d-sm-block d-lg-none">
@@ -59,25 +51,6 @@ if (!isset($_POST['pagina'])) {
                 <a href="precio2.php?articulo=<?php echo $value->id ?>" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
               </div>
             <?php  } ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
           </div>
@@ -113,11 +86,6 @@ if (!isset($_POST['pagina'])) {
         </div>
       </div>
     </div>
-
-
-
-
-
 
 
     <div class="row"></div>

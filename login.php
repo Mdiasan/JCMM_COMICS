@@ -6,31 +6,7 @@ require_once 'bbdd/model/Comic.php';
 
 session_start();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // fin logueo google
-
 
 $errorEnLogueo=false;
 
@@ -47,10 +23,7 @@ if(isset($_POST['Enviar'])){
     }
    
 
-   
 }
-
-
 
 
 ?>
@@ -94,8 +67,6 @@ if(isset($_POST['Enviar'])){
                          <div class="text-center">
                          <input type="submit" class="form-control-3 btn btn-warning mt-3" name="Enviar">
                         </div>
-
-
 
 
                         </form>
