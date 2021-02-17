@@ -306,4 +306,46 @@ static function editar($comic){
     $b->execute();
     $c->commit();
 }
+
+
+static function GetStock($id){
+    $c= new Conexion();
+       
+       
+    $result = $c->query("select c.stock FROM comic as c  where c.id=$id");
+   
+  
+
+
+    if($result->rowCount()){
+        $a=$result->fetchColumn(0);
+        return $a;
+    }
+
+    return false;
+}
+
+static function getComicCompras($arrayCompras){
+    $c= new Conexion();
+    foreach ($arrayCompras as $key => $value) {
+       
+       
+       
+        $result = $c->query("select c.* FROM comic as c  where c.id=$value->idComic");
+       
+      
+
+
+        if($result->rowCount()){
+           $comic= new Comic();
+           while($a=$result->fetchObject()){
+            $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->imagen,$a->editorial_id,$a->stock,$value->cantidad);
+            $comics[]=clone($comic);
+            
+           }
+          
+        } 
+    }
+    return $comics;
+}
 }

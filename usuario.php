@@ -2,6 +2,9 @@
 require_once 'bbdd/model/Usuario.php';
 require_once 'bbdd/model/Comic.php';
 require_once 'bbdd/Controller/UsuarioController.php';
+require_once 'bbdd/Controller/ComprasController.php';
+require_once 'bbdd/Controller/ComicController.php';
+
 
 
 session_start();
@@ -22,6 +25,13 @@ if(isset($_POST["usuario"])){
     
     UsuarioController::update($_SESSION['usuario']);
 }
+
+$compras= ComprasController::getComprasUsuario($_SESSION['usuario']->id);
+if($compras!=false){
+        $comicsComprados=ComicController::getComicCompras($compras);
+}
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -81,7 +91,41 @@ if(isset($_POST["usuario"])){
                 </div>
                 </div>
             </div>
+    <?php if(isset($comicsComprados)){
+           
+               
+            
+        ?>
 
+            <div class="row">
+                    <div class="col text-center">
+                    <h1 class="text-dark ">Mis compras</h1>
+                    <table class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Comic</th>
+                        <th scope="col">cantidad</th>
+                        <th scope="col">precio</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php  foreach ($comicsComprados as $key => $value) { ?>
+                            <tr>
+                            <th scope="row"><img src="media/images/<?php echo $value->imagen  ?>" style="width: 80px;height: 90px;"></th>
+                            <td><?php echo $value->titulo;  ?></td>
+                            <td><?php echo $value->cantidad ;?></td>
+                            <td><?php echo $value->cantidad*$value->precio; ?></td>
+                            </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+
+                    </div>
+                   
+            
+            </div>
+            <?php  } ?>
         </main>
 
         <?php include("includes/footer.php"); ?>

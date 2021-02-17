@@ -7,12 +7,58 @@ require_once 'bbdd/Controller/ComprasController.php';
 require_once 'bbdd/model/Comic.php';
 session_start();
 $resultado=null;
+$demasiado=null;
+
+
+
+if(isset($_POST['mas'])){
+    $c = ComicController::getComicById($_POST['mas']);
+    
+    $a=ComicController::GetStock($_POST['mas']);
+    $a= $a-$_SESSION['carrito'][$c->id]->cantidad;
+  if($a>0){
+    $c = ComicController::getComicById($_POST['mas']);
+    if(isset( $_SESSION['carrito'][$c->id])){
+       $_SESSION['carrito'][$c->id]->cantidad ++ ;
+  
+    }else{
+      $c->cantidad=1;
+      $_SESSION['carrito'][$c->id]=$c;
+    }
+  
+  }else{
+    $demasiado=true;
+  }
+ 
+  
+}
+if(isset($_POST['menos'])){
+    $c = ComicController::getComicById($_POST['menos']);
+    
+    if(isset( $_SESSION['carrito'][$c->id])){
+       $_SESSION['carrito'][$c->id]->cantidad -- ;
+
+       if( $_SESSION['carrito'][$c->id]->cantidad<=0){
+           unset( $_SESSION['carrito'][$c->id]);
+           if(count($_SESSION['carrito'])<=0){
+                unset($_SESSION['carrito']);
+           }
+       }
+  
+    }
+  
+    
+  }
+
 if(isset($_POST['pagar'])){
     $resultado=true;
     foreach ($_SESSION["carrito"] as $key => $value) {
-        if(!ComprasController::comprar($_SESSION['usuario']->id,$value->id)){
-            $resultado=false;
+        for ($i=0; $i < $value->cantidad ; $i++) { 
+            if(!ComprasController::comprar($_SESSION['usuario']->id,$value->id)){
+                $resultado=false;
+            }
         }
+        
     }
     $_SESSION['carrito']="";
   
@@ -68,8 +114,23 @@ if(isset($_POST['pagar'])){
                                     <p><?php echo $value->titulo ?></p>
                                 </div>
 
-                                <div class="col">X <?php echo $value->cantidad ?> </div>
+                                <div class="col">
+                               
+                                
+                                    <form action="" method="POST" class="d-inline"><button  name="menos" class="btn btn-orange" value="<?php echo $value->id ?>">-</button>  X <?php echo $value->cantidad ?> <button name="mas" class="btn btn-orange" value="<?php echo $value->id ?>" >+</button> </form>
+                                    
+                                   
+                                   
+                                   
+                                   
+                                    
+                                 
 
+                                
+                               
+                               
+                               
+                                </div>
                                 <div class="col">Precio: <?php echo ($value->precio * $value->cantidad) ?> €</div>
 
                             </div>
@@ -125,7 +186,7 @@ if(isset($_POST['pagar'])){
 
         </main>
 
-        <div class="modal fade" id="modalcompra">
+   <div class="modal fade" id="modalcompra">
     <div class="modal-dialog">
       <div class="modal-content">
      
@@ -145,6 +206,24 @@ if(isset($_POST['pagar'])){
   </div>
 
 
+  <div class="modal fade" id="demasiado">
+    <div class="modal-dialog">
+      <div class="modal-content">
+     
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+           <div class="alert alert-danger alert-dismissible fade show">
+    		 <button type="button" class="close" data-dismiss="modal">&times;</button>
+    		<strong>upss!</strong>no se puede añadir al carrito, por que no hay más unidades
+  			</div>
+        </div>
+        
+       
+        
+      </div>
+    </div>
+  </div>
 
   <div class="modal fade" id="error">
     <div class="modal-dialog">
@@ -174,6 +253,9 @@ if(isset($_POST['pagar'])){
         <?php }?>
         <?php if($resultado){ ?>
           <script> $('#modalcompra').modal('show');</script>
+        <?php }?>
+        <?php if($demasiado){ ?>
+          <script> $('#demasiado').modal('show');</script>
         <?php }?>
 </body>
 

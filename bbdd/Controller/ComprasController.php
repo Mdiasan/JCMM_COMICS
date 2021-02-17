@@ -1,6 +1,8 @@
 <?php 
 require_once 'Conexion.php';
 require_once './bbdd/model/Comic.php';
+require_once './bbdd/model/Compras.php';
+
 require_once './bbdd/Controller/ComicController.php';
 class ComprasController {
     static function comprar($idUsuario,$idCommic){
@@ -36,11 +38,11 @@ class ComprasController {
 
     static function getComprasUsuario($idUsuario){
         $c =  new Conexion();
-        $result=$c->query("select * from compras where usuario_id=$idUsuario");
+        $result=$c->query("select * , count(idcompras) cantidad from compras where usuario_id=$idUsuario  group by comic_id");
         $compra = new Compras();
         if($result->rowCount()){
             while ($a=$result->fetchObject()) {
-                $compra->nuevaCompra($a->id,$a->comic_id,$a->usuario_id);
+                $compra->nuevaCompra($a->idcompras,$a->comic_id,$a->usuario_id,$a->cantidad);
                 $compras[]=clone($compra);
             }
 
