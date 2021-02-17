@@ -95,7 +95,7 @@ if(isset($_GET["code"]))
                 <img src="media/images/novedad_vdi.png" alt="">
               </div>
               <div class="carousel-item">
-                <img src="media/images/novedad.png" alt="">
+                <img src="media/images/estreno.jpg" alt="">
               </div>
             </div>
 
