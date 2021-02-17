@@ -90,11 +90,6 @@ if(!isset($_POST['pagina'])){
     </div>
 
 
-
-
-
-
-
     <div class="row"></div>
 
 

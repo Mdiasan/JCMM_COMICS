@@ -22,11 +22,6 @@ if(isset($_POST['retirar'])){
 $arrayComics=ComicController::getAll();
 
  
-
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html>

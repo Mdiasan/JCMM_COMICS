@@ -1,4 +1,13 @@
-<?php include("includes/a_config.php"); ?>
+<?php include("includes/a_config.php"); 
+require_once 'bbdd/model/Usuario.php';
+require_once 'bbdd/Controller/ComicController.php';
+require_once 'bbdd/model/Comic.php';
+
+session_start();
+if (!isset($_POST['pagina'])) {
+  $_POST['pagina'] = 0;
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -15,121 +24,78 @@
 
         <?php include("includes/navigation-2.php"); ?>
         
-            <div class=" col-sm-9 mt-3 ">
+        <div class=" col-sm-9 mt-3 ">
 
-                <div class="row">
-                    <div class="col  bg-dark text-center ">
-                        <h4>productos</h4>
-                    </div>
-                </div>
-                <div class="col mt-5 mb-5">
-                    <div class="card-deck mt-5">
-
-                        <div class="card">
-                            <img class="card-img-top" src="media/images/titanes.png" alt="Card image">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">comic 1</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                            </div>
-                            <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
-                        </div>
+<div class="row">
+  <div class="col  bg-dark text-center ">
+    <h4>figuras</h4>
+  </div>
+</div>
+<div class="col mt-5 mb-5">
+  <div class="card-deck mt-5">
+    <?php $arrayNovedades = ComicController::getComicPorTipoPaginado($_POST['pagina'], 3, "Figura");
+    foreach ($arrayNovedades as $key => $value) {
 
 
-                        <div class="card">
-                            <img class="card-img-top" src="media/images/nacidos.png" alt="Card image">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">comic 1</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                            </div>
-                            <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
-                        </div>
+    ?>
 
-                        <div class="card">
-                            <img class="card-img-top" src="media/images/catan.png" alt="Card image">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">comic 1</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                            </div>
-                            <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
-                        </div>
-                    </div>
-                    <div class="card-deck mt-5">
-
-                        <div class="card">
-                            <img class="card-img-top" src="media/images/superior spiderman.png" alt="Card image">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">comic 1</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                            </div>
-                            <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
-                        </div>
-
-
-                        <div class="card">
-                            <img class="card-img-top" src="media/images/guantelete del infinito.png" alt="Card image">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">comic 1</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                            </div>
-                            <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
-                        </div>
-
-                        <div class="card">
-                            <img class="card-img-top" src="media/images/juego de tronos.png" alt="Card image">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">comic 1</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                            </div>
-                            <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
-
-                        </div>
-                    </div>
-                    <div class="card-deck mt-5">
-
-                        <div class="card">
-                            <img class="card-img-top" src="media/images/cell.png" alt="Card image">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">comic 1</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                            </div>
-                            <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
-                        </div>
-
-
-                        <div class="card">
-                            <img class="card-img-top" src="media/images/archivo de las tormentas.png" alt="Card image">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">comic 1</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                            </div>
-                            <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
-                        </div>
-
-                        <div class="card">
-                            <img class="card-img-top" src="media/images/spiderman ultimate.png" alt="Card image">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">comic 1</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, sapiente magni facere doloribus dolor possimus asperiores neque dolorum illo ad.</p>
-                            </div>
-                            <a href="precio2.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> comprar</a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="w-100 d-none d-sm-block d-lg-none">
+        <!-- wrap every 2 on sm-->
+      </div>
+      <div class="card">
+        <a href="precio2.php?articulo=<?php echo $value->id; ?>"><img class="card-img-top img-fluid" src="media/images/<?php echo $value->imagen ?>" alt="Card image"> </a>
+        <div class="card-body text-center">
+          <h2 class="card-title"><?php echo $value->titulo ?></h2>
+          <p class="card-text"><?php echo $value->descripcion ?></p>
         </div>
+        <a href="precio2.php?articulo=<?php echo $value->id ?>" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Comprar</a>
+      </div>
+    <?php  } ?>
 
 
+  </div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
 
 
+    <li class="page-item ">
+        <a class="page-link">
+          <form action="" method="POST"><button type="submit" class="btn btn-primary" name="pagina" value=0>Primera</button></form>
+        </a>
+      </li>
+      <?php
+
+      $numero = ComicController::getNumeroComicPorTipoPaginado("Figura");
+
+      $numero = ceil(($numero / 3));
+      for ($i = 0; $i < $numero; $i++) {
+
+      ?>
+         <li class="page-item"><a class="page-link">
+            <form action="" method="POST"><button type="submit" class="btn btn-primary" name="pagina" value=<?php echo ($i)  ?>><?php echo ($i + 1) ?></button></form>
+          </a></li>
+
+      <?php } ?>
+      <li>
+        <a class="page-link">
+          <form action="" method="POST"><button type="submit" class="btn btn-primary" name="pagina" value=<?php echo $numero - 1  ?>>Última</button></form>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</div>
 
 
+</div>
+</div>
 
-        <div class="row"></div>
+
+<div class="row"></div>
 
 
-        <?php include("includes/footer.php"); ?>
-    </div>
+<?php include("includes/footer.php"); ?>
+</div>
 </body>
 
 </html>

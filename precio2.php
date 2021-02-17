@@ -7,7 +7,6 @@ require_once 'bbdd/model/Comic.php';
 require_once 'bbdd/model/Valoracion.php';
 
 
-
 session_start();
 
 if(!isset($_GET["articulo"])){
@@ -181,10 +180,10 @@ $arrayComentarios= ValoracionController::getAll($comic);
             <div style="margin-top: 5%; <?php if($i>=2 ) {echo "display:none" ;}?>" name="comentarios" >
                <h5 class="text-dark"><?php  echo  UsuarioController::getNombre($arrayComentarios[$i]->usuario)  ?></h5>
                
-                <form >
-                <p class="clasificacion">
+<form >
+<p class="clasificacion">
                   
-                  <input id="radio12" type="radio"  value="5"   disabled  <?php if( $arrayComentarios[$i]->valoracion == 5){echo 'checked';}  ?> >
+<input id="radio12" type="radio"  value="5"   disabled  <?php if( $arrayComentarios[$i]->valoracion == 5){echo 'checked';}  ?> >
                   <!--
 --><label for="radio12" >★</label>
                   <!--
@@ -206,10 +205,6 @@ $arrayComentarios= ValoracionController::getAll($comic);
 </p>
                 
               </form>
-               
-               
-               
-               
                 
                
               <hr>
@@ -223,9 +218,7 @@ $arrayComentarios= ValoracionController::getAll($comic);
         }
         
         ?>
-
-
-        
+ 
         <div class="text-center">
           <button class="btn btn-primary"  style="margin: auto; <?php if($arrayComentarios==false || count($arrayComentarios)<2){echo "display:none";} ?>" onclick="verTodosLosComentarios()" id="mas">ver más</button>
           <button class="btn btn-primary " style="display: none; margin: auto;" onclick="verMenosComentarios()" id="menos" >ver menos</button>
@@ -252,8 +245,7 @@ $arrayComentarios= ValoracionController::getAll($comic);
     		<strong>Error!</strong> ya has realizado un comentario de este comic
   			</div>
         </div>
-        
-       
+               
         
       </div>
     </div>
@@ -262,8 +254,8 @@ $arrayComentarios= ValoracionController::getAll($comic);
   <div class="modal fade" id="usuario">
     <div class="modal-dialog">
       <div class="modal-content">
-     
-        
+
+
         <!-- Modal body -->
         <div class="modal-body">
            <div class="alert alert-danger alert-dismissible fade show">
@@ -271,8 +263,7 @@ $arrayComentarios= ValoracionController::getAll($comic);
     		<strong>Error!</strong> debes loguearte para añadir un comentario
   			</div>
         </div>
-        
-       
+              
         
       </div>
     </div>
@@ -290,17 +281,11 @@ $arrayComentarios= ValoracionController::getAll($comic);
     		<strong>Gracias!</strong> comic añadido al carrito 
   			</div>
         </div>
-        
-       
+             
         
       </div>
     </div>
   </div>
-
-
-
-
-
 
 
   <?php if(!$usuarioNoAutenticado){ ?>
@@ -329,15 +314,12 @@ $arrayComentarios= ValoracionController::getAll($comic);
       for (let index = 0; index < arrayDiv.length; index++) {
         if(index != 1 && index!= 0){
           arrayDiv[index].style.display='none';
-        }
-        
-       
-        
+        } 
+
       }
     document.getElementById('mas').style.display='block';
     document.getElementById('menos').style.display='none';
   }
-
 
   function darValorReseña(){
     var btnResena= document.getElementById("resena");
@@ -354,6 +336,5 @@ $arrayComentarios= ValoracionController::getAll($comic);
     
   }
 
-  
 </script>
 </html>
