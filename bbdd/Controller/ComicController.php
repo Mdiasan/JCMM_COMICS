@@ -100,7 +100,7 @@ class ComicController {
         $c = new Conexion();
         $c->beginTransaction();
         $b = $c->prepare('insert into comic values(?,?,?,?,?,?,?)');
-        $id =1;
+        $id =ComicController::getSiguienteId();
         $titulo=$comic->titulo;
         $des=$comic->descripcion;
         $precio=$comic->precio;
@@ -347,5 +347,14 @@ static function getComicCompras($arrayCompras){
         } 
     }
     return $comics;
+}
+static function getSiguienteId(){
+    $c =  new Conexion();
+    $result=$c->query("select id from comic order by id desc limit 1");
+
+   $id = $result->fetchColumn();
+   $id ++;
+
+   return $id;
 }
 }

@@ -14,4 +14,9 @@ class Editorial{
     public function __set($name, $value){
         $this->$name=$value;
     }
+
+    public function nuevaEditorial($id="",$nombre=""){
+        $this->id=$id;
+        $this->nombre=$nombre;
+    }
 }

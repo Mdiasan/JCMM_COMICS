@@ -1,11 +1,26 @@
 <?php include("includes/a_config.php");
 require_once 'bbdd/model/Usuario.php';
 require_once 'bbdd/Controller/ComicController.php';
+require_once 'bbdd/Controller/EditorialController.php';
+
 require_once 'bbdd/model/Comic.php';
 
 session_start();
-if (!isset($_POST['pagina'])) {
-    $_POST['pagina'] = 0;
+
+
+if(!isset($_SESSION['usuario']) || $_SESSION['usuario']->rol!='admin'){
+    header("Location:./index.php");
+}
+$arrayEditorial=EditorialController::getAll();
+
+if(isset($_POST['crearNuevo'])){
+    if(is_uploaded_file($_FILES['imagen']['tmp_name'])){
+        $fich_unic=time().$_FILES['imagen']['name'];
+        move_uploaded_file($_FILES['imagen']['tmp_name'],"media/images/".$fich_unic);
+
+        $comic=new Comic(null,$_POST['titulo'],$_POST['descripcion'],$_POST['precio'],$fich_unic,$_POST['editorial'],$_POST['stock']);
+        ComicController::insertarComic($comic);
+    }
 }
 
 ?>
@@ -30,7 +45,7 @@ if (!isset($_POST['pagina'])) {
 
 
 
-                    <form action="" method="post">
+                    <form action="" method="post" enctype="multipart/form-data">
 
                         <div class="card-body">
 
@@ -43,13 +58,23 @@ if (!isset($_POST['pagina'])) {
                             Precio: <input type="int"  class="form-control" name="precio">
                             <br>
                             <br>
-                            Imagen: <input type="file"  class="form-control" name="imagen">
+                            Imagen: <input type="file"  class="form-control" name="imagen" required>
                             <br>
                             <br>
-                            Editorial: <input type="int"  class="form-control" name="editorial">
+                            Editorial:
+                            <select name="editorial" id="">
+
+
+                            <?php foreach ($arrayEditorial as $key => $value) {  ?>
+                                <option value="<?php echo $value->id ?>"><?php echo $value->nombre ?></option>                          
+                            <?php  } ?>
+
+
+                               
+                            </select>
                             <br>
                             <br>
-                            Stock: <input type="int"  class="form-control" name="editorial">
+                            Stock: <input type="int"  class="form-control" name="stock">
                             <br>
                             <br>
                             <input type="submit" name="crearNuevo" class="btn btn-success" value="Añadir">
