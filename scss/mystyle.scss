@@ -382,4 +382,15 @@ input[type = "radio"]:checked ~ label{color:orange;}
 }
 
 
+.cookiealert::before {
+  content: " ";
+  position: absolute;
+  left: -20px;
 
+  top: -170px;
+  width: 190px;
+  height: 260px;
+  background: url(../media/images/cokkies.png) center center no-repeat;
+  background-size: 60%;
+  pointer-events: none;
+}

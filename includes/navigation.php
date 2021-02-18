@@ -97,8 +97,7 @@ if(isset($_SESSION['carrito'])){
             } ?>
             </a></div>
 
-        <input class="form-control mr-3 " type="text" placeholder="Busca aqui tu cómic">
-        <button class="btn btn-warning  d-block d-sm-inline" type="submit">Buscar</button>
+        
       </form>
 
     </div>
