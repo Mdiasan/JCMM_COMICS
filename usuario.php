@@ -25,7 +25,7 @@ if(isset($_POST["usuario"])){
     
     UsuarioController::update($_SESSION['usuario']);
 }
-
+echo $_SESSION['usuario']->id;
 //$compras= ComprasController::getComprasUsuario($_SESSION['usuario']->id);
 //if($compras!=false){
 //        $comicsComprados=ComicController::getComicCompras($compras);
