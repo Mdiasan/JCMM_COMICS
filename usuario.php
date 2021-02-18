@@ -26,10 +26,10 @@ if(isset($_POST["usuario"])){
     UsuarioController::update($_SESSION['usuario']);
 }
 
-$compras= ComprasController::getComprasUsuario($_SESSION['usuario']->id);
-if($compras!=false){
-        $comicsComprados=ComicController::getComicCompras($compras);
-}
+//$compras= ComprasController::getComprasUsuario($_SESSION['usuario']->id);
+//if($compras!=false){
+//        $comicsComprados=ComicController::getComicCompras($compras);
+//}
 
 
 ?>
