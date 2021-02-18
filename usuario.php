@@ -27,12 +27,12 @@ if(isset($_POST["usuario"])){
 }
 
 $compras= ComprasController::getComprasUsuario($_SESSION['usuario']->id);
-if($compras!=false){
-        $comicsComprados=ComicController::getComicCompras($compras);
-}
+//if($compras!=false){
+//        $comicsComprados=ComicController::getComicCompras($compras);
+//}
 
 
-var_dump($comicsComprados);
+var_dump($compras);
 
 ?>
 <!DOCTYPE html>
