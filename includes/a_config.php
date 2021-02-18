@@ -25,7 +25,8 @@ $google_client->setClientId('968720151135-icdldc3a7vn0p6giaepuc7ga4325r7qn.apps.
 $google_client->setClientSecret('LATwRxYJNrtgRtb_JSN-iKg-');
 
 //Set the OAuth 2.0 Redirect URI
-$google_client->setRedirectUri('http://localhost/index.php');
+//$google_client->setRedirectUri('http://localhost/index.php');
+$google_client->setRedirectUri('http://jcmmcomics.iesmarquesdecomares.org/index.php');
 
 //
 $google_client->addScope('email');
