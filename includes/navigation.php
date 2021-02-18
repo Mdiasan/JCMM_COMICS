@@ -28,9 +28,12 @@ if(isset($_SESSION['carrito'])){
           <a class="nav-link" href="usuario.php"  data-toggle="dropdown"><i class="fas fa-user"></i> <?php echo $_SESSION['usuario']->nombre ?> <span class="sr-only"></span></a>
 
         <div class="dropdown-menu">
+        <?php if($_SESSION['usuario']->rol='admin'){ ?>
+            <a class="dropdown-item" href="zonaAdmin.php">Zona Administrador</a>
+            <?php } ?>
+          <a class="dropdown-item" href="usuario.php">Mis Datos</a>
+          <a class="dropdown-item" href="logout.php">Cerrar Sesión</a>
           
-          <a class="dropdown-item" href="usuario.php">Mis datos</a>
-          <a class="dropdown-item" href="logout.php">cerrar sesión</a>
           
         </div>
       </li>

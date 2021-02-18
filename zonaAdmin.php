@@ -39,7 +39,9 @@ $arrayComics=ComicController::getAll();
             <div class="row">
                 
                 <div class="col">
+                <br>
                 <form action="nuevoComic.php"><button class="btn btn-primary">Añadir comic</button></form>
+                <br>
                     <table class="table">
                             <thead class="thead-dark">
                                 <tr>
