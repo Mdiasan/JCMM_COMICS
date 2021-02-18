@@ -32,7 +32,7 @@ if($compras!=false){
 }
 
 
-var_dump($compras);
+
 
 ?>
 <!DOCTYPE html>
