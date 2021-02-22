@@ -33,7 +33,7 @@ if(!isset($_POST['pagina'])){
           </div>
         </div>
         <div class="col mt-5 mb-5">
-          <div class="card-deck">
+          <div class="card-deck mb-5">
     
             <?php
           

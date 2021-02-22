@@ -33,7 +33,7 @@ if (!isset($_POST['pagina'])) {
 
         </div>
         <div class="col mt-5 mb-5">
-          <div class="card-deck mt-5">
+          <div class="card-deck mt-5 mb-5">
             <?php $arrayNovedades = ComicController::getComicPorTipoPaginado($_POST['pagina'], 3, "Libro");
             foreach ($arrayNovedades as $key => $value) {
 
