@@ -32,8 +32,8 @@ if (!isset($_POST['pagina'])) {
             <h4>Zona Marvel</h4>
           </div>
         </div>
-        <div class="col mt-5 mb-5">
-          <div class="card-deck">
+        <div class="col mt-5 ">
+          <div class="card-deck mb-5">
 
             <?php $arrayNovedades = ComicController::getComicPorNombreEditorialPaginado($_POST['pagina'], 3, "Marvel");
             foreach ($arrayNovedades as $key => $value) {
@@ -54,8 +54,8 @@ if (!isset($_POST['pagina'])) {
 
 
           </div>
-          <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
+          <nav aria-label="Page navigation example ">
+            <ul class="pagination justify-content-center ">
 
 
               <li class="page-item ">
