@@ -357,4 +357,22 @@ static function getSiguienteId(){
 
    return $id;
 }
+
+
+static function buscar($busqueda){
+    $c =  new Conexion();
+    $result=$c->query("select * from comic where titulo like '%$busqueda%' or descripcion like '%$busqueda%' ");
+    if($result->rowCount()){
+        $comic= new Comic();
+        while($a=$result->fetchObject()){
+         $comic->nuevoComic($a->id,$a->titulo,$a->descripcion,$a->precio,$a->imagen,$a->editorial_id,$a->stock);
+         $comics[]=clone($comic);
+         
+        }
+        return $comics;
+    }else{
+        return false;
+    }
+  
+}
 }

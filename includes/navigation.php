@@ -28,9 +28,9 @@ if(isset($_SESSION['carrito'])){
           <a class="nav-link" href="usuario.php"  data-toggle="dropdown"><i class="fas fa-user"></i> <?php echo $_SESSION['usuario']->nombre ?> <span class="sr-only"></span></a>
 
         <div class="dropdown-menu">
-        <?php if($_SESSION['usuario']->rol='admin'){ ?>
+        <?php if($_SESSION['usuario']->rol=='admin'){  ?>
             <a class="dropdown-item" href="zonaAdmin.php">Zona Administrador</a>
-            <?php } ?>
+        <?php } ?>
           <a class="dropdown-item" href="usuario.php">Mis Datos</a>
           <a class="dropdown-item" href="logout.php">Cerrar Sesión</a>
           
@@ -91,7 +91,7 @@ if(isset($_SESSION['carrito'])){
     </ul>
 
     <div class="ml-auto">
-      <form class="form-inline">
+      <form class="form-inline "  action="resultadoBusqueda.php" method="POST">
         <div class="mr-3"> <a class="fas fa-shopping-cart text-white" href="carrito.php"></a>
           <a class="text-white" href="carrito.php"> <?php 
           if(isset($_SESSION['carrito'])){
@@ -100,7 +100,8 @@ if(isset($_SESSION['carrito'])){
             } ?>
             </a></div>
 
-        
+          <input type="text" class="form-control" name="buscar">
+          <button class="btn btn-warning" name="busqueda">buscar</button>
       </form>
 
     </div>

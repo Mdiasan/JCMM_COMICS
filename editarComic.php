@@ -58,7 +58,7 @@ if(isset($_POST['crearNuevo'])){
 <br>
                 <div class="card formLogeo">
                     <div class="card-header bg-dark text-white">
-                        <h4 class="mb-0">Añade un nuevo Comic</h4>
+                        <h4 class="mb-0">Editar Comic</h4>
                     </div>
 
 
@@ -66,9 +66,9 @@ if(isset($_POST['crearNuevo'])){
                     <form action="" method="post" enctype="multipart/form-data">
 
                         <div class="card-body">
-                        <div class=" text-center " style="width: 100%;">   <img style="  width:300px;
+                        <div class=" text-center " style="width: 100%;">  <button class="btn btn-primary " id="btnImagen" style="border: none;" ><img style="  width:300px;
     height:300px;
-    border-radius:150px;" src="media/images/<?php echo $comic->imagen ?>" alt=""></div>
+    border-radius:150px;" src="media/images/<?php echo $comic->imagen ?>" alt=""></button> </div>
                          <br>
                             Titulo: <input type="text" class="form-control" name="titulo" value="<?php echo $comic->titulo ?>">
                             <br>
@@ -79,7 +79,7 @@ if(isset($_POST['crearNuevo'])){
                             Precio: <input type="int"  class="form-control" name="precio" value="<?php echo $comic->precio ?>">
                             <br>
                             <br>
-                            Imagen: <input type="file"  class="form-control" name="imagen" >
+                         <input type="file" id="InputImage"  hidden class="form-control" name="imagen" >
                             <br>
                             <br>
                             Editorial: 
@@ -104,7 +104,7 @@ if(isset($_POST['crearNuevo'])){
                             Stock: <input type="int"  class="form-control" name="stock" value="<?php echo $comic->stock ?>">
                             <br>
                             <br>
-                            <input type="submit" name="crearNuevo" class="btn btn-warning" value="Añadir">
+                            <input type="submit" name="crearNuevo" class="btn btn-warning" value="Editar">
                             <input type="submit" name="" class="btn btn-danger" value="Cancelar">
                         </div>
                 </div>
@@ -114,5 +114,11 @@ if(isset($_POST['crearNuevo'])){
     </div>
 
 </body>
-
+<script>
+var botonImagen = document.getElementById('btnImagen');
+var input = document.getElementById('InputImage');
+        botonImagen.addEventListener("click",function () {
+            input.click();
+    });
+</script>
 </html>

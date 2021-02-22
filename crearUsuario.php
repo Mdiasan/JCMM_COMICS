@@ -34,7 +34,7 @@ if(isset($_SESSION['usuario'])){
         <div class="row">
             <div class="col">
                 <h1>Crear usuario</h1>
-                <div class="formLogeo">
+                <div class="formLogeo" id="formLogueo">
 
                     <form action=""  class="needs-validation"   method="POST" novalidate  >
                     <div class="form-group">
@@ -66,21 +66,21 @@ if(isset($_SESSION['usuario'])){
                         
 
                     </div>
-                    
-                    
-                        <div class="text-center"> 
-                            <input class="form-control-3 btn btn-warning mt-3"  type="submit" id="btn"  value="Enviar"  disabled >
-
-                        
-                        </div>
-                    </form>
-                    
-                    <div class=" text-center formLogeo" >
+                    <div id="" class=" text-center formLogeo" >
                         
                                  <div  class="text-center formLogeo" id="mainCaptcha"></div>
                     
 
                     </div>
+                    
+                        <div class="text-center"> 
+                            <input class="form-control-3 btn btn-warning mt-3"  type="submit" id="btn"  value="Enviar"   >
+
+                        
+                        </div>
+                    </form>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -125,10 +125,10 @@ var chaptcha= false;
        
         if(contrasena == repite){
             document.getElementById('error').style.display='none';
-            btn.disabled=  false;
+            return true;
         }else{
             document.getElementById('error').style.display='block';
-            btn.disabled=  true;
+           return false;
         }
 
     }else{
@@ -140,20 +140,36 @@ var chaptcha= false;
         
         if(ValidaWeb()){
             chaptcha=true;
-            console.log(chaptcha);
+            return chaptcha;
         }else{
             chaptcha=false;
+            return chaptcha;
         }
     }
 
-    setInterval("valido()",10);
 
    function valido(){
     console.log(chaptcha);
         if(chaptcha){
-        setInterval('validarContraseña()',10);
+
+
     }
     }
+
+    $('#btn').click(function(event){
+        console.log('hola')
+        console.log('contraseñas correctas'+validarContraseña());
+        if(comprobarValidacionCaptcha() && validarContraseña() ){
+            
+            console.log('correcto amigo')
+            $('formLogueo').submit();
+
+        }else{
+            event.preventDefault();
+        }
+    });
+
+    
    
     
     

@@ -153,6 +153,7 @@ function CreaIMG(texto) {
                 if (ValidCaptcha('mainCaptcha', 'txtInput')) {
                      // tu codigo una vez validado
                      return true;
+                     
                 }else{
                     Captcha('mainCaptcha', 'txtInput');
                     return false;
