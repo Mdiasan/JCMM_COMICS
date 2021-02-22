@@ -7,7 +7,10 @@ require_once 'bbdd/model/Comic.php';
 
 session_start();
 
-
+$creado=false;
+if(isset($_POST['cancelar'])){
+    header("Location:./zonaAdmin.php");
+}
 if(!isset($_SESSION['usuario']) || $_SESSION['usuario']->rol!='admin'){
     header("Location:./index.php");
 }
@@ -20,6 +23,8 @@ if(isset($_POST['crearNuevo'])){
 
         $comic=new Comic(null,$_POST['titulo'],$_POST['descripcion'],$_POST['precio'],$fich_unic,$_POST['editorial'],$_POST['stock']);
         ComicController::insertarComic($comic);
+
+        $creado=true;
     }
 }
 
@@ -37,6 +42,10 @@ if(isset($_POST['crearNuevo'])){
 
         <div class="row">
             <div class="col">
+            <form action="" method="POST">
+            <br>
+            <input type="submit" name="cancelar" class="btn btn-primary" value="volver">
+            </form>
 <br>
                 <div class="card formLogeo">
                     <div class="card-header bg-dark text-white">
@@ -55,7 +64,7 @@ if(isset($_POST['crearNuevo'])){
                             Descripcion: <input type="text"  class="form-control" name="descripcion">
                             <br>
                             <br>
-                            Precio: <input type="int"  class="form-control" name="precio">
+                            Precio: <input type="number"  class="form-control" name="precio">
                             <br>
                             <br>
                             Imagen: <input type="file"  class="form-control" name="imagen" required>
@@ -74,7 +83,7 @@ if(isset($_POST['crearNuevo'])){
                             </select>
                             <br>
                             <br>
-                            Stock: <input type="int"  class="form-control" name="stock">
+                            Stock: <input type="number"  class="form-control" name="stock">
                             <br>
                             <br>
                             <input type="submit" name="crearNuevo" class="btn btn-success" value="Añadir">
@@ -85,7 +94,26 @@ if(isset($_POST['crearNuevo'])){
         </div>
         <?php include("includes/footer.php"); ?>
     </div>
-
+    <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+     
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+           <div class="success alert-success alert-dismissible fade show">
+    		 <button type="button" class="close" data-dismiss="modal">&times;</button>
+    		<strong>bien!</strong> comic creado
+  			</div>
+        </div>
+               
+        
+      </div>
+    </div>
+  </div>
+  <?php if($creado){ ?>
+          <script> $('#myModal').modal('show');</script>
+        <?php }?>
 </body>
 
 </html>

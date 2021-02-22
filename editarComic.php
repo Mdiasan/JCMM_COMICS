@@ -6,20 +6,20 @@ require_once 'bbdd/model/Comic.php';
 
 session_start();
 if(!isset($_GET['editar'])){
-    header("Location:./index.php");
+    header("Location:./zona.php");
 }else{
     $comic= ComicController::getComicById($_GET['editar']);
 }
 
 $arrayEditorial=EditorialController::getAll();
-
+$modificado=false;
 
 if(!isset($_SESSION['usuario']) || $_SESSION['usuario']->rol!='admin'){
     
     header("Location:./index.php");
 }
 if(isset($_POST['cancelar'])){
-    header("Location:./index.php");
+    header("Location:./zonaAdmin.php");
 }
 if(isset($_POST['crearNuevo'])){
     
@@ -31,13 +31,13 @@ if(isset($_POST['crearNuevo'])){
         $comic1=new Comic($comic->id,$_POST['titulo'],$_POST['descripcion'],$_POST['precio'],$fich_unic,$_POST['editorial'],$_POST['stock']);
         ComicController::editar($comic1);
         $comic= ComicController::getComicById($comic1->id);
-    
+        $modificado=true;
     }
     else{
         $comic2=new Comic($comic->id,$_POST['titulo'],$_POST['descripcion'],$_POST['precio'],$comic->imagen,$_POST['editorial'],$_POST['stock']);
         ComicController::editar($comic2);
         $comic= ComicController::getComicById($comic2->id);
-    
+        $modificado=true;
     } 
 }
 
@@ -55,6 +55,10 @@ if(isset($_POST['crearNuevo'])){
 
         <div class="row">
             <div class="col">
+            <form action="" method="POST">
+            <br>
+            <input type="submit" name="cancelar" class="btn btn-primary" value="volver">
+            </form>
 <br>
                 <div class="card formLogeo">
                     <div class="card-header bg-dark text-white">
@@ -70,13 +74,15 @@ if(isset($_POST['crearNuevo'])){
     height:300px;
     border-radius:150px;" src="media/images/<?php echo $comic->imagen ?>" alt=""></button> </div>
                          <br>
+                            <div class="text-center"> click en la imagen para cambiarla</div>
+                            <br>
                             Titulo: <input type="text" class="form-control" name="titulo" value="<?php echo $comic->titulo ?>">
                             <br>
                             <br>
                             Descripcion: <input type="text"  class="form-control" name="descripcion" value="<?php echo $comic->descripcion ?>">
                             <br>
                             <br>
-                            Precio: <input type="int"  class="form-control" name="precio" value="<?php echo $comic->precio ?>">
+                            Precio: <input type="number"  class="form-control" name="precio" value="<?php echo $comic->precio ?>">
                             <br>
                             <br>
                          <input type="file" id="InputImage"  hidden class="form-control" name="imagen" >
@@ -101,18 +107,37 @@ if(isset($_POST['crearNuevo'])){
                             
                             <br>
                             <br>
-                            Stock: <input type="int"  class="form-control" name="stock" value="<?php echo $comic->stock ?>">
+                            Stock: <input type="number"  class="form-control" name="stock" value="<?php echo $comic->stock ?>">
                             <br>
                             <br>
                             <input type="submit" name="crearNuevo" class="btn btn-warning" value="Editar">
-                            <input type="submit" name="" class="btn btn-danger" value="Cancelar">
+                            <input type="submit" name="cancelar" class="btn btn-danger" value="Cancelar">
                         </div>
                 </div>
             </div>
         </div>
         <?php include("includes/footer.php"); ?>
     </div>
-
+    <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+     
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+           <div class="success alert-success alert-dismissible fade show">
+    		 <button type="button" class="close" data-dismiss="modal">&times;</button>
+    		<strong>bien!</strong> comic editado
+  			</div>
+        </div>
+               
+        
+      </div>
+    </div>
+  </div>
+  <?php if($modificado){ ?>
+          <script> $('#myModal').modal('show');</script>
+        <?php }?>
 </body>
 <script>
 var botonImagen = document.getElementById('btnImagen');
