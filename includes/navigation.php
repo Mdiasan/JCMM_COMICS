@@ -70,7 +70,7 @@ if(isset($_SESSION['carrito'])){
         <div class="dropdown-menu">
           <a class="dropdown-item" href="juegosMesa.php">Juegos mesa/rol</a>
           <a class="dropdown-item" href="figuras.php">Figuras</a>
-          <a class="dropdown-item" href="videos.php">Videos</a>
+          <a class="dropdown-item" href="videos.php">Video</a>
 
         </div>
       </li>
