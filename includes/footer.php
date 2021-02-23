@@ -105,7 +105,7 @@
                     <a class="fab fa-facebook-f text-white" href="https://es-es.facebook.com/" target="_blank"></a>
 
 
-                    <a class="fab fa-twitter text-white" href="https://mobile.twitter.com/" target="_blank"></a>
+                    <a class="fab fa-twitter text-white" href="https://mobile.twitter.com/" target="_blank"><span class ></span></a>
                 </div>
                 <div class="col-8">
                     <i class="far fa-copyright "></i> 2020 JCMMCOMICS Todos los derechos reservados

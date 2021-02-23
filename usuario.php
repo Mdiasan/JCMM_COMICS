@@ -36,7 +36,7 @@ if($compras!=false){
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 
 <head>

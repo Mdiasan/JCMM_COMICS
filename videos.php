@@ -1,6 +1,6 @@
 <?php include("includes/a_config.php"); ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <div class="container-fluid">
 
 	<head>

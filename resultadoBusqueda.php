@@ -22,7 +22,7 @@ if(!isset($_POST['busqueda'])){
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 
 <head>

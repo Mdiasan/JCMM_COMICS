@@ -28,7 +28,7 @@ if(isset($_POST['Enviar'])){
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <?php include("includes/head-tag-contents.php"); ?>

@@ -53,7 +53,7 @@ $arrayComentarios= ValoracionController::getAll($comic);
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <?php include("includes/head-tag-contents.php"); ?>

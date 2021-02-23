@@ -30,7 +30,7 @@ if(isset($_POST['crearNuevo'])){
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <?php include("includes/head-tag-contents.php"); ?>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php include("includes/a_config.php"); ?>
 
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">

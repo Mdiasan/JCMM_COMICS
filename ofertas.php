@@ -7,7 +7,7 @@ require_once 'bbdd/model/Comic.php';
 session_start();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
