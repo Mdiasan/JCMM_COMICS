@@ -5,7 +5,7 @@
         <li class="list-group-item"><a href="ZonaDC.php">Zona DC</a></li>
         <li class="list-group-item"><a href="juegosMesa.php">Juegos de Mesa/Rol</a></li>
         <li class="list-group-item"><a href="figuras.php">Figuras</a></li>
-        <li class="list-group-item"><a href="videos.php">Videos</a></li>
+        <li class="list-group-item"><a href="videos.php">Video</a></li>
         <li class="list-group-item"><a href="manga.php">Manga</a></li>
         <li class="list-group-item"><a href="fantasia.php">Libros</a></li>
         <li class="list-group-item"><a href="ofertas.php">Ofertas</a></li>
