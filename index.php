@@ -89,22 +89,24 @@ if(isset($_GET["code"]))
             <!-- The slideshow -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="media/images/novedad.png" alt="">
+                <img src="media/images/novedad.png" alt="novedad">
               </div>
               <div class="carousel-item">
-                <img src="media/images/novedad_vdi.png" alt="">
+                <img src="media/images/novedad_vdi.png" alt="juego de tronos novedad">
               </div>
               <div class="carousel-item">
-                <img src="media/images/estreno.jpg" alt="">
+                <img src="media/images/estreno.jpg" alt="ataque a los titanes">
               </div>
             </div>
 
             <!-- Left and right controls -->
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
+              <span class="carousel-control-prev-icon "></span>
+              <span class="sr-only" >siguiente</span>
             </a>
             <a class="carousel-control-next" href="#demo" data-slide="next">
               <span class="carousel-control-next-icon"></span>
+              <span class="sr-only" >anterior</span>
             </a>
 
           </div>

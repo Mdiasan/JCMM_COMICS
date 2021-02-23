@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="col col-sm-6 col-md">
-                    <img src="media/images/logo-jcmm-128x128.png" class="imagenfooter">
+                    <img src="media/images/logo-jcmm-128x128.png" class="imagenfooter" alt="logotipo">
                 </div>
                 <div class="col col-sm-4 col-md">
                     <div class="row">
@@ -99,13 +99,13 @@
             <div class="row">
                 <div class="col-4">
 
-                    <a class="fab fa-instagram text-white"  href="https://www.instagram.com/" target="_blank"></a>
+                    <a class="fab fa-instagram text-white"  href="https://www.instagram.com/" target="_blank"><span class="sr-only" >instagram</span></a>
 
 
-                    <a class="fab fa-facebook-f text-white" href="https://es-es.facebook.com/" target="_blank"></a>
+                    <a class="fab fa-facebook-f text-white" href="https://es-es.facebook.com/" target="_blank"><span class="sr-only" >facebook</span></a>
 
 
-                    <a class="fab fa-twitter text-white" href="https://mobile.twitter.com/" target="_blank"><span class ></span></a>
+                    <a class="fab fa-twitter text-white" href="https://mobile.twitter.com/" target="_blank"><span class="sr-only" >twitter</span></a>
                 </div>
                 <div class="col-8">
                     <i class="far fa-copyright "></i> 2020 JCMMCOMICS Todos los derechos reservados

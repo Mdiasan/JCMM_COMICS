@@ -60,7 +60,7 @@ if (!isset($_POST['pagina'])) {
 
     <li class="page-item ">
         <a class="page-link">
-          <form action="" method="POST"><button type="submit" class="btn btn-primary" name="pagina" value=0>Primera</button></form>
+          <form action="" method="POST"><button type="submit" class="btn btn-warning" name="pagina" value=0>Primera</button></form>
         </a>
       </li>
       <?php
@@ -72,13 +72,13 @@ if (!isset($_POST['pagina'])) {
 
       ?>
          <li class="page-item"><a class="page-link">
-            <form action="" method="POST"><button type="submit" class="btn btn-primary" name="pagina" value=<?php echo ($i)  ?>><?php echo ($i + 1) ?></button></form>
+            <form action="" method="POST"><button type="submit" class="btn btn-warning" name="pagina" value=<?php echo ($i)  ?>><?php echo ($i + 1) ?></button></form>
           </a></li>
 
       <?php } ?>
       <li>
         <a class="page-link">
-          <form action="" method="POST"><button type="submit" class="btn btn-primary" name="pagina" value=<?php echo $numero - 1  ?>>Última</button></form>
+          <form action="" method="POST"><button type="submit" class="btn btn-warning" name="pagina" value=<?php echo $numero - 1  ?>>Última</button></form>
         </a>
       </li>
     </ul>

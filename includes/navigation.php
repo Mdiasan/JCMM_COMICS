@@ -92,15 +92,15 @@ if(isset($_SESSION['carrito'])){
 
     <div class="ml-auto">
       <form class="form-inline "  action="resultadoBusqueda.php" method="POST">
-        <div class="mr-3"> <a class="fas fa-shopping-cart text-white" href="carrito.php"></a>
+        <div class="mr-3"> <a class="fas fa-shopping-cart text-white" href="carrito.php"><span class="sr-only" >carrito</span></a>
           <a class="text-white" href="carrito.php"> <?php 
           if(isset($_SESSION['carrito'])){
             echo $total ."€";}else
             { echo " 0,00€"; 
             } ?>
             </a></div>
-
-          <input type="text" class="form-control" name="buscar">
+          <label for="buscar" class="d-none">busqueda comic</label>
+          <input type="text" class="form-control" name="buscar" id="buscar">
           <button class="btn btn-warning" name="busqueda">buscar</button>
       </form>
 

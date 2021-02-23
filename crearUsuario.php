@@ -33,32 +33,32 @@ if(isset($_SESSION['usuario'])){
         <main>
         <div class="row">
             <div class="col">
-                <h1>Crear usuario</h1>
+                <h1 class="text-dark">Crear usuario</h1>
                 <div class="formLogeo" id="formLogueo">
 
                     <form action=""  class="needs-validation"   method="POST" novalidate  >
                     <div class="form-group">
-                        <label for="usuario">Usuario</label>
-                        <input type="text" name="usuario" class="form-control" required>
+                        <label for="usuario" class="text-dark">Usuario</label>
+                        <input type="text" id="usuario" name="usuario" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" class="form-control" required>
+                        <label for="nombre" class="text-dark">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label for="apellidos">Apellidos</label>
-                        <input type="text" name="apellidos" class="form-control" required>
+                        <label for="apellidos" class="text-dark">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label for="apellidos">Mail</label>
-                        <input type="text" name="mail" class="form-control" required>
+                        <label for="mail" class="text-dark">Mail</label>
+                        <input type="text" id="mail" name="mail" class="form-control" required>
                     </div>
                     <div class="form-group"> 
-                        <label for="contraseña">Contraseña</label>
-                        <input type="password" name="contraseña" class="form-control"    id="contraseña" required>
+                        <label for="contraseña" class="text-dark">Contraseña</label>
+                        <input type="password" name="contraseña" id="contraseña" class="form-control"    id="contraseña" required>
                     </div>
                     <div class="form-group">
-                        <label for="recontraseña">Repite la contraseña</label>
+                        <label for="recontraseña" class="text-dark">Repite la contraseña</label>
                         <input type="password" name="recontraseña"   id="recontraseña"class="form-control"     required>
                        
                         <div class="invalid-feedback"></div>

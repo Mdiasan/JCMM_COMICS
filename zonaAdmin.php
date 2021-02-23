@@ -40,7 +40,7 @@ $arrayComics=ComicController::getAll();
                 
                 <div class="col">
                 <br>
-                <form action="nuevoComic.php"><button class="btn btn-primary">Añadir comic</button></form>
+                <form action="nuevoComic.php"><button class="btn btn-warning">Añadir comic</button></form>
                 <br>
                     <table class="table">
                             <thead class="thead-dark">
@@ -55,7 +55,7 @@ $arrayComics=ComicController::getAll();
                                 <th scope="col">Stock</th>
                                 <th scope="col">Añadir</th>
                                 <th scope="col">Retirar</th>
-                                <th scope="col"></th>    
+                                <th scope="col">editar</th>    
                                 </tr>
                             </thead>
                     <tbody>
@@ -70,7 +70,7 @@ $arrayComics=ComicController::getAll();
                         <td><?php echo $value->precio ?>€</td>
                         <td><?php echo EditorialController::getNombre( $value->editorial) ?></td>
                         <td><?php echo $value->stock ?></td>
-                        <td><form action="" method="POST" ><button class="btn btn-primary" name="anadir" value=<?php echo $value->id ?>>+1</button></form></td>
+                        <td><form action="" method="POST" ><button class="btn btn-orange" name="anadir" value=<?php echo $value->id ?>>+1</button></form></td>
                         <td><form action="" method="POST" ><button class="btn btn-danger" name="retirar"  value=<?php echo $value->id ?>>-1</button></form></td>
                         <td><form action="editarComic.php" ><button class="btn btn-warning" name="editar"  value=<?php echo $value->id ?>>Editar</button></form></td>
                         </tr>

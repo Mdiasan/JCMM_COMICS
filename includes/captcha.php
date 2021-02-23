@@ -29,12 +29,7 @@ function Captcha(mainCaptcha, inputName) {
     //columna para el refresh
     div1 = document.createElement('div');
     div1.className = "col";
-    var refresh = document.createElement('a');
-    refresh.id = "refresh";
-    refresh.innerHTML = '';
-    refresh.href = "javascript:void(0);";
-    refresh.setAttribute('onclick', "Captcha('" + mainCaptcha + "');");
-    div1.appendChild(refresh);
+    
     div.appendChild(div1);
     contenedor.appendChild(div);
     //columna para el texto
@@ -42,12 +37,17 @@ function Captcha(mainCaptcha, inputName) {
     div.className = "col text-center";
     div1 = document.createElement('div');
     div1.className = "form-horizontal";
+    var label = document.createElement('label');
+    label.setAttribute('for',inputName) ;
+    label.className="sr-only text-dark";
+    label.innerText="completar chaptcha";
+    div1.appendChild(label);
     var input = document.createElement('input');
     input.id = inputName;
     input.className = "form-control";
     div1.appendChild(input);
     var boton = document.createElement("button");
-    boton.className="btn btn-success"
+    boton.className="btn btn-warning"
     boton.addEventListener("click",function(){
         comprobarValidacionCaptcha();
     });

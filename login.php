@@ -53,19 +53,19 @@ if(isset($_POST['Enviar'])){
 
                             <div class="form-group"> <!--  DIV GROUP DE USUARIO-->
                                
-                                <label for="usuario">Usuario</label>
-                                <input type="text" name="usuario" class="form-control" required>
+                                <label for="usuario" class="text-dark">Usuario</label>
+                                <input type="text" name="usuario" id="usuario" class="form-control" required>
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Please fill out this field.</div>
                             </div> <!-- FIN  DIV GROUP DE USUARIO-->
                             <div class="form-group"> <!--  DIV GROUP DE CONTRASEÑA-->
-                                <label for="contraseña">Contraseña</label>
-                                <input type="password" name="contraseña" class="form-control" required>
+                                <label for="contraseña" class="text-dark">Contraseña</label>
+                                <input type="password" name="contraseña" id="contraseña" class="form-control" required>
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Please fill out this field.</div>
                             </div>  <!-- fin DIV GROUP DE CONTRASEÑA-->
                          <div class="text-center">
-                         <input type="submit" class="form-control-3 btn btn-warning mt-3" name="Enviar">
+                         <input type="submit" class="form-control-3 btn btn-warning mt-3" name="Enviar" value="enviar">
                         </div>
 
 
@@ -77,11 +77,11 @@ if(isset($_POST['Enviar'])){
                         <br>
                         <div id="customBtn" class="customGPlusSignIn">
                             <span class="icon"></span>
-                            <span class="buttonText" id="googleSignInBtn" ><a href="<?php echo $google_client->createAuthUrl() ?>">Google</a> </span>
+                            <span class="buttonText" id="googleSignInBtn" ><a  class="azulOscuro" href="<?php echo $google_client->createAuthUrl() ?>">Google</a> </span>
                         </div>
                     </div>
                     <div class="text-center">
-                         <br> ¿No tienes cuenta? registrate <a href="crearUsuario.php">AQUÍ!</a>
+                         <br> ¿No tienes cuenta? registrate <a class="azulOscuro" href="crearUsuario.php">AQUÍ!</a>
                     </div>
 
                 </div>

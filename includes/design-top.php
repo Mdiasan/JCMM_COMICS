@@ -2,7 +2,7 @@
 
   <div class="row">
     <div class="col p-0">
-      <div class=" d-none d-sm-block "><img src="media/images/portada.png" class="img-portada"></div>
+      <div class=" d-none d-sm-block "><img src="media/images/portada.png" class="img-portada" alt="Portada del sitio"></div>
     </div>
 
   </div>

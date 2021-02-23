@@ -91,7 +91,7 @@ h5 {
   background-color: #34A9DA; }
 
 .card-body-user {
-  background-color: #EF2131; }
+  background-color: #E01021; }
 
 .card-img,
 .card-img-botton,
@@ -102,7 +102,7 @@ h5 {
   color: #0D0B0E !important; }
 
 .bg-danger {
-  background-color: #EF2131 !important; }
+  background-color: #E01021 !important; }
 
 .bg-primary {
   background-color: #34A9DA !important; }
@@ -117,7 +117,7 @@ h5 {
   background-color: #F18C31 !important; }
 
 .btn-danger {
-  background-color: #EF2131 !important; }
+  background-color: #E01021 !important; }
 
 .btn-primary {
   background-color: #34A9DA !important; }
@@ -163,12 +163,12 @@ h5 {
   -o-transition: opacity .3s;
   -ms-transition: opacity .3s;
   transition: opacity .3s;
-  background-image: linear-gradient(bottom, #EF2131 13%, #EF2131 100%);
-  background-image: -o-linear-gradient(bottom, #EF2131 13%, #EF2131 100%);
-  background-image: -moz-linear-gradient(bottom, #EF2131 13%, #EF2131 100%);
-  background-image: -webkit-linear-gradient(bottom, #EF2131 13%, #EF2131 100%);
-  background-image: -ms-linear-gradient(bottom, #EF2131 13%, #EF2131 100%);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.13, #EF2131), color-stop(1, #EF2131)); }
+  background-image: linear-gradient(bottom, #E01021 13%, #E01021 100%);
+  background-image: -o-linear-gradient(bottom, #E01021 13%, #E01021 100%);
+  background-image: -moz-linear-gradient(bottom, #E01021 13%, #E01021 100%);
+  background-image: -webkit-linear-gradient(bottom, #E01021 13%, #E01021 100%);
+  background-image: -ms-linear-gradient(bottom, #E01021 13%, #E01021 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.13, #E01021), color-stop(1, #E01021)); }
 
 #video-container:hover #video-controls {
   opacity: .9; }
@@ -259,13 +259,13 @@ label {
   unicode-bidi: bidi-override; }
 
 .noStock {
-  color: #EF2131; }
+  color: #E01021; }
 
 .dinamico:hover, .dinamico:hover ~ label {
   color: orange; }
 
 .errorDiv {
-  color: #EF2131;
+  color: #E01021;
   display: none; }
 
 .formLogeo {
@@ -319,3 +319,6 @@ input[type="radio"]:checked ~ label {
   background: url(../media/images/cokkies.png) center center no-repeat;
   background-size: 60%;
   pointer-events: none; }
+
+.azulOscuro {
+  color: #004A8F; }

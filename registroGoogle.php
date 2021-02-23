@@ -35,25 +35,25 @@ session_start();
         <main>
 
             <div class="col ">
-                <h1>Crear usuario</h1>
+                <h1 class="text-dark">Crear usuario</h1>
                 <div class="formLogeo">
 
                     <form action=""  class="needs-validation"   method="POST"  novalidate  >
                     <div class="form-group">
-                        <label for="usuario">Usuario</label>
-                        <input type="text" name="usuario" class="form-control"  required>
+                        <label for="usuario" class="text-dark">Usuario</label>
+                        <input type="text" name="usuario" id="usuario" class="form-control"  required>
                     </div>
                     <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" class="form-control" value="<?php if(isset($_SESSION['google'])){ echo $_SESSION['google']->nombre;}   ?>" required>
+                        <label for="nombre"  class="text-dark">Nombre</label>
+                        <input type="text" name="nombre" class="form-control" id="nombre" value="<?php if(isset($_SESSION['google'])){ echo $_SESSION['google']->nombre;}   ?>" required>
                     </div>
                     <div class="form-group">
-                        <label for="apellidos">Apellidos</label>
-                        <input type="text" name="apellidos" class="form-control" value="<?php if(isset($_SESSION['google'])){ echo $_SESSION['google']->apellidos;}  ?>" required>
+                        <label for="apellidos"  class="text-dark">Apellidos</label>
+                        <input type="text" name="apellidos" class="form-control"   id="apellidos" value="<?php if(isset($_SESSION['google'])){ echo $_SESSION['google']->apellidos;}  ?>" required>
                     </div>
                     <div class="form-group">
-                        <label for="apellidos">Mail</label>
-                        <input type="text" name="mail" class="form-control" value="<?php if(isset($_SESSION['google'])){ echo $_SESSION['google']->mail;}  ?>" required>
+                        <label for="mail"  class="text-dark">Mail</label>
+                        <input type="text" name="mail" class="form-control" id="mail" value="<?php if(isset($_SESSION['google'])){ echo $_SESSION['google']->mail;}  ?>" required>
                     </div>
            
                     </div>
