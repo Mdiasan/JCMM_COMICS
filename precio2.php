@@ -208,7 +208,8 @@ $arrayComentarios= ValoracionController::getAll($comic);
                 
                
               <hr>
-              <textarea style="width: 100%; resize: none;" disabled><?php echo $arrayComentarios[$i]->comentario ?></textarea>
+              <label for="comentario" class="sr-only">comentario</label>
+              <textarea style="width: 100%; resize: none;"  id="comentario" disabled><?php echo $arrayComentarios[$i]->comentario ?></textarea>
             </div>
 
             
@@ -220,8 +221,8 @@ $arrayComentarios= ValoracionController::getAll($comic);
         ?>
  
         <div class="text-center">
-          <button class="btn btn-primary"  style="margin: auto; <?php if($arrayComentarios==false || count($arrayComentarios)<2){echo "display:none";} ?>" onclick="verTodosLosComentarios()" id="mas">ver más</button>
-          <button class="btn btn-primary " style="display: none; margin: auto;" onclick="verMenosComentarios()" id="menos" >ver menos</button>
+          <button class="btn btn-warning"  style="margin: auto; <?php if($arrayComentarios==false || count($arrayComentarios)<2){echo "display:none";} ?>" onclick="verTodosLosComentarios()" id="mas">ver más</button>
+          <button class="btn btn-warning " style="display: none; margin: auto;" onclick="verMenosComentarios()" id="menos" >ver menos</button>
         
       
         </div>

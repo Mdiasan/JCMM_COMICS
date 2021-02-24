@@ -252,7 +252,7 @@ input[type="radio"] {
   display: none; }
 
 label {
-  color: grey; }
+  color: #292929; }
 
 .clasificacion {
   direction: rtl;
@@ -262,7 +262,7 @@ label {
   color: #E01021; }
 
 .dinamico:hover, .dinamico:hover ~ label {
-  color: orange; }
+  color: #704900; }
 
 .errorDiv {
   color: #E01021;
@@ -299,7 +299,7 @@ label {
   vertical-align: baseline; }
 
 input[type="radio"]:checked ~ label {
-  color: orange; }
+  color: #704900; }
 
 /* text area de los comentarios*/
 .standalone-container {

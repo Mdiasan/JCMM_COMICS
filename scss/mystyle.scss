@@ -305,7 +305,7 @@ input[type="radio"] {
 }
 
 label {
-  color: grey;
+  color: #292929;
 }
 
 .clasificacion {
@@ -318,7 +318,7 @@ label {
   color: $primario;
 }
 .dinamico:hover,.dinamico:hover ~ label {
-  color: orange;
+  color: #704900;
 
 }
 
@@ -364,7 +364,7 @@ label {
   margin-left: 30px;
   vertical-align: baseline;
 } 
-input[type = "radio"]:checked ~ label{color:orange;}
+input[type = "radio"]:checked ~ label{color:#704900;}
 
 
 
