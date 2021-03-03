@@ -57,7 +57,7 @@ if(isset($_POST['crearNuevo'])){
             <div class="col">
             <form action="" method="POST">
             <br>
-            <input type="submit" name="cancelar" class="btn btn-primary" value="volver">
+            <input type="submit" name="cancelar" class="btn btn-danger" value="volver">
             </form>
 <br>
                 <div class="card formLogeo">
@@ -70,24 +70,28 @@ if(isset($_POST['crearNuevo'])){
                     <form action="" method="post" enctype="multipart/form-data">
 
                         <div class="card-body">
-                        <div class=" text-center " style="width: 100%;">  <button class="btn btn-primary " id="btnImagen" style="border: none;" ><img style="  width:300px;
+                        <div class=" text-center " style="width: 100%;">  <button class="btn btn-primary"aria-expanded="false"
+                        aria-label="Sort" id="btnImagen" value="." style="border: none;" ><img style="  width:300px;
     height:300px;
     border-radius:150px;" src="media/images/<?php echo $comic->imagen ?>" alt=""></button> </div>
                          <br>
                             <div class="text-center"> click en la imagen para cambiarla</div>
                             <br>
-                            Titulo: <input type="text" class="form-control" name="titulo" value="<?php echo $comic->titulo ?>">
+                            <label for="titulo" class="text-dark">Titulo:</label>
+                            <input type="text" class="form-control" name="titulo" id="titulo" value="<?php echo $comic->titulo ?>">
                             <br>
                             <br>
-                            Descripcion: <input type="text"  class="form-control" name="descripcion" value="<?php echo $comic->descripcion ?>">
+                            <label for="descripcion" class="text-dark">Descripcion:</label> 
+                            <input type="text"  class="form-control" name="descripcion" id="descripcion" value="<?php echo $comic->descripcion ?>">
                             <br>
                             <br>
-                            Precio: <input type="number"  class="form-control" name="precio" value="<?php echo $comic->precio ?>">
+                            <label for="precio" class="text-dark">Precio:</label>
+                            <input type="number"  class="form-control" name="precio" id="precio" value="<?php echo $comic->precio ?>">
                             <br>
                             
-                         <input type="file" id="InputImage"  hidden class="form-control" name="imagen" >
-                            Editorial: 
-                            <select name="editorial" id="">
+                         <input type="file" id="InputImage"  hidden class="form-control" name="InputImage">
+                         <label for="editorial" id="editorial" class="text-dark">Editorial:</label> 
+                            <select name="editorial"  id="editorial">
 
 
                             <?php foreach ($arrayEditorial as $key => $value) {  ?>
@@ -105,7 +109,8 @@ if(isset($_POST['crearNuevo'])){
                             
                             <br>
                             <br>
-                            Stock: <input type="number"  class="form-control" name="stock" value="<?php echo $comic->stock ?>">
+                            <label for="stock" class="text-dark">Stock:</label>
+                            <input type="number"  class="form-control" name="stock" id="stock" value="<?php echo $comic->stock ?>">
                             <br>
                             <br>
                             <input type="submit" name="crearNuevo" class="btn btn-warning" value="Editar">

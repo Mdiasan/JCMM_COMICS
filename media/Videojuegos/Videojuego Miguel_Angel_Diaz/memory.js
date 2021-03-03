@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.setAttribute('src', 'media/images/blank.png');
       card.setAttribute('data-id', i);
       card.setAttribute('data-name',"hola");
+      card.setAttribute('alt',"Imagen");
       card.addEventListener('click', flipCard);
       grid.appendChild(card);
 

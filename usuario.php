@@ -55,20 +55,20 @@ if($compras!=false){
                                 <div class="text-center"><h1 class=" text-dark">Modificar mis datos </h1></div>
                         <form action="" class="needs-validation" method="POST" novalidate>
                             <div class="form-group">
-                                <label for="usuario">Usuario</label>
-                                <input type="text" name="usuario" class="form-control" value="<?php echo $_SESSION['usuario']->usuario ?>" required>
+                            <label for="usuario" class="text-dark">Usuario</label>
+                                <input type="text" name="usuario" id="usuario" class="form-control" value="<?php echo $_SESSION['usuario']->usuario ?>" required>
                             </div>
                             <div class="form-group">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre" class="form-control" value="<?php echo $_SESSION['usuario']->nombre ?>" required>
+                                <label for="nombre" class="text-dark" >Nombre</label>
+                                <input type="text" name="nombre" id="nombre" class="form-control" value="<?php echo $_SESSION['usuario']->nombre ?>" required>
                             </div>
                             <div class="form-group">
-                                <label for="apellidos">Apellidos</label>
-                                <input type="text" name="apellidos" class="form-control" value="<?php echo $_SESSION['usuario']->apellidos ?>" required>
+                                <label for="apellidos" class="text-dark">Apellidos</label>
+                                <input type="text" name="apellidos" id="apellidos" class="form-control" value="<?php echo $_SESSION['usuario']->apellidos ?>" required>
                             </div>
                             <div class="form-group">
-                                <label for="apellidos">Mail</label>
-                                <input type="text" name="mail" class="form-control" value="<?php echo $_SESSION['usuario']->mail ?>" required>
+                                <label for="mail" class="text-dark">Mail</label>
+                                <input type="text" name="mail" id="mail" class="form-control" value="<?php echo $_SESSION['usuario']->mail ?>" required>
                             </div>                       
                             <div class="text-center">
                                 <input class="form-control-3 btn btn-warning mt-3  " type="submit" id="btn" value="Enviar" >
@@ -114,7 +114,7 @@ if($compras!=false){
                         <tbody>
                         <?php  foreach ($comicsComprados as $key => $value) { ?>
                             <tr>
-                            <th scope="row"><img src="media/images/<?php echo $value->imagen  ?>" style="width: 80px;height: 90px;"></th>
+                            <th scope="row"><img src="media/images/<?php echo $value->imagen  ?>" style="width: 80px;height: 90px;" alt="Colum Image"></th>
                             <td><?php echo $value->titulo;  ?></td>
                             <td><?php echo $value->cantidad ;?></td>
                             <td><?php echo $value->cantidad*$value->precio; ?></td>
