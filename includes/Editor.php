@@ -37,7 +37,7 @@
 
 <div style="width: 100%; text-align: center;">
 <form action="" method="POST">
-<button type="submit" class="btn btn-primary btn-sm" aria-label="Close"  name="resena" id="resena">
+<button type="submit" class="btn btn-warning btn-sm" aria-label="Close"  name="resena" id="resena">
     Enviar Reseña
   </button>
   <input type="hidden" name="hiddenEstrellas" id="hiddenEstrellas">

@@ -34,7 +34,7 @@
 <script src="https://apis.google.com/js/api:client.js"></script>
 <script type="text/javascript" src="js/google-signin.js"></script>
 
-<link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" href="css/mystyles.css">
 
 
 <!-- texto de los comentarios  -->
