@@ -88,7 +88,7 @@ if(isset($_POST['crearNuevo'])){
                             <label for="precio" class="text-dark">Precio:</label>
                             <input type="number"  class="form-control" name="precio" id="precio" value="<?php echo $comic->precio ?>">
                             <br>
-                            
+                            <label for="InputImage" id="InputImage" hidden> imagen</label> 
                          <input type="file" id="InputImage"  hidden class="form-control" name="InputImage">
                          <label for="editorial" id="editorial" class="text-dark">Editorial:</label> 
                             <select name="editorial"  id="editorial">

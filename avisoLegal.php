@@ -61,13 +61,13 @@ El uso de los contenidos y servicios ofrecidos por JCMMCOMIC será bajo el exclu
     <tr>
       <th scope="row">Disney</th>
       <td>Marvel</td>
-      <td><a href="https://disneytermsofuse.com/">Terminos de uso © Disney. All rights reserved.</a></td>
+      <td><a class="azulClaro" href="https://disneytermsofuse.com/">Terminos de uso © Disney. All rights reserved.</a></td>
      
     </tr>
     <tr>
       <th scope="row">Warnerbros</th>
       <td>DC comics</td>
-      <td><a href="https://policies.warnerbros.com/terms/en-us/html/terms_en-us_1.2.0.html">Terminos de uso TM & © 2020 Warner Bros. Entertainment Inc. All rights reserved.
+      <td><a class="azulClaro" href="https://policies.warnerbros.com/terms/en-us/html/terms_en-us_1.2.0.html">Terminos de uso TM & © 2020 Warner Bros. Entertainment Inc. All rights reserved.
 
 </a></td>
      
@@ -75,28 +75,28 @@ El uso de los contenidos y servicios ofrecidos por JCMMCOMIC será bajo el exclu
     <tr>
       <th scope="row">Shūeisha</th>
       <td>Dragon ball</td>
-      <td><a href="">Terminos de uso Terminos de uso Copyright © 2019 Shūeisha Advanced Media. All rights reserved</a></td>
+      <td><a  class="azulClaro" href="">Terminos de uso Terminos de uso Copyright © 2019 Shūeisha Advanced Media. All rights reserved</a></td>
      
     </tr>
 
     <tr>
       <th scope="row">Nova</th>
       <td>Brandon sanderson libros</td>
-      <td><a href="https://www.penguinrandomhousegrupoeditorial.com/aviso-legal/">Terminos de uso © 2017 Penguin Random House Grupo Editorial</a></td>
+      <td><a class="azulClaro" href="https://www.penguinrandomhousegrupoeditorial.com/aviso-legal/">Terminos de uso © 2017 Penguin Random House Grupo Editorial</a></td>
      
     </tr>
 
     <tr>
       <th scope="row">Kōdansha</th>
       <td>Attack of titan</td>
-      <td><a href="https://kodanshacomics.com/terms-of-use/">Terminos de uso Copyright © 2021 Kodansha Advanced Media. All rights reserved.</a></td>
+      <td><a class="azulClaro" href="https://kodanshacomics.com/terms-of-use/">Terminos de uso Copyright © 2021 Kodansha Advanced Media. All rights reserved.</a></td>
      
     </tr>
 
     <tr>
       <th scope="row">Shūeisha</th>
       <td>Boku no hero</td>
-      <td><a href="">Terminos de uso Terminos de uso Copyright © 2019 Shūeisha Advanced Media. All rights reserved</a></td>
+      <td><a class="azulClaro" href="">Terminos de uso Terminos de uso Copyright © 2019 Shūeisha Advanced Media. All rights reserved</a></td>
      
     </tr>
   </tbody>

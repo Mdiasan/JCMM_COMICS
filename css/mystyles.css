@@ -322,3 +322,7 @@ input[type="radio"]:checked ~ label {
 
 .azulOscuro {
   color: #004A8F; }
+
+  .azulClaro {
+    color: #30b5ee; }
+

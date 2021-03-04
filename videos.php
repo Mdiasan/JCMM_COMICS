@@ -35,11 +35,16 @@
 						</video>
 						<!-- Video Controls -->
 						<div id="video-controls">
-							<button type="button" id="play-pause" class="play">></button>
+							<button type="button" id="play-pause" aria-expanded="false"
+                        aria-label="Sort" class="play">></button>
+						<label for="seek-bar" hidden>range</label>
 							<input type="range" id="seek-bar" value="0">
-							<button type="button" id="mute"><i class="fas fa-volume-off"></i></button>
+							<button type="button" aria-expanded="false"
+                        aria-label="Sort" id="mute"><i class="fas fa-volume-off"></i></button>
+						<label for="volume-bar" hidden>range</label>
 							<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-							<button type="button" id="full-screen"><i class="fas fa-compress"></i></button>
+							<button type="button" id="full-screen" aria-expanded="false"
+                        aria-label="Sort"><i class="fas fa-compress"></i></button>
 						</div>
 
 					</div>
